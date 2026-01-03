@@ -1,30 +1,30 @@
-장소타입,장소이름,영어,이모지,카테고리,설명
-hospital,Hospital,병원,🏥,medical,Hospital for medical treatment
-restaurant,Restaurant,식당,🍽️,food,Restaurant for meals
-hotel,Hotel,호텔,🏨,accommodation,Hotel for accommodation
-trainstation,Train Station,기차역,🚄,transportation,Train station for KTX and trains
-busstation,Bus Station,버스터미널,🚌,transportation,Bus terminal for intercity buses
-airport,Airport,공항,✈️,transportation,Airport for flights
-market,Market,시장,🏪,shopping,Traditional market
-bank,Bank,은행,🏦,finance,Bank for currency exchange
-communication,Phone Store,통신사,📱,communication,Mobile phone store
-police,Police Station,경찰서,🚔,public,Police station for emergencies
-electronics,Electronics Store,전자제품,📺,shopping,Electronics retail store
-salon,Hair Salon,미용실,💇,lifestyle,Hair salon
-bakery,Bakery,베이커리,🥐,food,Bakery and cafe
-massage,Massage,마사지,💆,lifestyle,Massage parlor
-cinema,Cinema,영화관,🎬,entertainment,Movie theater
-park,Park,공원,🌳,tourism,Park and nature
-department,Department Store,백화점,🛍️,shopping,Department store
-scenic,Tourist Attraction,관광지,🏛️,tourism,Tourist attractions
-apartment,Apartment,아파트,🏢,accommodation,Apartment complex
-ktv,Karaoke,노래방,🎤,entertainment,Karaoke room
-theater,Theater,공연장,🎭,entertainment,Performance theater
-stadium,Stadium,경기장,🏟️,entertainment,Sports stadium
-asset,Real Estate,부동산,🏠,lifestyle,Real estate agency
-company,Company,회사,🏢,business,Office and company
-golf,Golf Course,골프장,⛳,lifestyle,Golf course
-elementary,Elementary School,초등학교,🏫,education,Elementary school
-highschool,High School,고등학교,🏫,education,High school
-university,University,대학교,🎓,education,University
-oldtown,Traditional Village,전통마을,🏘️,tourism,Korean traditional village
+placeType,name,korean,emoji,category,placeKeywords
+hospital,Hospital,병원,🏥,medical,hospital doctor nurse emergency
+restaurant,Restaurant,식당,🍽️,food,restaurant food eat dining korean bbq
+hotel,Hotel,호텔,🏨,accommodation,hotel room stay sleep accommodation
+trainstation,Train Station,기차역,🚄,transportation,train station KTX rail
+busstation,Bus Station,버스터미널,🚌,transportation,bus terminal intercity express
+airport,Airport,공항,✈️,transportation,airport flight plane check-in
+market,Market,시장,🏪,shopping,market traditional shopping bargain
+bank,Bank,은행,🏦,finance,bank exchange money ATM currency
+communication,Phone Store,통신사,📱,communication,phone SIM card mobile data
+police,Police Station,경찰서,🚔,public,police lost report emergency
+electronics,Electronics Store,전자제품,📺,shopping,electronics phone computer camera
+salon,Hair Salon,미용실,💇,lifestyle,hair salon haircut beauty
+bakery,Bakery,베이커리,🥐,food,bakery bread cafe coffee
+massage,Massage,마사지,💆,lifestyle,massage spa relax
+cinema,Cinema,영화관,🎬,entertainment,movie cinema film theater
+park,Park,공원,🌳,tourism,park nature walk outdoor
+department,Department Store,백화점,🛍️,shopping,department store shopping brand
+scenic,Tourist Attraction,관광지,🏛️,tourism,tourist attraction sightseeing tour
+apartment,Apartment,아파트,🏢,accommodation,apartment housing rent
+ktv,Karaoke,노래방,🎤,entertainment,karaoke singing noraebang
+theater,Theater,공연장,🎭,entertainment,theater performance show concert
+stadium,Stadium,경기장,🏟️,entertainment,stadium sports game
+asset,Real Estate,부동산,🏠,lifestyle,real estate rent house apartment
+company,Company,회사,🏢,business,company office work meeting
+golf,Golf Course,골프장,⛳,lifestyle,golf course club
+elementary,Elementary School,초등학교,🏫,education,elementary school student
+highschool,High School,고등학교,🏫,education,high school student
+university,University,대학교,🎓,education,university college student campus
+oldtown,Traditional Village,전통마을,🏘️,tourism,traditional village hanok culture

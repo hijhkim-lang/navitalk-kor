@@ -1,0 +1,30 @@
+장소타입,장소이름,영어,이모지,카테고리,설명
+hospital,Hospital,병원,🏥,medical,Hospital for medical treatment
+restaurant,Restaurant,식당,🍽️,food,Restaurant for meals
+hotel,Hotel,호텔,🏨,accommodation,Hotel for accommodation
+trainstation,Train Station,기차역,🚄,transportation,Train station for KTX and trains
+busstation,Bus Station,버스터미널,🚌,transportation,Bus terminal for intercity buses
+airport,Airport,공항,✈️,transportation,Airport for flights
+market,Market,시장,🏪,shopping,Traditional market
+bank,Bank,은행,🏦,finance,Bank for currency exchange
+communication,Phone Store,통신사,📱,communication,Mobile phone store
+police,Police Station,경찰서,🚔,public,Police station for emergencies
+electronics,Electronics Store,전자제품,📺,shopping,Electronics retail store
+salon,Hair Salon,미용실,💇,lifestyle,Hair salon
+bakery,Bakery,베이커리,🥐,food,Bakery and cafe
+massage,Massage,마사지,💆,lifestyle,Massage parlor
+cinema,Cinema,영화관,🎬,entertainment,Movie theater
+park,Park,공원,🌳,tourism,Park and nature
+department,Department Store,백화점,🛍️,shopping,Department store
+scenic,Tourist Attraction,관광지,🏛️,tourism,Tourist attractions
+apartment,Apartment,아파트,🏢,accommodation,Apartment complex
+ktv,Karaoke,노래방,🎤,entertainment,Karaoke room
+theater,Theater,공연장,🎭,entertainment,Performance theater
+stadium,Stadium,경기장,🏟️,entertainment,Sports stadium
+asset,Real Estate,부동산,🏠,lifestyle,Real estate agency
+company,Company,회사,🏢,business,Office and company
+golf,Golf Course,골프장,⛳,lifestyle,Golf course
+elementary,Elementary School,초등학교,🏫,education,Elementary school
+highschool,High School,고등학교,🏫,education,High school
+university,University,대학교,🎓,education,University
+oldtown,Traditional Village,전통마을,🏘️,tourism,Korean traditional village

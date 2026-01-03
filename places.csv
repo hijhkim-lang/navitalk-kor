@@ -1,13 +1,13 @@
 placeType,name,placeKeywords,category
-hospital,Hospital,"hospital,병원,clinic,emergency,doctor,nurse,pharmacy,의원,health center",medical
-restaurant,Restaurant,"restaurant,식당,food,dining,meal,음식점,맛집,korean food,eat",food
+hospital,Hospital,"hospital,병원,clinic,emergency,doctor,nurse,의원,health center,medical",medical
+restaurant,Restaurant,"restaurant,식당,food,dining,meal,음식점,맛집,korean food,eat,dinner",food
 police,Police Station,"police,경찰서,emergency,crime,report,lost,theft,help,파출소",service
 bank,Bank,"bank,은행,money,exchange,ATM,account,currency,금융,transfer",service
 busstation,Bus Terminal,"bus,버스터미널,bus station,terminal,coach,express bus,시외버스",transport
 airport,Airport,"airport,공항,flight,airplane,check-in,boarding,immigration,departure,arrival",transport
-trainstation,Train Station,"train,기차역,railway,KTX,station,platform,ticket,고속철,SRT",transport
-market,Traditional Market,"market,시장,traditional market,shopping,bargain,전통시장,남대문,동대문",shopping
-apartment,Real Estate,"apartment,부동산,rent,house,room,monthly rent,deposit,lease,아파트,집",residence
+trainstation,Train Station,"train,기차역,railway,KTX,station,platform,ticket,고속철,SRT,지하철",transport
+market,Traditional Market,"market,시장,traditional market,shopping,bargain,전통시장,남대문,동대문,마트",shopping
+apartment,Apartment,"apartment,아파트,rent,house,room,monthly rent,deposit,lease,주택,빌라",residence
 cinema,Movie Theater,"cinema,영화관,movie,film,theater,screening,CGV,롯데시네마,메가박스",entertainment
 theater,Theater,"theater,극장,performance,musical,play,concert,show,공연,뮤지컬",entertainment
 stadium,Sports Stadium,"stadium,경기장,sports,soccer,baseball,match,game,운동장,체육관",sports
@@ -18,13 +18,13 @@ massage,Spa/Massage,"massage,마사지,spa,relax,sauna,jjimjilbang,찜질방,사
 ktv,Karaoke,"karaoke,노래방,KTV,singing,song,music,노래,코인노래방",entertainment
 hotel,Hotel,"hotel,호텔,accommodation,room,check-in,check-out,reservation,숙소,모텔,게스트하우스",accommodation
 scenic,Tourist Attraction,"scenic,관광지,tourist,attraction,sightseeing,palace,temple,명소,관광",tourism
-oldtown,Traditional Village,"traditional village,한옥마을,hanok,old town,heritage,전주,북촌,문화유산",tourism
+oldtown,Traditional Village,"traditional village,한옥마을,hanok,old town,heritage,전주,북촌,문화유산,고진",tourism
 company,Company,"company,회사,office,business,meeting,work,사무실,미팅,방문",service
 salon,Hair Salon,"salon,미용실,hair,haircut,perm,color,beauty,머리,헤어",wellness
-bakery,Bakery/Cafe,"bakery,빵집,cafe,coffee,bread,dessert,pastry,카페,커피,케이크",food
+bakery,Bakery/Cafe,"bakery,빵집,cafe,coffee,bread,dessert,pastry,카페,커피,케이크,제과점",food
 elementary,Elementary School,"elementary,초등학교,school,student,teacher,children,education,학교",education
 highschool,High School,"high school,고등학교,student,education,teenager,학생,교육",education
 university,University,"university,대학교,college,campus,student,professor,학교,강의",education
 communication,Phone Store,"phone,통신사,mobile,SIM card,data plan,SKT,KT,LG,핸드폰,스마트폰",telecom
-asset,Real Estate Agency,"real estate,부동산,rent,buy,house,apartment,monthly,deposit,lease",realestate
+asset,Real Estate Agency,"real estate,부동산,rent,buy,house,apartment,monthly,deposit,lease,investment",realestate
 electronics,Electronics Store,"electronics,전자제품,phone,computer,laptop,appliance,가전,디지털",electronics

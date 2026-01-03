@@ -811,24 +811,14 @@
 
         async function loadData() {
             try {
-                let places = getCache(CACHE_KEY_PLACES);
-                let dialogues = getCache(CACHE_KEY_DIALOGUES);
-                let categories = getCache(CACHE_KEY_CATEGORIES);
+                // Clear old cache on load
+                localStorage.removeItem(CACHE_KEY_PLACES);
+                localStorage.removeItem(CACHE_KEY_DIALOGUES);
+                localStorage.removeItem(CACHE_KEY_CATEGORIES);
 
-                if (!places) {
-                    places = await fetchCSV(CONFIG.GOOGLE_SHEETS.PLACES_URL);
-                    setCache(CACHE_KEY_PLACES, places);
-                }
-
-                if (!dialogues) {
-                    dialogues = await fetchCSV(CONFIG.GOOGLE_SHEETS.DIALOGUES_URL);
-                    setCache(CACHE_KEY_DIALOGUES, dialogues);
-                }
-
-                if (!categories) {
-                    categories = await fetchCSV(CONFIG.GOOGLE_SHEETS.CATEGORIES_URL);
-                    setCache(CACHE_KEY_CATEGORIES, categories);
-                }
+                const places = await fetchCSV(CONFIG.GOOGLE_SHEETS.PLACES_URL);
+                const dialogues = await fetchCSV(CONFIG.GOOGLE_SHEETS.DIALOGUES_URL);
+                const categories = await fetchCSV(CONFIG.GOOGLE_SHEETS.CATEGORIES_URL);
 
                 placesData = places;
                 dialoguesData = dialogues;

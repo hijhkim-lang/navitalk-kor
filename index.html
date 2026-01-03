@@ -548,7 +548,8 @@
                 window.speechSynthesis.cancel();
                 const utterance = new SpeechSynthesisUtterance(text);
                 utterance.lang = 'ko-KR';
-                utterance.rate = 0.8;
+                utterance.rate = 1.1;
+                utterance.pitch = 1.4;
                 
                 const indicator = element.querySelector('.audio-indicator');
                 indicator.classList.add('playing');

@@ -2,716 +2,1247 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>KoreaTalk - Korean Travel Phrases</title>
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#2B9E9E">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="apple-touch-icon" href="icon-192.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🗺️ KoreaTalk - Travel Conversations</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            -webkit-tap-highlight-color: transparent;
         }
-        
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             background: linear-gradient(180deg, #f5f7fa 0%, #e8ecf1 100%);
             min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Landing Page Styles */
+        .landing-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 85vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .landing-title {
+            color: #008B8B;
+            font-size: 42px;
+            font-weight: bold;
+            font-style: italic;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        .landing-subtitle {
+            color: #E07A5F;
+            font-size: 24px;
+            font-style: italic;
+        }
+
+        .landing-header-clickable {
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 40px;
+        }
+
+        .landing-header-clickable:hover {
+            opacity: 0.8;
+            transform: scale(1.02);
+        }
+
+        .landing-description {
+            color: #555;
+            font-size: 18px;
+            margin-bottom: 35px;
+            line-height: 1.6;
+        }
+
+        .landing-input-wrapper {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+
+        .landing-input {
+            width: 100%;
+            padding: 18px 25px;
+            font-size: 16px;
+            border: 2px solid #008B8B;
+            border-radius: 50px;
+            outline: none;
+            text-align: center;
+            color: #333;
+            background: white;
+        }
+
+        .landing-input::placeholder {
+            color: #999;
+        }
+
+        .landing-input:focus {
+            border-color: #006666;
+            box-shadow: 0 0 15px rgba(0, 139, 139, 0.2);
+        }
+
+        .landing-hint {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .landing-go-btn {
+            background: linear-gradient(135deg, #E07A5F 0%, #D4644A 100%);
+            color: white;
+            border: none;
+            padding: 18px 80px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 5px 20px rgba(224, 122, 95, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .landing-go-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(224, 122, 95, 0.5);
+        }
+
+        .landing-go-btn:active {
+            transform: translateY(-1px);
+        }
+
+        .landing-brand {
+            margin-top: 60px;
+            color: #008B8B;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        /* Internal Header */
+        .header-new {
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .header-new:hover {
+            opacity: 0.85;
+            transform: scale(1.02);
+        }
+
+        .header-title {
+            color: #008B8B;
+            font-size: 32px;
+            font-weight: bold;
+            font-style: italic;
+            letter-spacing: 2px;
+            margin-bottom: 2px;
+        }
+
+        .header-subtitle {
+            color: #E07A5F;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* Scenario Cards */
+        .scenarios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 12px;
+            margin: 15px 0;
+        }
+
+        .scenario-card {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            border-radius: 12px;
+            padding: 15px 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            color: white;
+            text-align: left;
+            font-size: 13px;
+            font-weight: 600;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .scenario-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+        }
+
+        .scenario-card:active {
+            transform: translateY(-2px);
+        }
+
+        /* Back Button */
+        .back-btn {
+            background: #f5f5f5;
+            color: #333;
+            padding: 8px 14px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 11px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            transition: all 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #e0e0e0;
+        }
+
+        /* Action Buttons */
+        .action-btn {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: white;
+        }
+
+        .action-btn-primary {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            box-shadow: 0 5px 15px rgba(30, 60, 114, 0.3);
+        }
+
+        .action-btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(30, 60, 114, 0.4);
+        }
+
+        .action-btn-secondary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .action-btn-secondary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Modal */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            max-width: 400px;
+            width: 90%;
+            position: relative;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            animation: modalSlideIn 0.3s ease-out;
+            font-size: 14px;
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 22px;
+            color: #999;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .modal-close:hover {
             color: #333;
         }
-        
-        /* ===== LANDING PAGE ===== */
-        .landing-page {
-            min-height: 100vh;
+
+        .modal-btn {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: white;
+        }
+
+        .modal-btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .modal-btn-secondary {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            box-shadow: 0 5px 15px rgba(30, 60, 114, 0.3);
+        }
+
+        /* Places Grid */
+        .places-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+            gap: 10px;
+        }
+
+        .place-item {
+            color: white;
+            padding: 12px 8px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+            min-height: 85px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 40px 20px;
-            text-align: center;
         }
-        
-        .landing-title {
-            font-size: 42px;
-            font-weight: 700;
-            font-style: italic;
-            color: #2B9E9E;
-            margin-bottom: 8px;
-            letter-spacing: 2px;
+
+        .place-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+            pointer-events: none;
         }
-        
-        .landing-subtitle {
-            font-size: 20px;
-            font-style: italic;
-            color: #D97659;
-            margin-bottom: 40px;
+
+        .place-item:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
         }
-        
-        .landing-description {
-            font-size: 16px;
-            color: #555;
-            margin-bottom: 30px;
-            line-height: 1.6;
+
+        .place-icon {
+            font-size: 24px;
+            margin-bottom: 5px;
         }
-        
-        .landing-search-box {
-            width: 100%;
-            max-width: 400px;
-            margin-bottom: 15px;
-        }
-        
-        .landing-search-input {
-            width: 100%;
-            padding: 16px 24px;
-            font-size: 16px;
-            border: 2px solid #2B9E9E;
-            border-radius: 30px;
-            outline: none;
-            text-align: center;
-            transition: all 0.3s;
-        }
-        
-        .landing-search-input:focus {
-            box-shadow: 0 0 15px rgba(43, 158, 158, 0.3);
-        }
-        
-        .landing-search-input::placeholder {
-            color: #999;
-        }
-        
-        .landing-hint {
-            font-size: 14px;
-            color: #888;
-            margin-bottom: 20px;
-        }
-        
-        .go-button {
-            background: linear-gradient(135deg, #D97659 0%, #C4634A 100%);
-            color: white;
-            border: none;
-            padding: 16px 60px;
-            font-size: 18px;
+
+        .place-name {
+            font-size: 11px;
             font-weight: 600;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(217, 118, 89, 0.4);
+            line-height: 1.2;
         }
-        
-        .go-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(217, 118, 89, 0.5);
-        }
-        
-        .go-button:active {
-            transform: translateY(0);
-        }
-        
-        .landing-brand {
-            margin-top: 50px;
-            font-size: 18px;
-            font-weight: 700;
-            color: #2B9E9E;
-            letter-spacing: 3px;
-        }
-        
-        /* ===== APP PAGE ===== */
-        .app-page {
+
+        .place-keywords {
+            font-size: 9px;
+            opacity: 0.8;
+            margin-top: 3px;
             display: none;
         }
-        
-        .header {
-            background: rgba(255,255,255,0.98);
-            padding: 15px 20px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-            position: sticky;
-            top: 0;
-            z-index: 100;
+
+        /* Place Colors */
+        .place-hospital { background: linear-gradient(135deg, #4FC3F7 0%, #29B6F6 50%, #03A9F4 100%); }
+        .place-restaurant { background: linear-gradient(135deg, #FF6B6B 0%, #FF5252 50%, #F44336 100%); }
+        .place-police { background: linear-gradient(135deg, #5C6BC0 0%, #3F51B5 50%, #303F9F 100%); }
+        .place-bank { background: linear-gradient(135deg, #FFD54F 0%, #FFC107 50%, #FFA000 100%); }
+        .place-busstation { background: linear-gradient(135deg, #FFB74D 0%, #FF9800 50%, #F57C00 100%); }
+        .place-airport { background: linear-gradient(135deg, #81D4FA 0%, #4FC3F7 50%, #29B6F6 100%); }
+        .place-trainstation { background: linear-gradient(135deg, #78909C 0%, #607D8B 50%, #455A64 100%); }
+        .place-market { background: linear-gradient(135deg, #81C784 0%, #66BB6A 50%, #4CAF50 100%); }
+        .place-apartment { background: linear-gradient(135deg, #90A4AE 0%, #78909C 50%, #607D8B 100%); }
+        .place-cinema { background: linear-gradient(135deg, #E040FB 0%, #D500F9 50%, #AA00FF 100%); }
+        .place-theater { background: linear-gradient(135deg, #F48FB1 0%, #F06292 50%, #EC407A 100%); }
+        .place-stadium { background: linear-gradient(135deg, #AED581 0%, #9CCC65 50%, #8BC34A 100%); }
+        .place-park { background: linear-gradient(135deg, #4DB6AC 0%, #26A69A 50%, #009688 100%); }
+        .place-department { background: linear-gradient(135deg, #BA68C8 0%, #AB47BC 50%, #9C27B0 100%); }
+        .place-golf { background: linear-gradient(135deg, #66BB6A 0%, #4CAF50 50%, #43A047 100%); }
+        .place-massage { background: linear-gradient(135deg, #F8BBD9 0%, #F48FB1 50%, #EC407A 100%); }
+        .place-ktv { background: linear-gradient(135deg, #7E57C2 0%, #673AB7 50%, #5E35B1 100%); }
+        .place-hotel { background: linear-gradient(135deg, #64B5F6 0%, #42A5F5 50%, #2196F3 100%); }
+        .place-scenic { background: linear-gradient(135deg, #4DD0E1 0%, #26C6DA 50%, #00BCD4 100%); }
+        .place-oldtown { background: linear-gradient(135deg, #A1887F 0%, #8D6E63 50%, #795548 100%); }
+        .place-company { background: linear-gradient(135deg, #607D8B 0%, #546E7A 50%, #455A64 100%); }
+        .place-salon { background: linear-gradient(135deg, #CE93D8 0%, #BA68C8 50%, #AB47BC 100%); }
+        .place-bakery { background: linear-gradient(135deg, #FFCC80 0%, #FFB74D 50%, #FFA726 100%); }
+        .place-elementary { background: linear-gradient(135deg, #FFF176 0%, #FFEE58 50%, #FFEB3B 100%); color: #333; }
+        .place-highschool { background: linear-gradient(135deg, #64B5F6 0%, #42A5F5 50%, #2196F3 100%); }
+        .place-university { background: linear-gradient(135deg, #7986CB 0%, #5C6BC0 50%, #3F51B5 100%); }
+        .place-communication { background: linear-gradient(135deg, #4DD0E1 0%, #26C6DA 50%, #00BCD4 100%); }
+        .place-asset { background: linear-gradient(135deg, #A5D6A7 0%, #81C784 50%, #66BB6A 100%); }
+        .place-electronics { background: linear-gradient(135deg, #90CAF9 0%, #64B5F6 50%, #42A5F5 100%); }
+
+        /* Dialogue Styles */
+        .dialogue-item {
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 12px;
+            position: relative;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
         }
-        
-        .back-btn {
-            background: none;
-            border: none;
-            font-size: 24px;
-            cursor: pointer;
-            padding: 5px;
-            color: #2B9E9E;
-        }
-        
-        .header h1 {
-            font-size: 20px;
-            color: #2B9E9E;
-            flex: 1;
-        }
-        
-        .header-subtitle {
-            font-size: 12px;
-            color: #888;
-        }
-        
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        .search-box {
-            background: white;
-            border-radius: 25px;
-            padding: 12px 20px;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-            border: 1px solid #e0e0e0;
-        }
-        
-        .search-box input {
-            border: none;
-            outline: none;
-            font-size: 16px;
-            flex: 1;
-            background: transparent;
-        }
-        
-        .search-icon {
-            color: #2B9E9E;
-            font-size: 18px;
-        }
-        
-        /* Places Grid */
-        .places-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-        }
-        
-        .place-card {
-            background: white;
-            border-radius: 16px;
-            padding: 20px 12px;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.2s;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            border: 1px solid #f0f0f0;
-        }
-        
-        .place-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(43, 158, 158, 0.15);
-            border-color: #2B9E9E;
-        }
-        
-        .place-card:active {
-            transform: scale(0.97);
-        }
-        
-        .place-icon {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-        
-        .place-name {
-            font-size: 13px;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 4px;
-        }
-        
-        .place-name-ko {
-            font-size: 11px;
-            color: #888;
-        }
-        
-        /* Categories */
-        .categories-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
-        }
-        
-        .category-card {
-            background: white;
-            border-radius: 14px;
-            padding: 20px 16px;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.2s;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            border: 1px solid #f0f0f0;
-        }
-        
-        .category-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(217, 118, 89, 0.2);
-            border-color: #D97659;
-        }
-        
-        .category-card:active {
-            transform: scale(0.98);
-        }
-        
-        .category-name {
-            font-size: 15px;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 4px;
-        }
-        
-        .category-name-ko {
-            font-size: 13px;
-            color: #888;
-        }
-        
-        /* Dialogues */
-        .dialogue-container {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-        
-        .dialogue-bubble {
-            padding: 16px;
-            border-radius: 18px;
-            max-width: 90%;
-            cursor: pointer;
-            transition: all 0.2s;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        
-        .dialogue-bubble:active {
-            transform: scale(0.98);
-        }
-        
-        .dialogue-bubble.speaker-a {
-            background: white;
-            align-self: flex-start;
+
+        .dialogue-item.customer {
+            background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+            margin-left: 0;
+            margin-right: 40px;
             border-bottom-left-radius: 5px;
-            border: 1px solid #e8e8e8;
         }
-        
-        .dialogue-bubble.speaker-b {
-            background: linear-gradient(135deg, #2B9E9E 0%, #238B8B 100%);
-            color: white;
-            align-self: flex-end;
+
+        .dialogue-item.staff {
+            background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
+            margin-left: 40px;
+            margin-right: 0;
             border-bottom-right-radius: 5px;
         }
-        
-        .dialogue-korean {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 6px;
+
+        .speaker {
+            font-size: 11px;
+            font-weight: bold;
+            color: #666;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .korean {
+            font-size: 20px;
+            font-weight: bold;
+            color: #1a1a2e;
+            margin-bottom: 8px;
             line-height: 1.4;
         }
-        
-        .dialogue-romanization {
+
+        .english {
             font-size: 14px;
-            color: #666;
+            color: #555;
             margin-bottom: 6px;
+        }
+
+        .romanization {
+            font-size: 13px;
+            color: #888;
             font-style: italic;
         }
-        
-        .speaker-b .dialogue-romanization {
-            color: rgba(255,255,255,0.8);
+
+        .vocab-section {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed #ccc;
         }
-        
-        .dialogue-english {
-            font-size: 14px;
-            color: #888;
-        }
-        
-        .speaker-b .dialogue-english {
-            color: rgba(255,255,255,0.9);
-        }
-        
-        .speaker-label {
+
+        .vocab-title {
             font-size: 11px;
-            font-weight: 600;
-            margin-bottom: 8px;
-            opacity: 0.6;
+            color: #666;
+            margin-bottom: 5px;
         }
-        
-        /* Audio indicator */
-        .audio-indicator {
-            display: inline-block;
-            margin-left: 8px;
-            font-size: 14px;
+
+        .vocab-item {
+            font-size: 12px;
+            color: #333;
+            background: rgba(255,255,255,0.5);
+            padding: 3px 8px;
+            border-radius: 5px;
         }
-        
-        .playing {
+
+        .play-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s;
+            box-shadow: 0 3px 10px rgba(102, 126, 234, 0.4);
+        }
+
+        .play-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.5);
+        }
+
+        .play-btn:active {
+            transform: scale(0.95);
+        }
+
+        .play-btn.playing {
+            background: linear-gradient(135deg, #FF6B6B 0%, #FF5252 100%);
             animation: pulse 1s infinite;
         }
-        
+
         @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
         }
-        
-        /* Loading */
-        .loading {
-            text-align: center;
-            padding: 40px;
-            color: #666;
-        }
-        
-        .loading-spinner {
-            width: 40px;
-            height: 40px;
-            border: 3px solid #e0e0e0;
-            border-top-color: #2B9E9E;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 15px;
-        }
-        
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-        
-        /* Section title */
-        .section-title {
-            color: #D97659;
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 15px;
-            padding-left: 5px;
-        }
-        
-        /* Hidden */
-        .hidden {
-            display: none !important;
-        }
-        
-        /* Footer */
-        .footer {
-            text-align: center;
-            padding: 30px 20px;
-            color: #999;
-            font-size: 12px;
-        }
-        
+
         /* Responsive */
-        @media (max-width: 400px) {
+        @media (max-width: 768px) {
+            .scenarios-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .scenario-card {
+                padding: 20px;
+                font-size: 13px;
+            }
+
+            .places-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .modal-content {
+                padding: 30px 20px;
+            }
+
+            .dialogue-item.customer {
+                margin-right: 20px;
+            }
+
+            .dialogue-item.staff {
+                margin-left: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .places-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
             .landing-title {
                 font-size: 32px;
             }
-            
-            .places-grid {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 10px;
-            }
-            
-            .place-card {
-                padding: 15px 8px;
-            }
-            
-            .place-icon {
-                font-size: 28px;
-            }
-            
-            .place-name {
-                font-size: 11px;
-            }
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 20px;
+            color: #667eea;
+        }
+
+        .error {
+            background: #fee;
+            color: #c33;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
-    <!-- ===== LANDING PAGE ===== -->
-    <div class="landing-page" id="landingPage">
-        <h1 class="landing-title">KOREATALK</h1>
-        <p class="landing-subtitle">for Travelers</p>
-        
-        <p class="landing-description">
-            Practice conversations you'll need<br>
-            at your destination
-        </p>
-        
-        <div class="landing-search-box">
-            <input type="text" class="landing-search-input" id="landingSearchInput" 
-                   placeholder="Enter destination" 
-                   onkeypress="handleLandingSearch(event)">
+    <div class="container">
+        <!-- Internal Header (shown after search) -->
+        <div class="header-new" id="mainHeader" style="display: none;" onclick="resetApp()">
+            <div class="header-title">KOREATALK</div>
+            <div class="header-subtitle">for Travelers</div>
         </div>
-        
-        <p class="landing-hint">Click Go to see conversation topics</p>
-        
-        <button class="go-button" onclick="showApp()">Go ›</button>
-        
-        <p class="landing-brand">KOREATALK</p>
+
+        <!-- Landing Page -->
+        <div id="searchCard" class="landing-page">
+            <div class="landing-header-clickable" onclick="resetApp()">
+                <div class="landing-title">KOREATALK</div>
+                <div class="landing-subtitle">for Travelers</div>
+            </div>
+            <div class="landing-description">
+                Practice conversations you'll need<br>at your destination
+            </div>
+            <div class="landing-input-wrapper">
+                <input type="text" id="searchInput" class="landing-input" placeholder="Enter destination" onkeypress="if(event.key==='Enter') searchDestination()" />
+            </div>
+            <div class="landing-hint">Click Go to see conversation examples</div>
+            <button class="landing-go-btn" onclick="searchDestination()">
+                Go <span style="font-size: 20px;">›</span>
+            </button>
+            <div class="landing-brand">KOREATALK</div>
+        </div>
+
+        <!-- Loading -->
+        <div id="loadingSection" class="card hidden">
+            <div class="loading">Loading data...</div>
+        </div>
+
+        <!-- All Places List -->
+        <div id="allPlacesSection" class="card hidden">
+            <button class="back-btn" onclick="backToSearch()">← Back to Search</button>
+            <h2 style="margin-bottom: 20px; color: #2196F3; font-size: 28px;">🌈 All Locations</h2>
+            <div id="allPlacesList" class="places-grid"></div>
+        </div>
+
+        <!-- Scenarios List -->
+        <div id="scenariosSection" class="card hidden">
+            <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                <button class="back-btn" onclick="backToPlacesList()" style="display: none;" id="backToPlacesBtn">← All Locations</button>
+                <button class="back-btn" onclick="backToChoice()">← Search</button>
+            </div>
+            <h2 style="margin-bottom: 20px; color: #667eea;" id="scenariosSectionTitle">Select a Scenario</h2>
+            <div id="scenariosList" class="scenarios-grid"></div>
+            
+            <div style="display: flex; gap: 15px; margin-top: 30px;">
+                <button class="action-btn action-btn-primary" onclick="playAllScenarios()">🔊 Listen to All</button>
+                <button class="action-btn action-btn-secondary" onclick="navigateToDestination()">🧭 Navigate</button>
+            </div>
+        </div>
+
+        <!-- Conversations Content -->
+        <div id="conversationsSection" class="card hidden">
+            <div style="display: flex; gap: 8px; margin-bottom: 10px;">
+                <button class="back-btn" onclick="backToScenarios()">← Scenarios</button>
+                <button class="back-btn" onclick="nextScenario()" style="margin-left: auto; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">Next Scenario →</button>
+            </div>
+            <h2 style="margin-bottom: 15px; color: #667eea; font-size: 16px;" id="conversationTitle"></h2>
+            <div id="conversationsList"></div>
+            
+            <div style="display: flex; gap: 10px; margin-top: 20px;">
+                <button id="playAllBtn" class="action-btn action-btn-primary" onclick="playAllConversations()">🔊 Listen All</button>
+                <button class="action-btn action-btn-secondary" onclick="nextScenario()">📋 Next</button>
+                <button class="action-btn action-btn-secondary" onclick="navigateToDestination()">🧭 Navigate</button>
+            </div>
+        </div>
     </div>
-    
-    <!-- ===== APP PAGE ===== -->
-    <div class="app-page" id="appPage">
-        <header class="header">
-            <button class="back-btn" id="backBtn" onclick="goBack()">←</button>
-            <div>
-                <h1 id="headerTitle">KoreaTalk</h1>
-                <div class="header-subtitle" id="headerSubtitle">Korean Travel Phrases</div>
+
+    <!-- Custom Modal -->
+    <div id="customModal" class="modal hidden">
+        <div class="modal-content">
+            <p style="color: #666; margin-bottom: 30px; margin-top: 10px; line-height: 1.6; font-size: 17px;">
+                "<span id="searchKeywordDisplay" style="color: #1e3c72; font-weight: bold;"></span>" is not in the conversation list.
+            </p>
+            <div style="display: flex; gap: 15px;">
+                <button class="modal-btn modal-btn-primary" onclick="showAllPlaces()">
+                    📚 See Similar Examples
+                </button>
+                <button class="modal-btn modal-btn-secondary" onclick="navigateDirectly()">
+                    🧭 Navigate Directly
+                </button>
             </div>
-        </header>
-        
-        <div class="container">
-            <!-- Search Box -->
-            <div class="search-box" id="searchBox">
-                <span class="search-icon">🔍</span>
-                <input type="text" id="searchInput" placeholder="Search places..." oninput="filterPlaces()">
-            </div>
-            
-            <!-- Places View -->
-            <div id="placesView">
-                <div class="section-title">Choose a Location</div>
-                <div class="places-grid" id="placesGrid">
-                    <!-- Places will be loaded here -->
-                </div>
-            </div>
-            
-            <!-- Categories View -->
-            <div id="categoriesView" class="hidden">
-                <div class="section-title" id="categoriesTitle">Select a Topic</div>
-                <div class="categories-grid" id="categoriesGrid">
-                    <!-- Categories will be loaded here -->
-                </div>
-            </div>
-            
-            <!-- Dialogues View -->
-            <div id="dialoguesView" class="hidden">
-                <div class="section-title" id="dialoguesTitle">Conversation</div>
-                <div class="dialogue-container" id="dialogueContainer">
-                    <!-- Dialogues will be loaded here -->
-                </div>
-            </div>
+            <button class="modal-close" onclick="closeModal()">✕</button>
         </div>
-        
-        <footer class="footer">
-            <p>KOREATALK</p>
-            <p>Tap any phrase to hear pronunciation</p>
-        </footer>
     </div>
 
     <script>
-        // Data storage
-        let places = [];
-        let categories = [];
-        let dialogues = [];
-        let currentView = 'landing'; // landing, places, categories, dialogues
-        let currentPlace = null;
-        let currentCategory = null;
+        // Configuration
+        const CONFIG = {
+            GOOGLE_SHEETS: {
+                PLACES_URL: './places.csv',
+                DIALOGUES_URL: './dialogues.csv',
+                CATEGORIES_URL: './categories.csv'
+            },
+            CACHE_DURATION: 24 * 60 * 60 * 1000 // 24 hours
+        };
+
+        const CACHE_KEY_PLACES = 'koreatalk_places';
+        const CACHE_KEY_DIALOGUES = 'koreatalk_dialogues';
+        const CACHE_KEY_CATEGORIES = 'koreatalk_categories';
         
-        // Initialize
-        document.addEventListener('DOMContentLoaded', () => {
-            loadData();
-        });
-        
-        // Load CSV data
-        async function loadData() {
+        let placesData = [];
+        let dialoguesData = [];
+        let categoriesData = [];
+        let currentPlaceType = '';
+        let currentScenario = '';
+        let currentScenarioIndex = 0;
+        let currentSearchKeyword = '';
+
+        // TTS Voices
+        let koreanVoice = null;
+        let allSentences = [];
+        let currentSentenceIndex = 0;
+
+        function initVoices() {
+            const voices = window.speechSynthesis.getVoices();
+            koreanVoice = voices.find(v => v.lang.includes('ko')) || null;
+            console.log('Korean voice:', koreanVoice ? koreanVoice.name : 'Not found');
+        }
+
+        if (window.speechSynthesis.onvoiceschanged !== undefined) {
+            window.speechSynthesis.onvoiceschanged = initVoices;
+        }
+        initVoices();
+
+        function resetApp() {
+            localStorage.removeItem(CACHE_KEY_PLACES);
+            localStorage.removeItem(CACHE_KEY_DIALOGUES);
+            localStorage.removeItem(CACHE_KEY_CATEGORIES);
+            location.reload();
+        }
+
+        function getCache(key) {
             try {
-                // Load places
-                const placesRes = await fetch('places.csv');
-                const placesText = await placesRes.text();
-                places = parseCSV(placesText);
+                const cached = localStorage.getItem(key);
+                if (!cached) return null;
                 
-                // Load categories
-                const catRes = await fetch('categories.csv');
-                const catText = await catRes.text();
-                categories = parseCSV(catText);
+                const data = JSON.parse(cached);
+                if (Date.now() - data.timestamp > CONFIG.CACHE_DURATION) {
+                    localStorage.removeItem(key);
+                    return null;
+                }
                 
-                // Load dialogues
-                const diagRes = await fetch('dialogues.csv');
-                const diagText = await diagRes.text();
-                dialogues = parseCSV(diagText);
-                
-                console.log('Data loaded:', places.length, 'places,', categories.length, 'categories');
-            } catch (error) {
-                console.error('Error loading data:', error);
+                return data.value;
+            } catch (e) {
+                console.error('Cache read error:', e);
+                return null;
             }
         }
-        
-        // Parse CSV with proper quote handling
+
+        function setCache(key, value) {
+            localStorage.setItem(key, JSON.stringify({
+                value: value,
+                timestamp: Date.now()
+            }));
+        }
+
+        function sortScenariosByNumber(a, b) {
+            const numA = parseInt(a.match(/^\d+/)?.[0] || '999');
+            const numB = parseInt(b.match(/^\d+/)?.[0] || '999');
+            return numA - numB;
+        }
+
+        function isCustomer(speaker) {
+            return speaker.toLowerCase() === 'customer';
+        }
+
+        async function fetchCSV(url) {
+            const response = await fetch(url);
+            const text = await response.text();
+            return parseCSV(text);
+        }
+
         function parseCSV(text) {
-            const lines = text.trim().split('\n');
+            const lines = text.trim().split(/\r?\n/);
+            if (lines.length < 2) return [];
+            
             const headers = parseCSVLine(lines[0]);
             const data = [];
             
             for (let i = 1; i < lines.length; i++) {
                 const values = parseCSVLine(lines[i]);
-                if (values.length === headers.length) {
-                    const row = {};
-                    headers.forEach((h, idx) => {
-                        row[h] = values[idx];
-                    });
-                    data.push(row);
-                }
+                if (values.length === 0) continue;
+                
+                const obj = {};
+                headers.forEach((header, index) => {
+                    obj[header] = values[index] || '';
+                });
+                data.push(obj);
             }
+            
             return data;
         }
-        
+
         function parseCSVLine(line) {
-            const values = [];
+            const result = [];
             let current = '';
             let inQuotes = false;
             
             for (let i = 0; i < line.length; i++) {
                 const char = line[i];
+                const nextChar = line[i + 1];
+                
                 if (char === '"') {
-                    inQuotes = !inQuotes;
+                    if (inQuotes && nextChar === '"') {
+                        current += '"';
+                        i++;
+                    } else {
+                        inQuotes = !inQuotes;
+                    }
                 } else if (char === ',' && !inQuotes) {
-                    values.push(current.trim());
+                    result.push(current.trim());
                     current = '';
                 } else {
                     current += char;
                 }
             }
-            values.push(current.trim());
-            return values;
-        }
-        
-        // Landing page functions
-        function handleLandingSearch(event) {
-            if (event.key === 'Enter') {
-                showApp();
-            }
-        }
-        
-        function showApp() {
-            const searchTerm = document.getElementById('landingSearchInput').value.trim();
-            document.getElementById('landingPage').style.display = 'none';
-            document.getElementById('appPage').style.display = 'block';
-            currentView = 'places';
-            renderPlaces();
             
-            if (searchTerm) {
-                document.getElementById('searchInput').value = searchTerm;
-                filterPlaces();
-            }
+            result.push(current.trim());
+            return result;
         }
-        
-        // Render places grid
-        function renderPlaces() {
-            const grid = document.getElementById('placesGrid');
-            grid.innerHTML = places.map(place => `
-                <div class="place-card" onclick="selectPlace('${place.place_id}')">
-                    <div class="place-icon">${place.icon}</div>
-                    <div class="place-name">${place.place_name_en}</div>
-                    <div class="place-name-ko">${place.place_name_ko}</div>
-                </div>
-            `).join('');
-            
-            showView('places');
-        }
-        
-        // Filter places
-        function filterPlaces() {
-            const search = document.getElementById('searchInput').value.toLowerCase();
-            const cards = document.querySelectorAll('.place-card');
-            
-            cards.forEach((card, idx) => {
-                const place = places[idx];
-                const match = place.place_name_en.toLowerCase().includes(search) ||
-                             place.place_name_ko.includes(search) ||
-                             place.place_id.toLowerCase().includes(search);
-                card.style.display = match ? 'block' : 'none';
-            });
-        }
-        
-        // Select place
-        function selectPlace(placeId) {
-            currentPlace = places.find(p => p.place_id === placeId);
-            const placeCategories = categories.filter(c => c.place_id === placeId);
-            
-            document.getElementById('headerTitle').textContent = currentPlace.place_name_en;
-            document.getElementById('headerSubtitle').textContent = currentPlace.place_name_ko;
-            document.getElementById('categoriesTitle').textContent = `${currentPlace.place_name_en} Topics`;
-            
-            const grid = document.getElementById('categoriesGrid');
-            grid.innerHTML = placeCategories.map(cat => `
-                <div class="category-card" onclick="selectCategory('${cat.category_id}')">
-                    <div class="category-name">${cat.category_name_en}</div>
-                    <div class="category-name-ko">${cat.category_name_ko}</div>
-                </div>
-            `).join('');
-            
-            currentView = 'categories';
-            showView('categories');
-        }
-        
-        // Select category
-        function selectCategory(categoryId) {
-            currentCategory = categories.find(c => c.category_id === categoryId);
-            const categoryDialogues = dialogues.filter(d => 
-                d.place_id === currentPlace.place_id && d.category_id === categoryId
-            );
-            
-            document.getElementById('headerTitle').textContent = currentCategory.category_name_en;
-            document.getElementById('headerSubtitle').textContent = currentCategory.category_name_ko;
-            document.getElementById('dialoguesTitle').textContent = `${currentCategory.category_name_en}`;
-            
-            const container = document.getElementById('dialogueContainer');
-            container.innerHTML = categoryDialogues.map((d, idx) => `
-                <div class="dialogue-bubble speaker-${d.speaker.toLowerCase()}" onclick="speak('${escapeHtml(d.korean)}', this)">
-                    <div class="speaker-label">Speaker ${d.speaker}</div>
-                    <div class="dialogue-korean">${d.korean} <span class="audio-indicator">🔊</span></div>
-                    <div class="dialogue-romanization">${d.romanization}</div>
-                    <div class="dialogue-english">${d.english}</div>
-                </div>
-            `).join('');
-            
-            currentView = 'dialogues';
-            showView('dialogues');
-        }
-        
-        // Show/hide views
-        function showView(view) {
-            document.getElementById('placesView').classList.toggle('hidden', view !== 'places');
-            document.getElementById('categoriesView').classList.toggle('hidden', view !== 'categories');
-            document.getElementById('dialoguesView').classList.toggle('hidden', view !== 'dialogues');
-            document.getElementById('searchBox').classList.toggle('hidden', view !== 'places');
-            document.getElementById('backBtn').style.display = view === 'places' ? 'none' : 'block';
-        }
-        
-        // Go back
-        function goBack() {
-            if (currentView === 'dialogues') {
-                selectPlace(currentPlace.place_id);
-            } else if (currentView === 'categories') {
-                document.getElementById('headerTitle').textContent = 'KoreaTalk';
-                document.getElementById('headerSubtitle').textContent = 'Korean Travel Phrases';
-                currentView = 'places';
-                showView('places');
-            }
-        }
-        
-        // Text to speech
-        function speak(text, element) {
-            if ('speechSynthesis' in window) {
-                speechSynthesis.cancel();
+
+        async function loadData() {
+            try {
+                let places = getCache(CACHE_KEY_PLACES);
+                let dialogues = getCache(CACHE_KEY_DIALOGUES);
+                let categories = getCache(CACHE_KEY_CATEGORIES);
+
+                if (!places) {
+                    places = await fetchCSV(CONFIG.GOOGLE_SHEETS.PLACES_URL);
+                    setCache(CACHE_KEY_PLACES, places);
+                }
+
+                if (!dialogues) {
+                    dialogues = await fetchCSV(CONFIG.GOOGLE_SHEETS.DIALOGUES_URL);
+                    setCache(CACHE_KEY_DIALOGUES, dialogues);
+                }
+
+                if (!categories) {
+                    categories = await fetchCSV(CONFIG.GOOGLE_SHEETS.CATEGORIES_URL);
+                    setCache(CACHE_KEY_CATEGORIES, categories);
+                }
+
+                placesData = places;
+                dialoguesData = dialogues;
+                categoriesData = categories;
                 
-                const utterance = new SpeechSynthesisUtterance(text);
-                utterance.lang = 'ko-KR';
-                utterance.rate = 1.1;
-                utterance.pitch = 1.4;
+                console.log('Data loaded:', { places: places.length, dialogues: dialogues.length, categories: categories.length });
+            } catch (error) {
+                console.error('Data load error:', error);
+                throw error;
+            }
+        }
+
+        function searchDestination() {
+            const searchInput = document.getElementById('searchInput');
+            const keyword = searchInput.value.trim();
+            
+            if (keyword.length < 2) {
+                alert('Please enter a destination (at least 2 characters)');
+                return;
+            }
+
+            currentSearchKeyword = keyword;
+
+            if (placesData.length === 0) {
+                document.getElementById('loadingSection').classList.remove('hidden');
+                loadData().then(() => {
+                    document.getElementById('loadingSection').classList.add('hidden');
+                    processSearch();
+                }).catch(err => {
+                    document.getElementById('loadingSection').classList.add('hidden');
+                    alert('Data load error: ' + err.message);
+                });
+            } else {
+                processSearch();
+            }
+        }
+
+        function processSearch() {
+            const keyword = currentSearchKeyword.trim().toLowerCase();
+            
+            const matchedPlace = placesData.find(place => {
+                const placeName = (place.name || '').toLowerCase();
+                const placeKeywords = (place.placeKeywords || '').toLowerCase();
                 
-                const indicator = element.querySelector('.audio-indicator');
-                if (indicator) {
-                    indicator.classList.add('playing');
-                    utterance.onend = () => indicator.classList.remove('playing');
+                if (keyword.includes(placeName) || placeName.includes(keyword)) {
+                    return true;
                 }
                 
-                speechSynthesis.speak(utterance);
+                const keywords = placeKeywords.split(',');
+                for (let kw of keywords) {
+                    const trimmedKw = kw.trim();
+                    if (!trimmedKw) continue;
+                    
+                    if (keyword.includes(trimmedKw) || trimmedKw.includes(keyword)) {
+                        return true;
+                    }
+                }
+                
+                return false;
+            });
+            
+            if (matchedPlace) {
+                currentPlaceType = matchedPlace.placeType;
+                document.getElementById('backToPlacesBtn').style.display = 'none';
+                showScenarios();
+            } else {
+                document.getElementById('searchKeywordDisplay').textContent = currentSearchKeyword;
+                document.getElementById('customModal').classList.remove('hidden');
             }
         }
-        
-        // Escape HTML
-        function escapeHtml(text) {
-            return text.replace(/'/g, "\\'").replace(/"/g, '\\"');
+
+        function getPlaceEmoji(placeType) {
+            const emojiMap = {
+                'airport': '✈️', 'apartment': '🏢', 'bakery': '🥐', 'bank': '🏦',
+                'busstation': '🚌', 'cinema': '🎬', 'company': '🏢', 'department': '🏬',
+                'golf': '⛳', 'hospital': '🏥', 'hotel': '🏨', 'ktv': '🎤',
+                'market': '🛒', 'massage': '💆', 'oldtown': '🏘️', 'park': '🌳',
+                'police': '🚔', 'restaurant': '🍽️', 'salon': '💇', 'scenic': '🏞️',
+                'stadium': '⚽', 'theater': '🎭', 'trainstation': '🚄',
+                'elementary': '🏫', 'highschool': '🎒', 'university': '🎓',
+                'communication': '📱', 'asset': '🏠', 'electronics': '💻'
+            };
+            return emojiMap[placeType] || '📍';
         }
+
+        function showScenarios() {
+            document.getElementById('mainHeader').style.display = 'block';
+            document.body.style.background = 'linear-gradient(180deg, #e8ecf1 0%, #dde3eb 100%)';
+            
+            document.getElementById('searchCard').classList.add('hidden');
+            document.getElementById('allPlacesSection').classList.add('hidden');
+            document.getElementById('conversationsSection').classList.add('hidden');
+            document.getElementById('scenariosSection').classList.remove('hidden');
+
+            const conversations = dialoguesData.filter(d => d.placeType === currentPlaceType);
+            
+            if (conversations.length === 0) {
+                document.getElementById('scenariosList').innerHTML = '<p>No scenarios available for this location.</p>';
+                return;
+            }
+
+            const scenariosSet = new Set();
+            conversations.forEach(conv => {
+                if (conv.scenario && conv.scenario.trim()) {
+                    scenariosSet.add(conv.scenario.trim());
+                }
+            });
+
+            const scenariosArray = Array.from(scenariosSet).sort(sortScenariosByNumber);
+
+            const place = placesData.find(p => p.placeType === currentPlaceType);
+            const placeName = place ? `${getPlaceEmoji(currentPlaceType)} ${place.name}` : 'Location';
+            document.getElementById('scenariosSectionTitle').textContent = `${placeName} - Select a Scenario`;
+
+            const scenariosList = document.getElementById('scenariosList');
+            scenariosList.innerHTML = '';
+
+            scenariosArray.forEach(scenario => {
+                const scenarioCard = document.createElement('div');
+                scenarioCard.className = 'scenario-card';
+                scenarioCard.textContent = scenario;
+                scenarioCard.onclick = () => showScenarioDialogues(scenario);
+                scenariosList.appendChild(scenarioCard);
+            });
+        }
+
+        function showScenarioDialogues(scenario) {
+            currentScenario = scenario;
+            
+            const conversations = dialoguesData.filter(d => d.placeType === currentPlaceType);
+            const scenariosSet = new Set();
+            conversations.forEach(conv => {
+                if (conv.scenario && conv.scenario.trim()) {
+                    scenariosSet.add(conv.scenario.trim());
+                }
+            });
+            const scenariosArray = Array.from(scenariosSet).sort(sortScenariosByNumber);
+            currentScenarioIndex = scenariosArray.indexOf(scenario);
+            
+            document.getElementById('scenariosSection').classList.add('hidden');
+            document.getElementById('conversationsSection').classList.remove('hidden');
+
+            document.getElementById('conversationTitle').textContent = scenario;
+
+            const scenarioConversations = dialoguesData.filter(d => 
+                d.placeType === currentPlaceType && d.scenario === scenario
+            );
+
+            const conversationsList = document.getElementById('conversationsList');
+            conversationsList.innerHTML = '';
+
+            const dialogues = scenarioConversations.sort((a, b) => 
+                parseInt(a.order) - parseInt(b.order)
+            );
+
+            dialogues.forEach(dialogue => {
+                const speakerType = isCustomer(dialogue.speaker) ? 'customer' : 'staff';
+                
+                const dialogueDiv = document.createElement('div');
+                dialogueDiv.className = `dialogue-item ${speakerType}`;
+                dialogueDiv.setAttribute('data-korean', dialogue.korean);
+                
+                const playBtn = document.createElement('button');
+                playBtn.className = 'play-btn';
+                playBtn.textContent = '🔊';
+                playBtn.onclick = (e) => {
+                    e.stopPropagation();
+                    playKoreanSentence(dialogue.korean, playBtn);
+                };
+                
+                dialogueDiv.innerHTML = `
+                    <div class="speaker">${dialogue.speaker}</div>
+                    <div class="korean">${dialogue.korean}</div>
+                    <div class="english">${dialogue.english}</div>
+                    <div class="romanization">${dialogue.romanization}</div>
+                    ${dialogue.vocabulary ? `<div class="vocab-section">
+                        <div class="vocab-title">Key Words:</div>
+                        <span class="vocab-item">${dialogue.vocabulary}</span>
+                    </div>` : ''}
+                `;
+                
+                dialogueDiv.insertBefore(playBtn, dialogueDiv.firstChild);
+                conversationsList.appendChild(dialogueDiv);
+            });
+        }
+
+        function playKoreanSentence(text, button) {
+            if (window.speechSynthesis.speaking) {
+                window.speechSynthesis.cancel();
+            }
+
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'ko-KR';
+            utterance.rate = 1.1;
+            utterance.pitch = 1.4;
+            
+            if (koreanVoice) {
+                utterance.voice = koreanVoice;
+            }
+
+            if (button) {
+                button.classList.add('playing');
+                utterance.onend = () => button.classList.remove('playing');
+                utterance.onerror = () => button.classList.remove('playing');
+            }
+
+            window.speechSynthesis.speak(utterance);
+        }
+
+        function playAllConversations() {
+            const dialogueItems = document.querySelectorAll('.dialogue-item');
+            
+            if (dialogueItems.length === 0) {
+                alert('No conversations to play.');
+                return;
+            }
+
+            if (window.speechSynthesis.speaking) {
+                window.speechSynthesis.cancel();
+                document.getElementById('playAllBtn').textContent = '🔊 Listen All';
+                return;
+            }
+
+            allSentences = [];
+            dialogueItems.forEach(item => {
+                const korean = item.getAttribute('data-korean');
+                if (korean) {
+                    allSentences.push({ text: korean });
+                }
+            });
+
+            if (allSentences.length === 0) {
+                alert('No conversations to play.');
+                return;
+            }
+
+            currentSentenceIndex = 0;
+            document.getElementById('playAllBtn').textContent = '⏸ Stop';
+            playNextSentence();
+        }
+
+        function playNextSentence() {
+            if (currentSentenceIndex >= allSentences.length) {
+                document.getElementById('playAllBtn').textContent = '🔊 Listen All';
+                return;
+            }
+
+            const { text } = allSentences[currentSentenceIndex];
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'ko-KR';
+            utterance.rate = 1.1;
+            utterance.pitch = 1.4;
+            
+            if (koreanVoice) {
+                utterance.voice = koreanVoice;
+            }
+
+            utterance.onend = () => {
+                setTimeout(() => {
+                    currentSentenceIndex++;
+                    playNextSentence();
+                }, 300);
+            };
+
+            utterance.onerror = () => {
+                document.getElementById('playAllBtn').textContent = '🔊 Listen All';
+            };
+
+            window.speechSynthesis.speak(utterance);
+        }
+
+        function nextScenario() {
+            const conversations = dialoguesData.filter(d => d.placeType === currentPlaceType);
+            const scenariosSet = new Set();
+            conversations.forEach(conv => {
+                if (conv.scenario && conv.scenario.trim()) {
+                    scenariosSet.add(conv.scenario.trim());
+                }
+            });
+            const scenariosArray = Array.from(scenariosSet).sort(sortScenariosByNumber);
+            
+            currentScenarioIndex = (currentScenarioIndex + 1) % scenariosArray.length;
+            showScenarioDialogues(scenariosArray[currentScenarioIndex]);
+        }
+
+        function backToScenarios() {
+            window.speechSynthesis.cancel();
+            document.getElementById('conversationsSection').classList.add('hidden');
+            document.getElementById('scenariosSection').classList.remove('hidden');
+        }
+
+        function backToChoice() {
+            document.getElementById('mainHeader').style.display = 'none';
+            document.body.style.background = 'linear-gradient(180deg, #f5f7fa 0%, #e8ecf1 100%)';
+            
+            document.getElementById('scenariosSection').classList.add('hidden');
+            document.getElementById('conversationsSection').classList.add('hidden');
+            document.getElementById('allPlacesSection').classList.add('hidden');
+            document.getElementById('backToPlacesBtn').style.display = 'none';
+            document.getElementById('searchCard').classList.remove('hidden');
+        }
+
+        function backToSearch() {
+            document.getElementById('mainHeader').style.display = 'none';
+            document.body.style.background = 'linear-gradient(180deg, #f5f7fa 0%, #e8ecf1 100%)';
+            
+            document.getElementById('allPlacesSection').classList.add('hidden');
+            document.getElementById('searchCard').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('customModal').classList.add('hidden');
+        }
+
+        function showAllPlaces() {
+            closeModal();
+            
+            document.getElementById('mainHeader').style.display = 'block';
+            document.body.style.background = 'linear-gradient(180deg, #e8ecf1 0%, #dde3eb 100%)';
+            
+            document.querySelectorAll('.card').forEach(card => card.classList.add('hidden'));
+            document.getElementById('searchCard').classList.add('hidden');
+            document.getElementById('allPlacesSection').classList.remove('hidden');
+            
+            const placesList = document.getElementById('allPlacesList');
+            placesList.innerHTML = '';
+            
+            placesData.forEach(place => {
+                const placeDiv = document.createElement('div');
+                placeDiv.className = `place-item place-${place.placeType}`;
+                placeDiv.onclick = () => selectPlace(place.placeType);
+                
+                const icon = getPlaceEmoji(place.placeType);
+                
+                placeDiv.innerHTML = `
+                    <div class="place-icon">${icon}</div>
+                    <div class="place-name">${place.name}</div>
+                `;
+                
+                placesList.appendChild(placeDiv);
+            });
+        }
+
+        function selectPlace(placeType) {
+            currentPlaceType = placeType;
+            document.getElementById('allPlacesSection').classList.add('hidden');
+            document.getElementById('backToPlacesBtn').style.display = 'inline-block';
+            showScenarios();
+        }
+
+        function backToPlacesList() {
+            document.getElementById('scenariosSection').classList.add('hidden');
+            document.getElementById('backToPlacesBtn').style.display = 'none';
+            document.getElementById('allPlacesSection').classList.remove('hidden');
+        }
+
+        function navigateDirectly() {
+            closeModal();
+            navigateToDestination();
+        }
+
+        function navigateToDestination() {
+            const keyword = currentSearchKeyword || currentPlaceType;
+            if (!keyword) {
+                alert('Please enter a search term');
+                return;
+            }
+            
+            const googleMapUrl = `https://www.google.com/maps/search/${encodeURIComponent(keyword + ' Korea')}`;
+            window.open(googleMapUrl, '_blank');
+        }
+
+        function playAllScenarios() {
+            if (!currentPlaceType) {
+                alert('No location selected.');
+                return;
+            }
+
+            const conversations = dialoguesData.filter(d => d.placeType === currentPlaceType);
+            
+            if (conversations.length === 0) {
+                alert('No conversations to play.');
+                return;
+            }
+
+            allSentences = [];
+            conversations.forEach(conv => {
+                if (conv.korean) {
+                    allSentences.push({ text: conv.korean });
+                }
+            });
+
+            if (allSentences.length === 0) {
+                alert('No conversations to play.');
+                return;
+            }
+
+            if (window.speechSynthesis.speaking) {
+                window.speechSynthesis.cancel();
+                alert('Playback stopped.');
+                return;
+            }
+
+            currentSentenceIndex = 0;
+            alert(`Playing ${allSentences.length} conversations. (Est. ${Math.ceil(allSentences.length * 3 / 60)} min)`);
+            playNextSentence();
+        }
+
+        // Initial Load
+        window.addEventListener('DOMContentLoaded', () => {
+            loadData().catch(err => {
+                console.error('Initial data load failed:', err);
+            });
+        });
     </script>
 </body>
 </html>

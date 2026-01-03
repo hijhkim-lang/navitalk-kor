@@ -1,753 +1,753 @@
-place_id,category_id,speaker,korean,romanization,english
-hospital,symptoms,A,안녕하세요. 어디가 아프세요?,Annyeonghaseyo. Eodiga apeuseyo?,Hello. Where does it hurt?
-hospital,symptoms,B,머리가 너무 아파요.,Meoriga neomu apayo.,I have a terrible headache.
-hospital,symptoms,A,언제부터 아프셨어요?,Eonjebuteo apeusyeosseoyo?,Since when have you been in pain?
-hospital,symptoms,B,어제부터요. 열도 있는 것 같아요.,Eojebuteoyo. Yeoldo inneun geot gatayo.,Since yesterday. I think I have a fever too.
-hospital,symptoms,A,체온을 재 볼게요.,Cheoneul jae bolgeyo.,Let me take your temperature.
-hospital,symptoms,B,감사합니다.,Gamsahamnida.,Thank you.
-hospital,symptoms,A,38도네요. 감기인 것 같아요.,Samsippal doneyo. Gamgiin geot gatayo.,It's 38 degrees. It seems like you have a cold.
-hospital,symptoms,B,약을 받을 수 있나요?,Yageul badeul su innayo?,Can I get some medicine?
-hospital,prescription,A,처방전 드릴게요.,Cheobangjeon deurilgeyo.,I'll give you a prescription.
-hospital,prescription,B,이 약은 어떻게 먹어요?,I yageun eotteoke meogeoyo?,How do I take this medicine?
-hospital,prescription,A,하루에 세 번 식후에 드세요.,Harue se beon sikue deuseyo.,Take it three times a day after meals.
-hospital,prescription,B,며칠 동안 먹어야 해요?,Myeochil dongan meogeoya haeyo?,How many days should I take it?
-hospital,prescription,A,5일 동안 드세요.,O-il dongan deuseyo.,Take it for 5 days.
-hospital,prescription,B,알겠습니다. 감사합니다.,Algessseumnida. Gamsahamnida.,I understand. Thank you.
-hospital,prescription,A,다 나으면 다시 오세요.,Da naeumyeon dasi oseyo.,Come back after you recover.
-hospital,prescription,B,네 안녕히 계세요.,Ne annyeonghi gyeseyo.,Yes goodbye.
-hospital,emergency,A,응급실이 어디예요?,Eunggeupsiri eodiyeyo?,Where is the emergency room?
-hospital,emergency,B,저쪽 빨간 표지판 따라가세요.,Jeojjok ppalgan pyojipan ttaragaseyo.,Follow the red sign over there.
-hospital,emergency,A,친구가 다쳤어요!,Chinguga dachyeosseoyo!,My friend is injured!
-hospital,emergency,B,어디를 다쳤어요?,Eodireul dachyeosseoyo?,Where is the injury?
-hospital,emergency,A,팔이 부러진 것 같아요.,Pari bureojin geot gatayo.,I think the arm is broken.
-hospital,emergency,B,의사 선생님을 바로 부를게요.,Uisa seonsaengnimeul baro bureulgeyo.,I'll call the doctor right away.
-hospital,emergency,A,빨리 부탁드려요!,Ppalli butakdeuryeoyo!,Please hurry!
-hospital,emergency,B,걱정 마세요. 곧 오실 거예요.,Geokjeong maseyo. Got osil geoyeyo.,Don't worry. They'll come soon.
-hospital,pharmacy,A,이 처방전으로 약 주세요.,I cheobangjeoneullo yak juseyo.,Please give me medicine for this prescription.
-hospital,pharmacy,B,네 잠시만요. 5분 정도 걸려요.,Ne jamsimanyo. O-bun jeongdo geollyeoyo.,Yes just a moment. It takes about 5 minutes.
-hospital,pharmacy,A,진통제도 있나요?,Jintongje-do innayo?,Do you have painkillers too?
-hospital,pharmacy,B,네 타이레놀 드릴까요?,Ne Tailenol deurilkkayo?,Yes would you like Tylenol?
-hospital,pharmacy,A,네 주세요. 얼마예요?,Ne juseyo. Eolmayeyo?,Yes please. How much is it?
-hospital,pharmacy,B,총 15000원입니다.,Chong man-ocheon-wonimida.,It's 15,000 won total.
-hospital,pharmacy,A,카드로 해도 돼요?,Kadeuro haedo dwaeyo?,Can I pay by card?
-hospital,pharmacy,B,네 카드도 됩니다.,Ne kadeudo doemnida.,Yes card is fine.
-restaurant,ordering,A,주문하시겠어요?,Jumunhasigesseoyo?,Would you like to order?
-restaurant,ordering,B,네 비빔밥 하나 주세요.,Ne bibimbap hana juseyo.,Yes one bibimbap please.
-restaurant,ordering,A,매운 거 괜찮으세요?,Maeun geo gwaenchaneuseyo?,Is spicy food okay for you?
-restaurant,ordering,B,조금만 매운 걸로 해 주세요.,Jogeumman maeun geollo hae juseyo.,Please make it a little spicy.
-restaurant,ordering,A,음료는 뭐로 하시겠어요?,Eumryoneun mworo hasigesseoyo?,What would you like to drink?
-restaurant,ordering,B,물 주세요.,Mul juseyo.,Water please.
-restaurant,ordering,A,네 알겠습니다. 잠시만 기다려 주세요.,Ne algessseumnida. Jamsiman gidaryeo juseyo.,Okay. Please wait a moment.
-restaurant,ordering,B,감사합니다.,Gamsahamnida.,Thank you.
-restaurant,recommendation,A,뭐가 맛있어요?,Mwoga masisseoyo?,What's delicious here?
-restaurant,recommendation,B,여기는 삼겹살이 유명해요.,Yeogineun samgyeopsari yumyeonghaeyo.,This place is famous for samgyeopsal.
-restaurant,recommendation,A,삼겹살이 뭐예요?,Samgyeopsari mwoyeyo?,What is samgyeopsal?
-restaurant,recommendation,B,돼지고기 구이예요. 아주 맛있어요.,Dwaejigogi guiyeyo. Aju masisseoyo.,It's grilled pork belly. Very delicious.
-restaurant,recommendation,A,그럼 삼겹살 2인분 주세요.,Geureom samgyeopsal i-inbun juseyo.,Then two servings of samgyeopsal please.
-restaurant,recommendation,B,네 좋은 선택이에요!,Ne joeun seontaegieyo!,Yes good choice!
-restaurant,recommendation,A,반찬은 뭐가 나와요?,Banchaneun mwoga nawayo?,What side dishes come with it?
-restaurant,recommendation,B,김치 쌈 그리고 여러 가지 나와요.,Gimchi ssam geurigo yeoreo gaji nawayo.,Kimchi, ssam, and various others.
-restaurant,payment,A,계산해 주세요.,Gyesanhae juseyo.,Check please.
-restaurant,payment,B,네 총 25000원입니다.,Ne chong iman-ocheon-wonimida.,Yes it's 25,000 won total.
-restaurant,payment,A,카드 되나요?,Kadeu doenayo?,Do you accept cards?
-restaurant,payment,B,네 됩니다.,Ne doemnida.,Yes we do.
-restaurant,payment,A,영수증 주세요.,Yeongsujeung juseyo.,Receipt please.
-restaurant,payment,B,여기 있습니다.,Yeogi isseumnida.,Here you are.
-restaurant,payment,A,맛있었어요. 감사합니다.,Masissseosseoyo. Gamsahamnida.,It was delicious. Thank you.
-restaurant,payment,B,감사합니다. 또 오세요!,Gamsahamnida. Tto oseyo!,Thank you. Please come again!
-restaurant,reservation,A,예약하고 싶은데요.,Yeyakhago sipeundeyo.,I'd like to make a reservation.
-restaurant,reservation,B,몇 분이세요?,Myeot buniseyo?,How many people?
-restaurant,reservation,A,4명이요. 오늘 저녁 7시에요.,Ne-myeong-iyo. Oneul jeonyeok ilgopsi-eyo.,Four people. Today at 7 PM.
-restaurant,reservation,B,네 자리 있어요. 성함이 어떻게 되세요?,Ne jari isseoyo. Seonghami eotteoke doeseyo?,Yes we have a table. What is your name?
-restaurant,reservation,A,제 이름은 존이에요.,Je ireumeun Jon-ieyo.,My name is John.
-restaurant,reservation,B,존 님 4분 저녁 7시 예약했습니다.,Jon nim ne-bun jeonyeok ilgopsi yeyakhaesseumnida.,John, party of 4 at 7 PM reserved.
-restaurant,reservation,A,창가 자리로 부탁해요.,Changga jariro butakhaeyo.,Window seat please.
-restaurant,reservation,B,네 준비해 드릴게요.,Ne junbihae deurilgeyo.,Yes I'll arrange that.
-hotel,checkin,A,체크인하려고요.,Chekeuinharyeogoyo.,I'd like to check in.
-hotel,checkin,B,예약하셨어요?,Yeyakasyeosseoyo?,Do you have a reservation?
-hotel,checkin,A,네 제 이름은 마이클입니다.,Ne je ireumeun Maikeul-imnida.,Yes my name is Michael.
-hotel,checkin,B,네 찾았어요. 2박이시죠?,Ne chajasseoyo. I-bagisijyo?,Yes found it. Two nights right?
-hotel,checkin,A,네 맞아요.,Ne majayo.,Yes that's right.
-hotel,checkin,B,여권 보여주시겠어요?,Yeogwon boyeojusigesseoyo?,May I see your passport?
-hotel,checkin,A,여기 있습니다.,Yeogi isseumnida.,Here it is.
-hotel,checkin,B,감사합니다. 방은 705호입니다.,Gamsahamnida. Bangeun chilbaeg-o-hoimnida.,Thank you. Your room is 705.
-hotel,checkout,A,체크아웃하려고요.,Chekeuautharyeogoyo.,I'd like to check out.
-hotel,checkout,B,방 번호가 어떻게 되세요?,Bang beonhoga eotteoke doeseyo?,What is your room number?
-hotel,checkout,A,705호요.,Chilbaeg-o-hoyo.,Room 705.
-hotel,checkout,B,미니바 이용하셨어요?,Miniba iyongasyeosseoyo?,Did you use the minibar?
-hotel,checkout,A,아니요 안 했어요.,Aniyo an haesseoyo.,No I didn't.
-hotel,checkout,B,총 240000원입니다.,Chong isipsa-man-wonimida.,The total is 240,000 won.
-hotel,checkout,A,카드로 계산할게요.,Kadeuro gyesanhalgeyo.,I'll pay by card.
-hotel,checkout,B,감사합니다. 좋은 여행 되세요.,Gamsahamnida. Joeun yeohaeng doeseyo.,Thank you. Have a nice trip.
-hotel,service,A,룸서비스 부탁드려요.,Rumseobiseu butakdeuryeoyo.,Room service please.
-hotel,service,B,네 무엇을 도와드릴까요?,Ne mueoseul dowadeurilkkayo?,Yes how may I help you?
-hotel,service,A,수건 좀 더 주세요.,Sugeon jom deo juseyo.,Please bring more towels.
-hotel,service,B,네 바로 보내드릴게요.,Ne baro bonaedeurilgeyo.,Yes I'll send them right away.
-hotel,service,A,그리고 아침 식사는 몇 시예요?,Geurigo achim siksaneun myeot siyeyo?,And what time is breakfast?
-hotel,service,B,7시부터 10시까지요.,Ilgopsibuteo yeolsikkkajiyo.,From 7 to 10 AM.
-hotel,service,A,감사합니다.,Gamsahamnida.,Thank you.
-hotel,service,B,더 필요한 거 있으시면 말씀해 주세요.,Deo piryohan geo isseusimyeon malsseumhae juseyo.,Please let us know if you need anything else.
-hotel,amenities,A,수영장이 있어요?,Suyeongjang-i isseoyo?,Is there a swimming pool?
-hotel,amenities,B,네 지하 1층에 있어요.,Ne jiha il-cheunge isseoyo.,Yes it's in basement level 1.
-hotel,amenities,A,몇 시까지 이용할 수 있어요?,Myeot sikkaji iyonghal su isseoyo?,Until what time can I use it?
-hotel,amenities,B,밤 10시까지요.,Bam yeolsikkkajiyo.,Until 10 PM.
-hotel,amenities,A,헬스장도 있나요?,Helseujangdo innayo?,Is there a gym too?
-hotel,amenities,B,네 수영장 옆에 있어요.,Ne suyeongjang yeope isseoyo.,Yes it's next to the pool.
-hotel,amenities,A,무료인가요?,Muryoingayo?,Is it free?
-hotel,amenities,B,네 투숙객은 무료예요.,Ne tusukgaegeun muryoyeyo.,Yes it's free for hotel guests.
-trainstation,ticket,A,서울행 기차표 한 장 주세요.,Seoul-haeng gichapyo han jang juseyo.,One ticket to Seoul please.
-trainstation,ticket,B,몇 시 기차로 드릴까요?,Myeot si gicharo deurilkkayo?,What time train would you like?
-trainstation,ticket,A,오전 10시 있어요?,Ojeon yeolsi isseoyo?,Is there one at 10 AM?
-trainstation,ticket,B,네 있어요. KTX로 하시겠어요?,Ne isseoyo. KTX-ro hasigesseoyo?,Yes there is. Would you like KTX?
-trainstation,ticket,A,네 KTX로 주세요.,Ne KTX-ro juseyo.,Yes KTX please.
-trainstation,ticket,B,일반석 특실 중에 어떤 걸로요?,Ilbanseok teuksil junge eotteon geollo-yo?,Regular or first class?
-trainstation,ticket,A,일반석이요. 얼마예요?,Ilbanseog-iyo. Eolmayeyo?,Regular please. How much?
-trainstation,ticket,B,59800원입니다.,Ogubaek-wonimida.,It's 59,800 won.
-trainstation,schedule,A,부산행 기차 시간표 볼 수 있어요?,Busan-haeng gicha siganpyo bol su isseoyo?,Can I see the timetable for Busan?
-trainstation,schedule,B,네 여기 화면에서 보세요.,Ne yeogi hwamyeoneseo boseyo.,Yes look at this screen.
-trainstation,schedule,A,다음 기차는 몇 시예요?,Daeum gichaneun myeot siyeyo?,What time is the next train?
-trainstation,schedule,B,11시 30분이요.,Yeolhansi samsip-bun-iyo.,At 11:30.
-trainstation,schedule,A,얼마나 걸려요?,Eolmana geollyeoyo?,How long does it take?
-trainstation,schedule,B,약 2시간 30분이요.,Yak du-sigan samsip-bun-iyo.,About 2 hours 30 minutes.
-trainstation,schedule,A,알겠습니다. 감사합니다.,Algessseumnida. Gamsahamnida.,I see. Thank you.
-trainstation,schedule,B,좋은 여행 되세요.,Joeun yeohaeng doeseyo.,Have a good trip.
-trainstation,platform,A,서울행 기차는 몇 번 승강장이에요?,Seoul-haeng gichaneun myeot beon seunggangjangi-eyo?,Which platform for Seoul train?
-trainstation,platform,B,3번 승강장이요.,Sam-beon seunggangjang-iyo.,Platform 3.
-trainstation,platform,A,어디로 가면 돼요?,Eodiro gamyeon dwaeyo?,How do I get there?
-trainstation,platform,B,저쪽 계단으로 내려가세요.,Jeojjok gyedaneuro naeryeogaseyo.,Go down those stairs over there.
-trainstation,platform,A,기차가 몇 분 후에 와요?,Gichaga myeot bun hue wayo?,How many minutes until the train comes?
-trainstation,platform,B,약 10분 후에요.,Yak sip-bun hueyo.,About 10 minutes.
-trainstation,platform,A,감사합니다.,Gamsahamnida.,Thank you.
-trainstation,platform,B,천만에요.,Cheonmaneyo.,You're welcome.
-trainstation,ktx,A,KTX가 뭐예요?,KTX-ga mwoyeyo?,What is KTX?
-trainstation,ktx,B,한국의 고속철도예요.,Hangugui gosokcholdoyeyo.,It's Korea's high-speed rail.
-trainstation,ktx,A,얼마나 빨라요?,Eolmana ppallayo?,How fast is it?
-trainstation,ktx,B,시속 300km까지 가요.,Sisok sambaek kilomiteokkaji gayo.,Up to 300km per hour.
-trainstation,ktx,A,일반 기차보다 비싸요?,Ilban gichaboda bissayo?,Is it more expensive than regular trains?
-trainstation,ktx,B,네 조금 더 비싸지만 빨라요.,Ne jogeum deo bissajiman ppallayo.,Yes a bit more expensive but faster.
-trainstation,ktx,A,그럼 KTX로 할게요.,Geureom KTX-ro halgeyo.,Then I'll take KTX.
-trainstation,ktx,B,좋은 선택이에요.,Joeun seontaeg-ieyo.,Good choice.
-busstation,busticket,A,대전행 버스표 주세요.,Daejeon-haeng beoseupyo juseyo.,One ticket to Daejeon please.
-busstation,busticket,B,몇 시 출발로요?,Myeot si chulballo-yo?,What time departure?
-busstation,busticket,A,가장 빠른 버스로요.,Gajang ppareun beoseuro-yo.,The earliest bus please.
-busstation,busticket,B,1시 30분 있어요.,Han-si samsip-bun isseoyo.,There's one at 1:30.
-busstation,busticket,A,좋아요. 얼마예요?,Joayo. Eolmayeyo?,Good. How much?
-busstation,busticket,B,18000원이요.,Man-palcheon-won-iyo.,18,000 won.
-busstation,busticket,A,카드로 해도 돼요?,Kadeuro haedo dwaeyo?,Can I pay by card?
-busstation,busticket,B,네 됩니다.,Ne doemnida.,Yes you can.
-busstation,busschedule,A,경주행 버스는 얼마나 자주 있어요?,Gyeongju-haeng beoseuneun eolmana jaju isseoyo?,How often do buses to Gyeongju run?
-busstation,busschedule,B,30분마다 있어요.,Samsip-bunmada isseoyo.,Every 30 minutes.
-busstation,busschedule,A,마지막 버스는 몇 시예요?,Majimak beoseuneun myeot siyeyo?,What time is the last bus?
-busstation,busschedule,B,밤 9시요.,Bam ahupssiyo.,9 PM.
-busstation,busschedule,A,경주까지 얼마나 걸려요?,Gyeongjukkaji eolmana geollyeoyo?,How long to Gyeongju?
-busstation,busschedule,B,약 4시간이요.,Yak ne-sigan-iyo.,About 4 hours.
-busstation,busschedule,A,알겠어요. 감사합니다.,Algesseoyo. Gamsahamnida.,I see. Thank you.
-busstation,busschedule,B,안녕히 가세요.,Annyeonghi gaseyo.,Goodbye.
-busstation,busdest,A,이 버스 인천공항 가요?,I beoseu Incheon-gonghang gayo?,Does this bus go to Incheon Airport?
-busstation,busdest,B,아니요. 저쪽 버스 타세요.,Aniyo. Jeojjok beoseu taseyo.,No. Take that bus over there.
-busstation,busdest,A,몇 번 버스예요?,Myeot beon beoseu-yeyo?,What number bus?
-busstation,busdest,B,6002번이요.,Yukcheon-i-beon-iyo.,Number 6002.
-busstation,busdest,A,어디서 타요?,Eodiseo tayo?,Where do I board?
-busstation,busdest,B,5번 정류장에서요.,O-beon jeongnyujang-eseoyo.,At stop number 5.
-busstation,busdest,A,공항까지 얼마나 걸려요?,Gonghangkkaji eolmana geollyeoyo?,How long to the airport?
-busstation,busdest,B,약 1시간이요.,Yak han-sigan-iyo.,About 1 hour.
-airport,aircheck,A,체크인 카운터가 어디예요?,Chekeuin kaunteoga eodiyeyo?,Where is the check-in counter?
-airport,aircheck,B,어느 항공사예요?,Eoneu hanggongsayeyo?,Which airline?
-airport,aircheck,A,대한항공이요.,Daehan-hanggong-iyo.,Korean Air.
-airport,aircheck,B,F구역 3층에 있어요.,F-guyeok sam-cheunge isseoyo.,It's in Zone F 3rd floor.
-airport,aircheck,A,창가 좌석으로 해 주세요.,Changga jwaseogeuro hae juseyo.,Window seat please.
-airport,aircheck,B,네 가능해요. 여권 주세요.,Ne ganeunghaeyo. Yeogwon juseyo.,Yes possible. Passport please.
-airport,aircheck,A,짐은 여기서 부치면 돼요?,Jimeun yeogiseo buchimyeon dwaeyo?,Can I check my luggage here?
-airport,aircheck,B,네 저울 위에 올려주세요.,Ne jeoul wie ollyeojuseyo.,Yes put it on the scale.
-airport,security,A,보안검색대가 어디예요?,Boangeomsakdaega eodiyeyo?,Where is security?
-airport,security,B,체크인 후 오른쪽으로 가세요.,Chekeuin hu oreunjjogeuro gaseyo.,Go right after check-in.
-airport,security,A,노트북을 꺼내야 해요?,Noteubuk-eul kkeonaeya haeyo?,Do I need to take out my laptop?
-airport,security,B,네 따로 트레이에 넣으세요.,Ne ttaro teure-ie neoeuseyo.,Yes put it in a separate tray.
-airport,security,A,신발도 벗어야 해요?,Sinbaldo beoseoya haeyo?,Do I need to remove my shoes?
-airport,security,B,네 벗어주세요.,Ne beoseojuseyo.,Yes please remove them.
-airport,security,A,액체류는 안 돼요?,Aekcheryuneun an dwaeyo?,Liquids are not allowed?
-airport,security,B,100ml 이하만 돼요.,Baek ml ihaman dwaeyo.,Only under 100ml.
-airport,boarding,A,탑승구가 어디예요?,Tapseungguga eodiyeyo?,Where is the boarding gate?
-airport,boarding,B,탑승권 보여주세요.,Tapseunggwon boyeojuseyo.,Show me your boarding pass.
-airport,boarding,A,여기요.,Yeogiyo.,Here.
-airport,boarding,B,32번 게이트예요. 저쪽이요.,Samsip-i-beon geiteu-yeyo. Jeojjog-iyo.,Gate 32. Over there.
-airport,boarding,A,탑승 시간이 언제예요?,Tapseung sigani eonjeyeyo?,What time is boarding?
-airport,boarding,B,2시 30분부터요.,Du-si samsip-bunbuteoyo.,From 2:30.
-airport,boarding,A,감사합니다.,Gamsahamnida.,Thank you.
-airport,boarding,B,좋은 비행 되세요.,Joeun bihaeng doeseyo.,Have a good flight.
-airport,immigration,A,여권 보여주세요.,Yeogwon boyeojuseyo.,Passport please.
-airport,immigration,B,여기요.,Yeogiyo.,Here.
-airport,immigration,A,한국에 온 목적이 뭐예요?,Hanguge on mokjeogi mwoyeyo?,What is your purpose in Korea?
-airport,immigration,B,관광이요.,Gwangwang-iyo.,Tourism.
-airport,immigration,A,며칠 동안 머물러요?,Myeochil dongan meomulleoyo?,How many days will you stay?
-airport,immigration,B,일주일이요.,Iljuil-iyo.,One week.
-airport,immigration,A,어디서 묵어요?,Eodiseo mugeoyo?,Where will you stay?
-airport,immigration,B,명동 호텔이요.,Myeongdong hotel-iyo.,A hotel in Myeongdong.
-airport,luggage,A,제 짐이 안 나왔어요.,Je jimi an nawasseoyo.,My luggage didn't come out.
-airport,luggage,B,탑승권 보여주세요.,Tapseunggwon boyeojuseyo.,Show me your boarding pass.
-airport,luggage,A,가방이 검정색 캐리어예요.,Gabangi geomjeongsaek kaerieo-yeyo.,It's a black suitcase.
-airport,luggage,B,찾아볼게요. 연락처 남겨주세요.,Chajavolgeyo. Yeollakcheo namgyeojuseyo.,I'll look for it. Leave your contact.
-airport,luggage,A,호텔로 배송해 줄 수 있어요?,Hotello baesong hae jul su isseoyo?,Can you deliver it to my hotel?
-airport,luggage,B,네 가능해요.,Ne ganeunghaeyo.,Yes that's possible.
-airport,luggage,A,감사합니다. 걱정됐어요.,Gamsahamnida. Geokjeongdwaesseoyo.,Thank you. I was worried.
-airport,luggage,B,걱정 마세요. 꼭 찾아드릴게요.,Geokjeong maseyo. Kkok chajadeurilgeyo.,Don't worry. We'll definitely find it.
-market,bargain,A,이거 얼마예요?,Igeo eolmayeyo?,How much is this?
-market,bargain,B,10000원이요.,Man-won-iyo.,10,000 won.
-market,bargain,A,너무 비싸요. 깎아 주세요.,Neomu bissayo. Kkakka juseyo.,Too expensive. Give me a discount.
-market,bargain,B,그럼 8000원에 드릴게요.,Geureom palcheon-wone deurilgeyo.,Then I'll give it to you for 8,000.
-market,bargain,A,5000원은 안 돼요?,Ocheon-woneun an dwaeyo?,How about 5,000 won?
-market,bargain,B,그건 너무 싸요. 7000원이요.,Geugeon neomu ssayo. Chilcheon-won-iyo.,That's too cheap. 7,000 won.
-market,bargain,A,좋아요. 살게요.,Joayo. Salgeyo.,Okay. I'll buy it.
-market,bargain,B,감사합니다!,Gamsahamnida!,Thank you!
-market,selection,A,이거 뭐예요?,Igeo mwoyeyo?,What is this?
-market,selection,B,이건 떡이에요. 한국 전통 음식이요.,Igeon tteog-ieyo. Hanguk jeontong eumsig-iyo.,This is tteok. Korean traditional food.
-market,selection,A,맛볼 수 있어요?,Matbol su isseoyo?,Can I taste it?
-market,selection,B,네 여기요. 드셔보세요.,Ne yeogiyo. Deusyeoboseyo.,Yes here. Try it.
-market,selection,A,맛있네요! 한 봉지 주세요.,Masinneyo! Han bongji juseyo.,Delicious! One bag please.
-market,selection,B,5000원이요.,Ocheon-won-iyo.,5,000 won.
-market,selection,A,두 봉지 사면 얼마예요?,Du bongji samyeon eolmayeyo?,How much for two bags?
-market,selection,B,8000원에 드릴게요.,Palcheon-wone deurilgeyo.,I'll give them for 8,000 won.
-market,marketpay,A,현금만 돼요?,Hyeongeum-man dwaeyo?,Cash only?
-market,marketpay,B,아니요. 카드도 돼요.,Aniyo. Kadeudo dwaeyo.,No. Cards are okay too.
-market,marketpay,A,여기 20000원이요.,Yeogi iman-won-iyo.,Here's 20,000 won.
-market,marketpay,B,5000원 거슬러 드릴게요.,Ocheon-won geoseulleo deurilgeyo.,Here's 5,000 won change.
-market,marketpay,A,봉투 있어요?,Bongtu isseoyo?,Do you have a bag?
-market,marketpay,B,100원이요.,Baek-won-iyo.,100 won.
-market,marketpay,A,괜찮아요. 제 가방에 넣을게요.,Gwaenchanayo. Je gabange neoeulgeyo.,That's okay. I'll put it in my bag.
-market,marketpay,B,네 감사합니다!,Ne gamsahamnida!,Yes thank you!
-bank,account,A,계좌 개설하고 싶어요.,Gyejwa gaesulhago sipeoyo.,I want to open an account.
-bank,account,B,여권하고 비자 보여주세요.,Yeogwon-hago bija boyeojuseyo.,Show me your passport and visa.
-bank,account,A,여기 있어요.,Yeogi isseoyo.,Here you are.
-bank,account,B,한국 전화번호 있으세요?,Hanguk jeonhwabeonho isseuseyo?,Do you have a Korean phone number?
-bank,account,A,네 있어요.,Ne isseoyo.,Yes I do.
-bank,account,B,이 양식 작성해 주세요.,I yangsik jakseong hae juseyo.,Please fill out this form.
-bank,account,A,비밀번호는 몇 자리예요?,Bimilbeonhoneun myeot jariyeyo?,How many digits for the PIN?
-bank,account,B,4자리요.,Ne-jariyo.,4 digits.
-bank,exchange,A,환전하고 싶어요.,Hwanjeonhago sipeoyo.,I want to exchange money.
-bank,exchange,B,어떤 통화요?,Eotteon tonghwayo?,What currency?
-bank,exchange,A,달러를 원화로요.,Dalleoreul wonhwaro-yo.,Dollars to won.
-bank,exchange,B,얼마를 바꾸실 거예요?,Eolmareul bakkusil geoyeyo?,How much do you want to exchange?
-bank,exchange,A,500달러요.,Obaek-dalleo-yo.,500 dollars.
-bank,exchange,B,오늘 환율이 1달러에 1300원이에요.,Oneul hwallyuri il-dalleoe cheonsambaek-won-ieyo.,Today's rate is 1,300 won per dollar.
-bank,exchange,A,좋아요. 바꿔주세요.,Joayo. Bakkwojuseyo.,Okay. Please exchange it.
-bank,exchange,B,650000원입니다. 여기요.,Yuksipoman-wonimida. Yeogiyo.,Here's 650,000 won.
-bank,atm,A,ATM이 어디 있어요?,ATM-i eodi isseoyo?,Where is the ATM?
-bank,atm,B,저쪽 입구 옆에 있어요.,Jeojjok ipgu yeope isseoyo.,It's next to the entrance over there.
-bank,atm,A,외국 카드도 돼요?,Oeguk kadeudo dwaeyo?,Does it accept foreign cards?
-bank,atm,B,네 국제카드 다 돼요.,Ne gukjekadeu da dwaeyo.,Yes all international cards work.
-bank,atm,A,영어로 할 수 있어요?,Yeongeoro hal su isseoyo?,Can I use it in English?
-bank,atm,B,네 언어 선택하시면 돼요.,Ne eoneo seontakasimyeon dwaeyo.,Yes just select the language.
-bank,atm,A,수수료가 있어요?,Susuryoga isseoyo?,Is there a fee?
-bank,atm,B,네 3000원이요.,Ne samcheon-won-iyo.,Yes 3,000 won.
-bank,transfer,A,해외 송금하고 싶어요.,Haeoe songgeumhago sipeoyo.,I want to make an international transfer.
-bank,transfer,B,어느 나라로요?,Eoneu nararo-yo?,To which country?
-bank,transfer,A,미국이요.,Migug-iyo.,United States.
-bank,transfer,B,금액이 얼마예요?,Geumaegi eolmayeyo?,What is the amount?
-bank,transfer,A,100만원이요.,Baengman-won-iyo.,1,000,000 won.
-bank,transfer,B,수수료가 20000원이에요.,Susuryoga iman-won-ieyo.,The fee is 20,000 won.
-bank,transfer,A,며칠 걸려요?,Myeochil geollyeoyo?,How many days will it take?
-bank,transfer,B,2~3일 정도요.,I-sam-il jeongdoyo.,About 2-3 days.
-communication,simcard,A,유심 카드 사고 싶어요.,Yusim kadeu sago sipeoyo.,I want to buy a SIM card.
-communication,simcard,B,여권 보여주세요.,Yeogwon boyeojuseyo.,Show me your passport.
-communication,simcard,A,프리페이드로요.,Peuripeideu-royo.,Prepaid please.
-communication,simcard,B,며칠짜리로요?,Myeochil-jjariro-yo?,For how many days?
-communication,simcard,A,일주일이요.,Iljuil-iyo.,One week.
-communication,simcard,B,데이터 무제한 33000원이요.,Deiteo mujeh-an samman-samcheon-won-iyo.,Unlimited data is 33,000 won.
-communication,simcard,A,좋아요. 설치도 해주세요.,Joayo. Seolchido haejuseyo.,Good. Please install it too.
-communication,simcard,B,네 5분이면 돼요.,Ne o-bun-imyeon dwaeyo.,Yes it takes 5 minutes.
-communication,phoneplan,A,한 달 요금제 뭐가 있어요?,Han dal yogeumje mwoga isseoyo?,What monthly plans do you have?
-communication,phoneplan,B,55000원에 무제한 데이터요.,Oman-ocheon-wone mujeh-an deiteoyo.,55,000 won for unlimited data.
-communication,phoneplan,A,통화도 무제한이에요?,Tonghwado mujeh-an-ieyo?,Are calls unlimited too?
-communication,phoneplan,B,네 국내 통화 무제한이요.,Ne guknae tonghwa mujeh-an-iyo.,Yes unlimited domestic calls.
-communication,phoneplan,A,국제전화는요?,Gukjejeonhwaneunyo?,What about international calls?
-communication,phoneplan,B,분당 300원이요.,Bundang sambaek-won-iyo.,300 won per minute.
-communication,phoneplan,A,그 요금제로 할게요.,Geu yogeumjero halgeyo.,I'll take that plan.
-communication,phoneplan,B,신분증 필요해요.,Sinbunjeung piryohaeyo.,I need your ID.
-communication,recharge,A,데이터 충전하고 싶어요.,Deiteo chungjeonhago sipeoyo.,I want to recharge data.
-communication,recharge,B,몇 기가요?,Myeot gigayo?,How many gigabytes?
-communication,recharge,A,5기가요. 얼마예요?,O-gigayo. Eolmayeyo?,5 gigabytes. How much?
-communication,recharge,B,11000원이요.,Man-cheon-won-iyo.,11,000 won.
-communication,recharge,A,바로 되나요?,Baro doenayo?,Will it be activated immediately?
-communication,recharge,B,네 바로 충전돼요.,Ne baro chungjeondwaeyo.,Yes it activates immediately.
-communication,recharge,A,현금으로 할게요.,Hyeongeumuro halgeyo.,I'll pay cash.
-communication,recharge,B,감사합니다. 여기 영수증이요.,Gamsahamnida. Yeogi yeongsujeung-iyo.,Thank you. Here's your receipt.
-police,report,A,신고하러 왔어요.,Singoharo wasseoyo.,I came to file a report.
-police,report,B,무슨 일이세요?,Museun iriseyo?,What happened?
-police,report,A,지갑을 도둑맞았어요.,Jigabeul dodungmajasseoyo.,My wallet was stolen.
-police,report,B,어디서요?,Eodiseoyo?,Where?
-police,report,A,명동 지하철역에서요.,Myeongdong jihacheol-yeog-eseoyo.,At Myeongdong subway station.
-police,report,B,몇 시쯤이요?,Myeot sijjeum-iyo?,Around what time?
-police,report,A,오후 3시쯤이요.,Ohu se-sijjeum-iyo.,Around 3 PM.
-police,report,B,이 양식 작성해 주세요.,I yangsik jakseong hae juseyo.,Please fill out this form.
-police,lostitem,A,분실물 센터가 어디예요?,Bunsilmul senteoga eodiyeyo?,Where is the lost and found?
-police,lostitem,B,저쪽 2층에 있어요.,Jeojjok i-cheunge isseoyo.,It's on the 2nd floor over there.
-police,lostitem,A,휴대폰을 잃어버렸어요.,Hyudaeponeul ireobeolyeosseoyo.,I lost my phone.
-police,lostitem,B,어디서 잃어버리셨어요?,Eodiseo ireobeorisyeosseoyo?,Where did you lose it?
-police,lostitem,A,버스에서요.,Beoseu-eseoyo.,On the bus.
-police,lostitem,B,버스 번호 아세요?,Beoseu beonho aseyo?,Do you know the bus number?
-police,lostitem,A,143번이요.,Baek-sasip-sam-beon-iyo.,Number 143.
-police,lostitem,B,연락처 남겨주세요. 찾으면 연락드릴게요.,Yeollakcheo namgyeojuseyo. Chajeumyeon yeollakdeurilgeyo.,Leave your contact. We'll call if we find it.
-police,policehelp,A,도와주세요!,Dowajuseyo!,Help me!
-police,policehelp,B,무슨 일이에요?,Museun irieyo?,What's wrong?
-police,policehelp,A,누가 저를 따라와요.,Nuga jeoreul ttarawayo.,Someone is following me.
-police,policehelp,B,어디 있어요?,Eodi isseoyo?,Where are you?
-police,policehelp,A,홍대입구역 근처요.,Hongdae-ipguyeok geuncheo-yo.,Near Hongdae Station.
-police,policehelp,B,거기 있으세요. 경찰 바로 보낼게요.,Geogi isseuseyo. Gyeongchal baro bonaelgeyo.,Stay there. I'll send police right away.
-police,policehelp,A,감사합니다. 무서워요.,Gamsahamnida. Museowoyo.,Thank you. I'm scared.
-police,policehelp,B,걱정 마세요. 곧 도착해요.,Geokjeong maseyo. Got dochakhaeyo.,Don't worry. They'll arrive soon.
-electronics,purchase,A,노트북 사고 싶어요.,Noteubuk sago sipeoyo.,I want to buy a laptop.
-electronics,purchase,B,어떤 용도로 쓰실 거예요?,Eotteon yongdoro sseusil geoyeyo?,What will you use it for?
-electronics,purchase,A,일반 업무용이요.,Ilban eommuyong-iyo.,For general office work.
-electronics,purchase,B,이 모델 추천해요. 가성비 좋아요.,I model chucheonhaeyo. Gaseongbi joayo.,I recommend this model. Good value.
-electronics,purchase,A,얼마예요?,Eolmayeyo?,How much is it?
-electronics,purchase,B,89만원이요.,Palsipgu-man-won-iyo.,890,000 won.
-electronics,purchase,A,보증기간이 얼마예요?,Bojeunggigan-i eolmayeyo?,What's the warranty period?
-electronics,purchase,B,1년이요. 연장도 가능해요.,Il-lyeon-iyo. Yeonjangdo ganeunghaeyo.,1 year. Extension is possible.
-electronics,repair,A,폰 수리하러 왔어요.,Pon surihareo wasseoyo.,I came to repair my phone.
-electronics,repair,B,어떤 문제예요?,Eotteon munjeyeyo?,What's the problem?
-electronics,repair,A,화면이 깨졌어요.,Hwamyeoni kkaejyeosseoyo.,The screen is cracked.
-electronics,repair,B,화면 교체 비용이 15만원이에요.,Hwamyeon gyoche biyong-i siboman-won-ieyo.,Screen replacement costs 150,000 won.
-electronics,repair,A,얼마나 걸려요?,Eolmana geollyeoyo?,How long will it take?
-electronics,repair,B,약 2시간이요.,Yak du-sigan-iyo.,About 2 hours.
-electronics,repair,A,오늘 할 수 있어요?,Oneul hal su isseoyo?,Can you do it today?
-electronics,repair,B,네 가능해요.,Ne ganeunghaeyo.,Yes we can.
-electronics,compare,A,이 두 모델 차이가 뭐예요?,I du model chaiga mwoyeyo?,What's the difference between these two?
-electronics,compare,B,이건 더 가볍고 배터리가 오래 가요.,Igeon deo gabyeopgo baeteori-ga orae gayo.,This one is lighter with longer battery.
-electronics,compare,A,가격 차이는요?,Gagyeok chaineunyo?,What's the price difference?
-electronics,compare,B,20만원 차이요.,Isipman-won chaiyo.,200,000 won difference.
-electronics,compare,A,성능은 비슷해요?,Seongneungeun biseutae-yo?,Is the performance similar?
-electronics,compare,B,네 거의 같아요.,Ne geoui gatayo.,Yes almost the same.
-electronics,compare,A,그럼 싼 걸로 할게요.,Geureom ssan geollo halgeyo.,Then I'll take the cheaper one.
-electronics,compare,B,좋은 선택이에요.,Joeun seontaeg-ieyo.,Good choice.
-salon,haircut,A,커트하러 왔어요.,Keoteuharo wasseoyo.,I came for a haircut.
-salon,haircut,B,어떻게 해 드릴까요?,Eotteoke hae deurilkkayo?,How would you like it?
-salon,haircut,A,조금만 다듬어 주세요.,Jogeumman dadeumeo juseyo.,Just a little trim please.
-salon,haircut,B,몇 센치 자를까요?,Myeot senchi jareulaklkayo?,How many centimeters?
-salon,haircut,A,2센치 정도요.,I-senchi jeongdoyo.,About 2 centimeters.
-salon,haircut,B,앞머리도 잘라요?,Apmeorido jallayo?,Should I cut the bangs too?
-salon,haircut,A,네 눈 위까지 해 주세요.,Ne nun wikkaji hae juseyo.,Yes above my eyes please.
-salon,haircut,B,알겠어요. 시작할게요.,Algesseoyo. Sijakhalgeyo.,Okay. I'll start.
-salon,haircolor,A,염색하고 싶어요.,Yeomsaekago sipeoyo.,I want to dye my hair.
-salon,haircolor,B,어떤 색으로요?,Eotteon saek-euroyo?,What color?
-salon,haircolor,A,밝은 갈색이요.,Balgeun galsaeg-iyo.,Light brown.
-salon,haircolor,B,이 색 어떠세요?,I saek eotteuseyo?,How about this color?
-salon,haircolor,A,좋아요. 이걸로요.,Joayo. Igeolloyo.,Good. This one.
-salon,haircolor,B,시간이 2시간 정도 걸려요.,Sigan-i du-sigan jeongdo geollyeoyo.,It takes about 2 hours.
-salon,haircolor,A,얼마예요?,Eolmayeyo?,How much is it?
-salon,haircolor,B,8만원이요.,Palman-won-iyo.,80,000 won.
-salon,hairstyle,A,스타일 추천해 주세요.,Seutail chucheonhae juseyo.,Please recommend a style.
-salon,hairstyle,B,얼굴형에 이 스타일이 잘 어울려요.,Eolgulhyeonge i seutail-i jal eoullyeoyo.,This style suits your face shape.
-salon,hairstyle,A,사진 보여주세요.,Sajin boyeojuseyo.,Show me a picture.
-salon,hairstyle,B,이런 느낌이요.,Ireon neukkim-iyo.,Like this.
-salon,hairstyle,A,좋아요. 이렇게 해 주세요.,Joayo. Ireoke hae juseyo.,Good. Do it like this.
-salon,hairstyle,B,파마도 하시겠어요?,Pamado hasigesseoyo?,Would you like a perm too?
-salon,hairstyle,A,아니요 자연스럽게요.,Aniyo jayeonseureobgeyo.,No just natural.
-salon,hairstyle,B,알겠어요.,Algesseoyo.,Understood.
-bakery,cafeorder,A,아메리카노 한 잔 주세요.,Amerikano han jan juseyo.,One Americano please.
-bakery,cafeorder,B,뜨거운 거요 차가운 거요?,Tteugeoun geoyo chagaun geoyo?,Hot or iced?
-bakery,cafeorder,A,아이스로요.,Aiseu-royo.,Iced please.
-bakery,cafeorder,B,사이즈 뭐로 하시겠어요?,Saijeu mworo hasigesseoyo?,What size?
-bakery,cafeorder,A,레귤러로요.,Regyulleoro-yo.,Regular please.
-bakery,cafeorder,B,빵도 드시겠어요?,Ppangdo deusigesseoyo?,Would you like bread too?
-bakery,cafeorder,A,네 크루아상 하나요.,Ne keuruasang hanayo.,Yes one croissant.
-bakery,cafeorder,B,9500원입니다.,Gucheonobaek-wonimida.,That's 9,500 won.
-bakery,caferec,A,제일 인기 있는 게 뭐예요?,Jeil ingi inneun ge mwoyeyo?,What's the most popular?
-bakery,caferec,B,소금빵이 요즘 인기 많아요.,Sogeumppang-i yojeum ingi manayo.,Salt bread is popular these days.
-bakery,caferec,A,맛있어요?,Masisseoyo?,Is it good?
-bakery,caferec,B,네 버터향이 정말 좋아요.,Ne beoteo-hyang-i jeongmal joayo.,Yes the butter flavor is really nice.
-bakery,caferec,A,그럼 하나 주세요.,Geureom hana juseyo.,Then one please.
-bakery,caferec,B,따뜻하게 데워드릴까요?,Ttatteutage dewodeurilkkayo?,Should I warm it up?
-bakery,caferec,A,네 부탁해요.,Ne butakhaeyo.,Yes please.
-bakery,caferec,B,잠시만요.,Jamsimanyo.,Just a moment.
-bakery,cafetake,A,포장해 주세요.,Pojang hae juseyo.,For takeout please.
-bakery,cafetake,B,네 잠시만요.,Ne jamsimanyo.,Yes just a moment.
-bakery,cafetake,A,케이크도 포장 돼요?,Keikeu-do pojang dwaeyo?,Can I get cake to go too?
-bakery,cafetake,B,네 상자에 넣어드릴게요.,Ne sangjae neeodeurilgeyo.,Yes I'll put it in a box.
-bakery,cafetake,A,아이스팩 있어요?,Aiseupak isseoyo?,Do you have ice packs?
-bakery,cafetake,B,네 드릴게요. 500원이요.,Ne deurilgeyo. Obaek-won-iyo.,Yes I'll give you one. 500 won.
-bakery,cafetake,A,좋아요. 같이 해 주세요.,Joayo. Gachi hae juseyo.,Good. Please add it.
-bakery,cafetake,B,총 32000원입니다.,Chong samman-icheon-wonimida.,The total is 32,000 won.
-massage,spaservice,A,마사지 받고 싶어요.,Masaji batgo sipeoyo.,I want to get a massage.
-massage,spaservice,B,어떤 마사지로 하시겠어요?,Eotteon masajiro hasigesseoyo?,What type of massage?
-massage,spaservice,A,전신 마사지요.,Jeonsin masajiyo.,Full body massage.
-massage,spaservice,B,60분이요 90분이요?,Yuksip-bun-iyo gusip-bun-iyo?,60 minutes or 90 minutes?
-massage,spaservice,A,90분이요. 얼마예요?,Gusip-bun-iyo. Eolmayeyo?,90 minutes. How much?
-massage,spaservice,B,12만원이요.,Sibiman-won-iyo.,120,000 won.
-massage,spaservice,A,좋아요. 할게요.,Joayo. Halgeyo.,Good. I'll do it.
-massage,spaservice,B,탈의실은 저쪽이요.,Taruisil-eun jeojjog-iyo.,The changing room is over there.
-massage,sparesv,A,예약하고 싶어요.,Yeyakhago sipeoyo.,I want to make a reservation.
-massage,sparesv,B,언제로요?,Eonjeroyo?,For when?
-massage,sparesv,A,내일 오후 3시요.,Naeil ohu se-siyo.,Tomorrow 3 PM.
-massage,sparesv,B,몇 분이세요?,Myeot buniseyo?,How many people?
-massage,sparesv,A,두 명이요.,Du myeong-iyo.,Two people.
-massage,sparesv,B,커플 마사지 원하세요?,Keopeul masaji wonhaseyo?,Would you like couples massage?
-massage,sparesv,A,네 부탁해요.,Ne butakhaeyo.,Yes please.
-massage,sparesv,B,예약됐어요. 내일 봬요.,Yeyakdwaesseoyo. Naeil boeyo.,Reserved. See you tomorrow.
-massage,spafeed,A,어땠어요?,Eottaesseoyo?,How was it?
-massage,spafeed,B,아주 좋았어요. 시원해요.,Aju joasseoyo. Siwonhaeyo.,Very good. Refreshing.
-massage,spafeed,A,어깨가 많이 뭉쳤었네요.,Eokkaega mani mungchyeosseonne-yo.,Your shoulders were very tense.
-massage,spafeed,B,맞아요. 스트레스가 많았어요.,Majayo. Seuteuleseu-ga manasseoyo.,Yes I've been stressed.
-massage,spafeed,A,다음에 또 오세요.,Daeume tto oseyo.,Please come again.
-massage,spafeed,B,네 다음 주에 또 올게요.,Ne daeum jue tto olgeyo.,Yes I'll come again next week.
-massage,spafeed,A,예약해 드릴까요?,Yeyakhae deurilkkayo?,Should I make a reservation?
-massage,spafeed,B,네 같은 시간으로요.,Ne gateun siganeu-royo.,Yes same time.
-cinema,movieticket,A,영화표 두 장 주세요.,Yeonghwapyo du jang juseyo.,Two movie tickets please.
-cinema,movieticket,B,어떤 영화요?,Eotteon yeonghwayo?,Which movie?
-cinema,movieticket,A,가장 인기 있는 영화로요.,Gajang ingi inneun yeonghwaro-yo.,The most popular one.
-cinema,movieticket,B,지금 범죄도시가 인기예요.,Jigeum Beomoedosi-ga ingi-yeyo.,Crime City is popular now.
-cinema,movieticket,A,그걸로 주세요. 몇 시에 시작해요?,Geugeol-lo juseyo. Myeot sie sijakae-yo?,That one please. What time does it start?
-cinema,movieticket,B,4시 30분이요.,Ne-si samsip-bun-iyo.,4:30 PM.
-cinema,movieticket,A,좋아요.,Joayo.,Good.
-cinema,movieticket,B,총 26000원이요.,Chong iman-yukcheon-won-iyo.,Total is 26,000 won.
-cinema,moviesnack,A,팝콘 큰 거 하나요.,Papkon keun geo hanayo.,One large popcorn please.
-cinema,moviesnack,B,콜라도 드릴까요?,Kollado deurilkkayo?,Would you like cola too?
-cinema,moviesnack,A,네 중간 사이즈로요.,Ne junggan saijeu-ro-yo.,Yes medium size.
-cinema,moviesnack,B,세트로 하시면 3000원 할인이에요.,Seteuro hasimyeon samcheon-won harineyo.,You save 3,000 won with a set.
-cinema,moviesnack,A,그럼 세트로요.,Geureom seteu-ro-yo.,Then a set please.
-cinema,moviesnack,B,나쵸도 있어요. 추가하실래요?,Nachyodo isseoyo. Chugahasilraeyo?,We have nachos too. Want to add?
-cinema,moviesnack,A,아니요 괜찮아요.,Aniyo gwaenchanayo.,No thanks.
-cinema,moviesnack,B,총 11000원이요.,Chong man-cheon-won-iyo.,Total is 11,000 won.
-cinema,movieseat,A,좌석 선택할게요.,Jwaseok seontaekhalgeyo.,I'll choose my seats.
-cinema,movieseat,B,어디로 하시겠어요?,Eodiro hasigesseoyo?,Where would you like?
-cinema,movieseat,A,중간 쪽이요.,Junggan jjog-iyo.,Middle section.
-cinema,movieseat,B,H열 8번 9번 어떠세요?,H-yeol pal-beon gu-beon eotteuseyo?,How about H row seats 8 and 9?
-cinema,movieseat,A,좋아요. 그걸로요.,Joayo. Geugeol-lo-yo.,Good. Those please.
-cinema,movieseat,B,커플석도 있어요.,Keopeul-seokdo isseoyo.,We also have couple seats.
-cinema,movieseat,A,아니요 일반석으로요.,Aniyo ilbanseok-euro-yo.,No regular seats please.
-cinema,movieseat,B,네 예약 완료됐어요.,Ne yeyak wanryodwaesseoyo.,Your booking is complete.
-park,parkdir,A,화장실이 어디예요?,Hwajangsil-i eodiyeyo?,Where is the restroom?
-park,parkdir,B,저쪽 분수대 옆에 있어요.,Jeojjok bunsudae yeope isseoyo.,It's next to the fountain over there.
-park,parkdir,A,공원 입구는요?,Gongwon ipguneunyo?,What about the park entrance?
-park,parkdir,B,여기서 직진하세요.,Yeogiseo jikjinhaseyo.,Go straight from here.
-park,parkdir,A,자전거 대여소가 있어요?,Jajeongeo daeyeosoga isseoyo?,Is there a bike rental?
-park,parkdir,B,네 동문 쪽에 있어요.,Ne dongmun jjoge isseoyo.,Yes near the east gate.
-park,parkdir,A,걸어서 얼마나 걸려요?,Georeoseo eolmana geollyeoyo?,How long on foot?
-park,parkdir,B,약 10분이요.,Yak sip-bun-iyo.,About 10 minutes.
-park,parkfac,A,여기 피크닉 할 수 있어요?,Yeogi pikeunik hal su isseoyo?,Can we have a picnic here?
-park,parkfac,B,네 잔디밭에서 가능해요.,Ne jandibare-seo ganeunghaeyo.,Yes you can on the lawn.
-park,parkfac,A,돗자리 빌릴 수 있어요?,Dotjari billil su isseoyo?,Can I rent a mat?
-park,parkfac,B,관리소에서 대여해요. 3000원이요.,Gwanrisoeseo daeyeohaeyo. Samcheon-won-iyo.,You can rent at the office. 3,000 won.
-park,parkfac,A,음식 반입 가능해요?,Eumsik banip ganeunghaeyo?,Can we bring food?
-park,parkfac,B,네 근데 쓰레기는 가져가세요.,Ne geunde sseuregineunn gajyeogaseyo.,Yes but take your trash.
-park,parkfac,A,알겠어요. 감사합니다.,Algesseoyo. Gamsahamnida.,I understand. Thank you.
-park,parkfac,B,즐거운 시간 보내세요.,Jeulgeoun sigan bonaeseyo.,Have a good time.
-park,parkact,A,여기서 뭘 할 수 있어요?,Yeogiseo mwol hal su isseoyo?,What can we do here?
-park,parkact,B,산책 자전거 보트 타기 가능해요.,Sanchaek jajeongeo boteu tagi ganeunghaeyo.,Walking cycling boating are available.
-park,parkact,A,보트는 어디서 타요?,Boteuneun eodiseo tayo?,Where can we ride boats?
-park,parkact,B,호수 옆 선착장에서요.,Hosu yeop seonchaekjang-eseoyo.,At the dock by the lake.
-park,parkact,A,1인당 얼마예요?,Il-indang eolmayeyo?,How much per person?
-park,parkact,B,30분에 5000원이요.,Samsip-bune ocheon-won-iyo.,5,000 won for 30 minutes.
-park,parkact,A,두 명이요. 할게요.,Du myeong-iyo. Halgeyo.,Two people. We'll do it.
-park,parkact,B,여기 구명조끼 입으세요.,Yeogi gumyeongjokki ibeuseyo.,Please wear these life jackets.
-department,deptshopping,A,화장품 코너가 어디예요?,Hwajangpum koneoga eodiyeyo?,Where is the cosmetics section?
-department,deptshopping,B,1층에 있어요. 에스컬레이터 옆이요.,Il-cheunge isseoyo. Eseukolleiteo yeob-iyo.,1st floor. Next to the escalator.
-department,deptshopping,A,세일하고 있어요?,Seilhago isseoyo?,Is there a sale?
-department,deptshopping,B,네 지금 20% 할인 중이에요.,Ne jigeum isip-peosenteu harin jung-ieyo.,Yes 20% off now.
-department,deptshopping,A,면세 가능해요?,Myeonse ganeunghaeyo?,Is duty-free available?
-department,deptshopping,B,네 여권 보여주시면 돼요.,Ne yeogwon boyeojusimyeon dwaeyo.,Yes just show your passport.
-department,deptshopping,A,좋아요. 갈게요.,Joayo. Galgeyo.,Good. I'll go there.
-department,deptshopping,B,즐거운 쇼핑 되세요.,Jeulgeoun syoping doeseyo.,Enjoy your shopping.
-department,deptreturn,A,교환하러 왔어요.,Gyohwanharo wasseoyo.,I came to exchange this.
-department,deptreturn,B,영수증 있으세요?,Yeongsujeung isseuseyo?,Do you have the receipt?
-department,deptreturn,A,네 여기요.,Ne yeogiyo.,Yes here.
-department,deptreturn,B,무슨 문제예요?,Museun munjeyeyo?,What's the problem?
-department,deptreturn,A,사이즈가 안 맞아요.,Saijeu-ga an majayo.,The size doesn't fit.
-department,deptreturn,B,다른 사이즈로 바꿔드릴게요.,Dareun saijeu-ro bakkwodeurilgeyo.,I'll exchange it for a different size.
-department,deptreturn,A,L사이즈로 주세요.,L-saijeu-ro juseyo.,Large size please.
-department,deptreturn,B,네 잠시만요.,Ne jamsimanyo.,Yes just a moment.
-department,deptinquiry,A,영업시간이 어떻게 돼요?,Yeongeopsiganl eotteoke dwaeyo?,What are the business hours?
-department,deptinquiry,B,10시부터 밤 10시까지요.,Yeol-sibuteo bam yeolsikkajiyo.,10 AM to 10 PM.
-department,deptinquiry,A,주차장 있어요?,Juchajang isseoyo?,Is there parking?
-department,deptinquiry,B,네 지하에 있어요. 3시간 무료예요.,Ne jiha-e isseoyo. Se-sigan muryoyeyo.,Yes in the basement. 3 hours free.
-department,deptinquiry,A,식당가는 몇 층이에요?,Sikdangganeun myeot cheung-ieyo?,Which floor is the food court?
-department,deptinquiry,B,6층이요.,Yuk-cheung-iyo.,6th floor.
-department,deptinquiry,A,감사합니다.,Gamsahamnida.,Thank you.
-department,deptinquiry,B,천만에요.,Cheonmaneyo.,You're welcome.
-scenic,scenicphoto,A,여기서 사진 찍어도 돼요?,Yeogiseo sajin jjigeodo dwaeyo?,Can I take photos here?
-scenic,scenicphoto,B,네 괜찮아요.,Ne gwaenchanayo.,Yes that's fine.
-scenic,scenicphoto,A,사진 좀 찍어주실 수 있어요?,Sajin jom jjigeojusil su isseoyo?,Could you take a photo for me?
-scenic,scenicphoto,B,네 물론이죠. 카메라 주세요.,Ne mullon-ijyo. Kamera juseyo.,Yes of course. Give me your camera.
-scenic,scenicphoto,A,여기 버튼 누르시면 돼요.,Yeogi beoteun nureuseumyeon dwaeyo.,Just press this button.
-scenic,scenicphoto,B,하나 둘 셋! 찍었어요.,Hana dul set! Jjigeosseoyo.,One two three! Done.
-scenic,scenicphoto,A,감사합니다!,Gamsahamnida!,Thank you!
-scenic,scenicphoto,B,잘 나왔어요.,Jal nawasseoyo.,It came out well.
-scenic,scenicinfo,A,이 건물이 뭐예요?,I geonmul-i mwoyeyo?,What is this building?
-scenic,scenicinfo,B,경복궁이요. 조선시대 궁궐이에요.,Gyeongbokgung-iyo. Joseon-sidae gunggwol-ieyo.,It's Gyeongbokgung. A Joseon Dynasty palace.
-scenic,scenicinfo,A,언제 지어졌어요?,Eonje jieojyeosseoyo?,When was it built?
-scenic,scenicinfo,B,1395년이요.,Cheonsambaek-gusib-o-nyeon-iyo.,In 1395.
-scenic,scenicinfo,A,입장료가 얼마예요?,Ipjangryoga eolmayeyo?,What's the admission fee?
-scenic,scenicinfo,B,3000원이요. 한복 입으면 무료예요.,Samcheon-won-iyo. Hanbok ibeumyeon muryoyeyo.,3,000 won. Free if wearing hanbok.
-scenic,scenicinfo,A,한복 빌릴 수 있어요?,Hanbok billil su isseoyo?,Can I rent a hanbok?
-scenic,scenicinfo,B,네 근처에 대여점 많아요.,Ne geuncheoe daeyeojeom manayo.,Yes there are many rental shops nearby.
-scenic,scenicguide,A,가이드 투어 있어요?,Gaideu tueo isseoyo?,Are there guided tours?
-scenic,scenicguide,B,네 영어 투어도 있어요.,Ne yeongeo tueodo isseoyo.,Yes there's an English tour too.
-scenic,scenicguide,A,몇 시에 시작해요?,Myeot si-e sijakae-yo?,What time does it start?
-scenic,scenicguide,B,11시하고 2시에 있어요.,Yeolhan-sihago du-sie isseoyo.,At 11 AM and 2 PM.
-scenic,scenicguide,A,얼마나 걸려요?,Eolmana geollyeoyo?,How long is it?
-scenic,scenicguide,B,약 1시간 30분이요.,Yak han-sigan samsip-bun-iyo.,About 1 hour 30 minutes.
-scenic,scenicguide,A,예약해야 해요?,Yeyakhaeya haeyo?,Do I need to reserve?
-scenic,scenicguide,B,아니요. 그냥 오시면 돼요.,Aniyo. Geunyang osimyeon dwaeyo.,No. Just come.
-apartment,aptview,A,집 보러 왔어요.,Jip boreo wasseoyo.,I came to see an apartment.
-apartment,aptview,B,어떤 조건을 원하세요?,Eotteon jogeonuel wonhaseyo?,What conditions are you looking for?
-apartment,aptview,A,방 2개짜리로요.,Bang du-gaejjariro-yo.,Two bedrooms please.
-apartment,aptview,B,보증금 얼마까지 생각하세요?,Bojeunggeum eolmakkaji saenggakaseyo?,What's your deposit budget?
-apartment,aptview,A,5000만원 정도요.,Ocheonman-won jeongdoyo.,About 50 million won.
-apartment,aptview,B,좋은 매물 있어요. 보실래요?,Joeun maemul isseoyo. Bosillaeyo?,There's a good listing. Want to see it?
-apartment,aptview,A,네 언제 볼 수 있어요?,Ne eonje bol su isseoyo?,Yes when can I see it?
-apartment,aptview,B,오늘 오후에 가능해요.,Oneul ohue ganeunghaeyo.,This afternoon is possible.
-apartment,aptcontract,A,이 집으로 계약하고 싶어요.,I jibeuro gyeyakhago sipeoyo.,I want to sign a contract for this place.
-apartment,aptcontract,B,보증금은 5000만원 월세 80만원이에요.,Bojeunggeunmeun ocheonman-won wolse palsipman-won-ieyo.,Deposit is 50 million and rent is 800,000 won.
-apartment,aptcontract,A,월세 좀 깎아주실 수 있어요?,Wolse jom kkakkajusil su isseoyo?,Can you lower the rent?
-apartment,aptcontract,B,집주인한테 여쭤볼게요.,Jipjuinhante yeojjweobolgeyo.,I'll ask the landlord.
-apartment,aptcontract,A,입주는 언제부터 가능해요?,Ipjuneun eonjebuteo ganeunghaeyo?,When can I move in?
-apartment,aptcontract,B,다음 달 1일부터요.,Daeum dal il-ilbuteoyo.,From the 1st of next month.
-apartment,aptcontract,A,좋아요. 계약할게요.,Joayo. Gyeyakhalgeyo.,Good. I'll sign the contract.
-apartment,aptcontract,B,신분증 가져오셨어요?,Sinbunjeung gajyeoosyeosseoyo?,Did you bring your ID?
-apartment,aptinquiry,A,전세도 있어요?,Jeonsedo isseoyo?,Do you have jeonse options?
-apartment,aptinquiry,B,네 몇 개 있어요.,Ne myeot gae isseoyo.,Yes we have a few.
-apartment,aptinquiry,A,전세가 뭐예요?,Jeonsega mwoyeyo?,What is jeonse?
-apartment,aptinquiry,B,목돈을 맡기고 월세 없이 사는 거예요.,Mokdoneul matgigo wolse eopsi saneun geoyeyo.,You deposit a lump sum and live rent-free.
-apartment,aptinquiry,A,보증보험 들 수 있어요?,Bojeungboheom deul su isseoyo?,Can I get deposit insurance?
-apartment,aptinquiry,B,네 가능해요. 안전해요.,Ne ganeunghaeyo. Anjeonhaeyo.,Yes you can. It's safe.
-apartment,aptinquiry,A,좋은 정보 감사합니다.,Joeun jeongbo gamsahamnida.,Thank you for the good information.
-apartment,aptinquiry,B,언제든 연락주세요.,Eonjedeunn yeollakjuseyo.,Contact us anytime.
-ktv,ktvroom,A,노래방 하고 싶어요.,Noraebang hago sipeoyo.,We want to do karaoke.
-ktv,ktvroom,B,몇 분이세요?,Myeot buniseyo?,How many people?
-ktv,ktvroom,A,4명이요.,Ne-myeong-iyo.,Four people.
-ktv,ktvroom,B,중간 방으로 드릴까요?,Junggan bangeuro deurilkkayo?,Would you like a medium room?
-ktv,ktvroom,A,네 좋아요. 시간당 얼마예요?,Ne joayo. Sigandang eolmayeyo?,Yes. How much per hour?
-ktv,ktvroom,B,1시간에 15000원이요.,Han-sigane man-ocheon-won-iyo.,15,000 won per hour.
-ktv,ktvroom,A,2시간이요.,Du-sigan-iyo.,Two hours please.
-ktv,ktvroom,B,3번 방이요. 이쪽으로요.,Sam-beon bang-iyo. Ijjok-euro-yo.,Room 3. This way.
-ktv,ktvsong,A,영어 노래도 있어요?,Yeongeo noraedo isseoyo?,Do you have English songs?
-ktv,ktvsong,B,네 많아요. 리모컨 여기 있어요.,Ne manayo. Rimokon yeogi isseoyo.,Yes many. Here's the remote.
-ktv,ktvsong,A,인기 있는 노래 추천해 주세요.,Ingi inneun norae chucheonhae juseyo.,Recommend popular songs please.
-ktv,ktvsong,B,요즘 이 노래가 인기예요.,Yojeum i noraega ingi-yeyo.,This song is popular now.
-ktv,ktvsong,A,예약 어떻게 해요?,Yeyak eotteoke haeyo?,How do I queue a song?
-ktv,ktvsong,B,번호 누르고 예약 버튼 누르세요.,Beonho nureugo yeyak beoteun nureuseyo.,Press the number then the reserve button.
-ktv,ktvsong,A,알겠어요. 감사합니다.,Algesseoyo. Gamsahamnida.,Got it. Thanks.
-ktv,ktvsong,B,즐거운 시간 보내세요!,Jeulgeoun sigan bonaeseyo!,Have fun!
-ktv,ktvpay,A,계산할게요.,Gyesanhalgeyo.,I'd like to pay.
-ktv,ktvpay,B,2시간 30분 하셨어요. 45000원이요.,Du-sigan samsip-bun hasyeosseoyo. Saman-ocheon-won-iyo.,You used 2 hours 30 minutes. 45,000 won.
-ktv,ktvpay,A,음료 값도 포함이에요?,Eumnyo gapdo poham-ieyo?,Does that include drinks?
-ktv,ktvpay,B,네 다 포함이에요.,Ne da poham-ieyo.,Yes everything included.
-ktv,ktvpay,A,카드로 해도 돼요?,Kadeuro haedo dwaeyo?,Can I pay by card?
-ktv,ktvpay,B,네 됩니다.,Ne doemnida.,Yes you can.
-ktv,ktvpay,A,재밌었어요!,Jaemisseosseoyo!,It was fun!
-ktv,ktvpay,B,감사합니다. 또 오세요!,Gamsahamnida. Tto oseyo!,Thank you. Come again!
-theater,theaterticket,A,오늘 공연 표 있어요?,Oneul gongyeon pyo isseoyo?,Are there tickets for today's show?
-theater,theaterticket,B,몇 시 공연이요?,Myeot si gongyeon-iyo?,Which showing?
-theater,theaterticket,A,저녁 7시요.,Jeonyeok ilgopsi-yo.,7 PM evening.
-theater,theaterticket,B,좌석이 조금 남았어요.,Jwaseogi jogeum namasseoyo.,A few seats are left.
-theater,theaterticket,A,얼마예요?,Eolmayeyo?,How much?
-theater,theaterticket,B,R석 8만원 S석 6만원이에요.,R-seok palman-won S-seok yungman-won-ieyo.,R seats 80,000 S seats 60,000 won.
-theater,theaterticket,A,S석 두 장 주세요.,S-seok du jang juseyo.,Two S seats please.
-theater,theaterticket,B,12만원입니다.,Sibiman-wonimida.,That's 120,000 won.
-theater,theaterseat,A,좋은 좌석 추천해 주세요.,Joeun jwaseok chucheonhae juseyo.,Recommend good seats please.
-theater,theaterseat,B,중앙 앞쪽이 무대가 잘 보여요.,Jungang apjjogi mudaega jal boyeoyo.,Center front has a good view of the stage.
-theater,theaterseat,A,너무 앞은 불편하지 않아요?,Neomu apeun bulpyeonhaji anayo?,Isn't too front uncomfortable?
-theater,theaterseat,B,10열 정도가 좋아요.,Sip-yeol jeongdoga joayo.,Row 10 is good.
-theater,theaterseat,A,그럼 10열로 주세요.,Geureom sip-yeol-lo juseyo.,Then row 10 please.
-theater,theaterseat,B,10열 12번 13번 어떠세요?,Sip-yeol sib-i-beon sip-sam-beon eotteuseyo?,How about row 10 seats 12 and 13?
-theater,theaterseat,A,좋아요.,Joayo.,Good.
-theater,theaterseat,B,예매 완료됐어요.,Yemae wanryodwaesseoyo.,Booking complete.
-theater,theaterprogram,A,지금 어떤 공연 해요?,Jigeum eotteon gongyeon haeyo?,What shows are on now?
-theater,theaterprogram,B,뮤지컬 오페라의 유령이요.,Myujikeol Operaui Yuryeong-iyo.,The musical Phantom of the Opera.
-theater,theaterprogram,A,공연 시간이 얼마나 돼요?,Gongyeon sigani eolmana dwaeyo?,How long is the show?
-theater,theaterprogram,B,인터미션 포함 3시간이요.,Inteomisyeon poham se-sigan-iyo.,3 hours including intermission.
-theater,theaterprogram,A,자막이 있어요?,Jamagi isseoyo?,Are there subtitles?
-theater,theaterprogram,B,네 영어 자막 있어요.,Ne yeongeo jamak isseoyo.,Yes there are English subtitles.
-theater,theaterprogram,A,좋네요.,Joeunneyo.,Great.
-theater,theaterprogram,B,즐거운 관람 되세요.,Jeulgeoun gwallam doeseyo.,Enjoy the show.
-stadium,stadiumticket,A,야구 표 사고 싶어요.,Yagu pyo sago sipeoyo.,I want to buy baseball tickets.
-stadium,stadiumticket,B,어느 경기요?,Eoneu gyeonggi-yo?,Which game?
-stadium,stadiumticket,A,이번 주 토요일이요.,Ibeon ju toyoil-iyo.,This Saturday.
-stadium,stadiumticket,B,삼성 대 LG요.,Samsung dae LG-yo.,Samsung vs LG.
-stadium,stadiumticket,A,외야석으로 주세요.,Oeyaseok-euro juseyo.,Outfield seats please.
-stadium,stadiumticket,B,1인당 15000원이요.,Il-indang man-ocheon-won-iyo.,15,000 won per person.
-stadium,stadiumticket,A,두 장이요.,Du jang-iyo.,Two tickets.
-stadium,stadiumticket,B,3만원입니다.,Samman-wonimida.,30,000 won.
-stadium,stadiumseat,A,우리 좌석이 어디예요?,Uri jwaseogi eodiyeyo?,Where are our seats?
-stadium,stadiumseat,B,표 보여주세요.,Pyo boyeojuseyo.,Show me your tickets.
-stadium,stadiumseat,A,여기요.,Yeogiyo.,Here.
-stadium,stadiumseat,B,3루 쪽 K블록 15열이요.,Sam-lu jjok K-beullok sib-o-yeol-iyo.,3rd base side K block row 15.
-stadium,stadiumseat,A,어디로 가요?,Eodiro gayo?,How do I get there?
-stadium,stadiumseat,B,저쪽 계단으로 올라가세요.,Jeojjok gyedaneuro ollagaseyo.,Go up those stairs.
-stadium,stadiumseat,A,감사합니다.,Gamsahamnida.,Thank you.
-stadium,stadiumseat,B,경기 잘 보세요!,Gyeonggi jal boseyo!,Enjoy the game!
-stadium,stadiumfac,A,매점이 어디 있어요?,Maejeon-i eodi isseoyo?,Where is the concession stand?
-stadium,stadiumfac,B,각 층마다 있어요.,Gak cheungmada isseoyo.,On every level.
-stadium,stadiumfac,A,맥주도 팔아요?,Maekjudo parayo?,Do they sell beer?
-stadium,stadiumfac,B,네 치킨도 있어요.,Ne chikindo isseoyo.,Yes and fried chicken too.
-stadium,stadiumfac,A,화장실은요?,Hwajangsireunyo?,Restrooms?
-stadium,stadiumfac,B,매점 옆에 있어요.,Maejeonn yeope isseoyo.,Next to the concession stand.
-stadium,stadiumfac,A,응원도구 파는 데 있어요?,Eungwondogu paneun de isseoyo?,Is there a place selling cheering goods?
-stadium,stadiumfac,B,입구 근처에 기념품점이 있어요.,Ipgu geuncheoe ginyeompumjeom-i isseoyo.,There's a souvenir shop near the entrance.
-asset,assetaccount,A,증권 계좌 개설하고 싶어요.,Jeunggwon gyejwa gaesulhago sipeoyo.,I want to open a securities account.
-asset,assetaccount,B,여권하고 비자 보여주세요.,Yeogwon-hago bija boyeojuseyo.,Show your passport and visa.
-asset,assetaccount,A,외국인도 가능해요?,Oegugin-do ganeunghaeyo?,Is it possible for foreigners?
-asset,assetaccount,B,네 외국인등록증 있으면 돼요.,Ne oegugindeungrokjeung isseumyeon dwaeyo.,Yes if you have an ARC.
-asset,assetaccount,A,한국 주식 살 수 있어요?,Hanguk jusik sal su isseoyo?,Can I buy Korean stocks?
-asset,assetaccount,B,네 가능해요. 앱도 영어로 돼요.,Ne ganeunghaeyo. Aepdo yeongeoro dwaeyo.,Yes you can. The app is in English too.
-asset,assetaccount,A,수수료는 얼마예요?,Susuryoneun eolmayeyo?,What are the fees?
-asset,assetaccount,B,거래당 0.015%예요.,Georaedang yeongjeon-ilgo-peosenteu-yeyo.,0.015% per trade.
-asset,assetinvest,A,좋은 투자 상품 있어요?,Joeun tuja sangpum isseoyo?,Are there good investment products?
-asset,assetinvest,B,어떤 투자 스타일이세요?,Eotteon tuja seutail-iseyo?,What's your investment style?
-asset,assetinvest,A,안전한 걸 원해요.,Anjeonhan geol wonhaeyo.,I want something safe.
-asset,assetinvest,B,적금이나 채권 추천해요.,Jeokgeum-ina chaegwon chucheonhaeyo.,I recommend savings or bonds.
-asset,assetinvest,A,수익률이 얼마예요?,Suignyuri eolmayeyo?,What's the return rate?
-asset,assetinvest,B,연 3~4% 정도요.,Yeon sam-sa-peosenteu jeongdoyo.,About 3-4% annually.
-asset,assetinvest,A,생각해 볼게요.,Saenggakae bolgeyo.,I'll think about it.
-asset,assetinvest,B,자료 드릴게요.,Jaryo deurilgeyo.,I'll give you some materials.
-asset,assetconsult,A,재정 상담 받고 싶어요.,Jaejeong sangdam batgo sipeoyo.,I want financial consultation.
-asset,assetconsult,B,어떤 부분이요?,Eotteon bubun-iyo?,What aspect?
-asset,assetconsult,A,은퇴 준비요.,Euntoe junbiyo.,Retirement planning.
-asset,assetconsult,B,현재 자산 상황을 알려주세요.,Hyeonjae jasan sanghwang-eul allyeojuseyo.,Tell me your current asset situation.
-asset,assetconsult,A,상담비가 있어요?,Sangdambiga isseoyo?,Is there a consultation fee?
-asset,assetconsult,B,첫 상담은 무료예요.,Cheot sangdameun muryoyeyo.,First consultation is free.
-asset,assetconsult,A,좋아요. 시작해요.,Joayo. Sijakhaeyo.,Good. Let's start.
-asset,assetconsult,B,네 이쪽으로 앉으세요.,Ne ijjogeuro anjeuseyo.,Yes please sit this way.
-company,companymeeting,A,회의실이 어디예요?,Hoeuisiri eodiyeyo?,Where is the meeting room?
-company,companymeeting,B,몇 층 회의실이요?,Myeot cheung hoeuisiriyo?,Which floor meeting room?
-company,companymeeting,A,10층 A회의실이요.,Sip-cheung A-hoeuisiriyo.,10th floor room A.
-company,companymeeting,B,엘리베이터 타고 왼쪽이요.,Ellibeiteo tago oenjjog-iyo.,Take the elevator then go left.
-company,companymeeting,A,와이파이 비밀번호 뭐예요?,Waipai bimilbeonho mwoyeyo?,What's the WiFi password?
-company,companymeeting,B,guest1234예요.,Guest-il-i-sam-sa-yeyo.,It's guest1234.
-company,companymeeting,A,감사합니다.,Gamsahamnida.,Thank you.
-company,companymeeting,B,좋은 회의 되세요.,Joeun hoeui doeseyo.,Have a good meeting.
-company,companyvisit,A,김 과장님 만나러 왔어요.,Kim gwajangnim mannaro wasseoyo.,I came to see Manager Kim.
-company,companyvisit,B,약속하셨어요?,Yaksokhasyeosseoyo?,Do you have an appointment?
-company,companyvisit,A,네 2시에요.,Ne du-siyeyo.,Yes at 2 PM.
-company,companyvisit,B,성함이 어떻게 되세요?,Seonghami eotteoke doeseyo?,What is your name?
-company,companyvisit,A,존 스미스예요.,Jon Seumiseu-yeyo.,John Smith.
-company,companyvisit,B,잠시만요. 안내해 드릴게요.,Jamsimanyo. Annaehae deurilgeyo.,Just a moment. I'll escort you.
-company,companyvisit,A,감사합니다.,Gamsahamnida.,Thank you.
-company,companyvisit,B,이쪽으로 오세요.,Ijjogeuro oseyo.,Please come this way.
-company,companyinquiry,A,영업시간이 어떻게 돼요?,Yeongeopsiganl eotteoke dwaeyo?,What are your business hours?
-company,companyinquiry,B,9시부터 6시까지요.,Ahopsibuteo yeoseot-sikkkajiyo.,9 AM to 6 PM.
-company,companyinquiry,A,토요일도 해요?,Toyoil-do haeyo?,Are you open on Saturdays?
-company,companyinquiry,B,아니요. 주말은 쉬어요.,Aniyo. Jumareun swioyo.,No. We're closed on weekends.
-company,companyinquiry,A,담당자 연락처 알 수 있어요?,Damdangja yeollakcheo al su isseoyo?,Can I get the contact person's number?
-company,companyinquiry,B,명함 드릴게요.,Myeongham deurilgeyo.,I'll give you a business card.
-company,companyinquiry,A,감사합니다.,Gamsahamnida.,Thank you.
-company,companyinquiry,B,천만에요.,Cheonmaneyo.,You're welcome.
-golf,golfreserve,A,내일 라운드 예약하고 싶어요.,Naeil laundeu yeyakhago sipeoyo.,I want to reserve a round for tomorrow.
-golf,golfreserve,B,몇 시로 하시겠어요?,Myeot siro hasigesseoyo?,What time would you like?
-golf,golfreserve,A,오전 7시요.,Ojeon ilgopsiyo.,7 AM.
-golf,golfreserve,B,몇 분이세요?,Myeot buniseyo?,How many people?
-golf,golfreserve,A,4명이요.,Ne-myeong-iyo.,Four people.
-golf,golfreserve,B,그린피가 1인당 15만원이에요.,Geurinpi-ga il-indang siboman-won-ieyo.,Green fee is 150,000 won per person.
-golf,golfreserve,A,카트 포함이에요?,Kateu poham-ieyo?,Does that include a cart?
-golf,golfreserve,B,네 카트 캐디 포함이에요.,Ne kateu kaedi poham-ieyo.,Yes cart and caddy included.
-golf,golfequip,A,클럽 렌탈 할 수 있어요?,Keulleop rental hal su isseoyo?,Can I rent clubs?
-golf,golfequip,B,네 풀세트 5만원이에요.,Ne pulseteu oman-won-ieyo.,Yes a full set is 50,000 won.
-golf,golfequip,A,공도 팔아요?,Gongdo parayo?,Do you sell balls?
-golf,golfequip,B,네 프로샵에서요.,Ne peuroshap-eseoyo.,Yes at the pro shop.
-golf,golfequip,A,장갑도 있어요?,Janggapdo isseoyo?,Do you have gloves?
-golf,golfequip,B,네 다 있어요.,Ne da isseoyo.,Yes we have everything.
-golf,golfequip,A,프로샵은 어디예요?,Peuroshap-eun eodiyeyo?,Where is the pro shop?
-golf,golfequip,B,클럽하우스 1층이요.,Keulleophauseu il-cheung-iyo.,1st floor of the clubhouse.
-golf,golfcourse,A,코스가 어떻게 돼요?,Koseuga eotteoke dwaeyo?,What's the course like?
-golf,golfcourse,B,18홀 파72예요.,Sip-pal-hol pa-chilsip-i-yeyo.,18 holes par 72.
-golf,golfcourse,A,난이도 어때요?,Nanido eottaeyo?,How difficult is it?
-golf,golfcourse,B,중급자용이에요.,Junggeubjayong-ieyo.,It's for intermediate players.
-golf,golfcourse,A,드라이빙 레인지 있어요?,Deuraibing reinji isseoyo?,Is there a driving range?
-golf,golfcourse,B,네 50타석 있어요.,Ne osip-taseok isseoyo.,Yes 50 bays.
-golf,golfcourse,A,연습하고 나갈게요.,Yeonseupago nagalgeyo.,I'll practice before going out.
-golf,golfcourse,B,1시간 전에 오세요.,Han-sigan jeone oseyo.,Come an hour early.
-elementary,elemvisit,A,학교 방문하러 왔어요.,Hakgyo bangmunhareo wasseoyo.,I came to visit the school.
-elementary,elemvisit,B,무슨 일로 오셨어요?,Museun illo osyeosseoyo?,What brings you here?
-elementary,elemvisit,A,아이 입학 상담이요.,Ai iphak sangdam-iyo.,School admission consultation for my child.
-elementary,elemvisit,B,교무실로 안내해 드릴게요.,Gyomusillo annaehae deurilgeyo.,I'll guide you to the office.
-elementary,elemvisit,A,외국인 자녀도 입학 가능해요?,Oegugin janyeodo iphak ganeunghaeyo?,Can foreign children enroll?
-elementary,elemvisit,B,네 서류만 준비하시면 돼요.,Ne seoryuman junbihaseumyeon dwaeyo.,Yes just prepare the documents.
-elementary,elemvisit,A,어떤 서류가 필요해요?,Eotteon seoryuga piryohaeyo?,What documents are needed?
-elementary,elemvisit,B,여권 외국인등록증 건강검진서요.,Yeogwon oegugindeungrokjeung geonganggoemjinseoyo.,Passport ARC and health certificate.
-elementary,eleminquiry,A,급식이 있어요?,Geupsi-gi isseoyo?,Is there school lunch?
-elementary,eleminquiry,B,네 매일 급식 제공해요.,Ne maeil geupsi jegonghaeyo.,Yes lunch is provided daily.
-elementary,eleminquiry,A,영어 수업 있어요?,Yeongeo sueop isseoyo?,Are there English classes?
-elementary,eleminquiry,B,네 원어민 선생님이 계세요.,Ne woneomini seonsaengnim-i gyeseyo.,Yes there's a native teacher.
-elementary,eleminquiry,A,방과후 프로그램 있어요?,Banggwahu peurogeuraem isseoyo?,Are there after-school programs?
-elementary,eleminquiry,B,네 여러 가지 있어요.,Ne yeoreo gaji isseoyo.,Yes there are many.
-elementary,eleminquiry,A,목록 볼 수 있어요?,Mongnok bol su isseoyo?,Can I see the list?
-elementary,eleminquiry,B,여기 안내책자요.,Yeogi annaechaekjayo.,Here's a brochure.
-elementary,elemevent,A,학예회가 언제예요?,Hagyehoe-ga eonjeyeyo?,When is the school festival?
-elementary,elemevent,B,다음 달 15일이요.,Daeum dal sib-o-il-iyo.,The 15th of next month.
-elementary,elemevent,A,학부모도 갈 수 있어요?,Hakbumodo gal su isseoyo?,Can parents attend?
-elementary,elemevent,B,네 물론이죠.,Ne mullon-ijyo.,Yes of course.
-elementary,elemevent,A,몇 시에 시작해요?,Myeot si-e sijakae-yo?,What time does it start?
-elementary,elemevent,B,오전 10시요.,Ojeon yeolsiyo.,10 AM.
-elementary,elemevent,A,카메라 가져가도 돼요?,Kamera gajyeogado dwaeyo?,Can I bring a camera?
-elementary,elemevent,B,네 괜찮아요.,Ne gwaenchanayo.,Yes that's fine.
-highschool,highvisit,A,학교 투어 할 수 있어요?,Hakgyo tueo hal su isseoyo?,Can I tour the school?
-highschool,highvisit,B,네 예약하셨어요?,Ne yeyakhasyeosseoyo?,Yes did you make a reservation?
-highschool,highvisit,A,네 오늘 오후 2시요.,Ne oneul ohu du-siyo.,Yes today at 2 PM.
-highschool,highvisit,B,교무실에서 대기해 주세요.,Gyomusil-eseo daegihae juseyo.,Please wait at the office.
-highschool,highvisit,A,시설 구경도 가능해요?,Siseol gugyeongdo ganeunghaeyo?,Can I see the facilities?
-highschool,highvisit,B,네 안내해 드릴게요.,Ne annaehae deurilgeyo.,Yes I'll show you around.
-highschool,highvisit,A,감사합니다.,Gamsahamnida.,Thank you.
-highschool,highvisit,B,이쪽으로 오세요.,Ijjogeuro oseyo.,Please come this way.
-highschool,highinquiry,A,특수 프로그램이 있어요?,Teuksu peurogeuraem-i isseoyo?,Are there special programs?
-highschool,highinquiry,B,네 국제반이 있어요.,Ne gukjeban-i isseoyo.,Yes there's an international class.
-highschool,highinquiry,A,영어로 수업해요?,Yeongeoro sueopaeyo?,Are classes in English?
-highschool,highinquiry,B,일부 과목은요.,Ilbu gwamok-eunyo.,Some subjects are.
-highschool,highinquiry,A,대학 진학률이 어때요?,Daehak jinhangnyuri eottaeyo?,What's the university admission rate?
-highschool,highinquiry,B,작년에 90%였어요.,Jaknyeone gusip-peosenteu-yeosseoyo.,It was 90% last year.
-highschool,highinquiry,A,좋네요.,Joeunneyo.,That's good.
-highschool,highinquiry,B,더 궁금한 거 있으세요?,Deo gunggeumhan geo isseuseyo?,Any other questions?
-highschool,highevent,A,체육대회가 언제예요?,Cheyukdaehoe-ga eonjeyeyo?,When is the sports day?
-highschool,highevent,B,이번 주 금요일이요.,Ibeon ju geumyoil-iyo.,This Friday.
-highschool,highevent,A,어디서 해요?,Eodiseo haeyo?,Where is it held?
-highschool,highevent,B,운동장에서요.,Undongjang-eseoyo.,At the sports field.
-highschool,highevent,A,관람 가능해요?,Gwallam ganeunghaeyo?,Can I watch?
-highschool,highevent,B,네 가족은 환영해요.,Ne gajogeun hwanyeonghaeyo.,Yes family is welcome.
-highschool,highevent,A,몇 시에 끝나요?,Myeot si-e kkeunayo?,What time does it end?
-highschool,highevent,B,오후 4시쯤이요.,Ohu ne-sijjeum-iyo.,Around 4 PM.
-university,unicampus,A,캠퍼스 투어 할 수 있어요?,Kaempeoseu tueo hal su isseoyo?,Can I take a campus tour?
-university,unicampus,B,네 입학처에서 신청하세요.,Ne iphakcheoseo sincheongaseyo.,Yes apply at the admissions office.
-university,unicampus,A,영어 투어 있어요?,Yeongeo tueo isseoyo?,Is there an English tour?
-university,unicampus,B,네 매주 화요일이요.,Ne maeju hwayoil-iyo.,Yes every Tuesday.
-university,unicampus,A,도서관 볼 수 있어요?,Doseogwan bol su isseoyo?,Can I see the library?
-university,unicampus,B,네 투어에 포함돼요.,Ne tueoe pohamdwaeyo.,Yes it's included in the tour.
-university,unicampus,A,학생 식당도요?,Haksaeng sikdangdoyo?,The student cafeteria too?
-university,unicampus,B,네 모든 시설 보여드려요.,Ne modeun siseol boyeodeuryeoyo.,Yes we show all facilities.
-university,uniinquiry,A,외국인 입학 조건이 뭐예요?,Oegugin iphak jogeon-i mwoyeyo?,What are the requirements for foreign students?
-university,uniinquiry,B,토픽 4급 이상이요.,Topik sa-geup isang-iyo.,TOPIK level 4 or above.
-university,uniinquiry,A,장학금 있어요?,Janghakgeum isseoyo?,Are there scholarships?
-university,uniinquiry,B,네 성적 우수자에게요.,Ne seongjeok usuja-ege-yo.,Yes for excellent students.
-university,uniinquiry,A,기숙사 있어요?,Gisuksa isseoyo?,Is there a dormitory?
-university,uniinquiry,B,네 외국인 전용 기숙사 있어요.,Ne oegugin jeonyong gisuksa isseoyo.,Yes there's a dorm for foreigners.
-university,uniinquiry,A,학비가 얼마예요?,Hakbi-ga eolmayeyo?,How much is tuition?
-university,uniinquiry,B,전공마다 달라요. 여기 안내서요.,Jeongongmada dallayo. Yeogi annae-seoyo.,It varies by major. Here's a guide.
-university,unitour,A,오늘 가이드 투어 있어요?,Oneul gaideu tueo isseoyo?,Is there a guided tour today?
-university,unitour,B,네 오후 1시에 시작해요.,Ne ohu han-sie sijakae-yo.,Yes it starts at 1 PM.
-university,unitour,A,어디서 모여요?,Eodiseo moyeoyo?,Where do we meet?
-university,unitour,B,정문 앞 안내소요.,Jeongmun ap annaesoyo.,At the information center in front of the main gate.
-university,unitour,A,얼마나 걸려요?,Eolmana geollyeoyo?,How long does it take?
-university,unitour,B,약 2시간이요.,Yak du-sigan-iyo.,About 2 hours.
-university,unitour,A,무료예요?,Muryoyeyo?,Is it free?
-university,unitour,B,네 무료예요.,Ne muryoyeyo.,Yes it's free.
-oldtown,oldtour,A,한옥마을 투어 있어요?,Hanongmaeul tueo isseoyo?,Are there Hanok Village tours?
-oldtown,oldtour,B,네 여러 코스 있어요.,Ne yeoreo koseu isseoyo.,Yes there are several courses.
-oldtown,oldtour,A,추천 코스가 뭐예요?,Chucheon koseu-ga mwoyeyo?,What course do you recommend?
-oldtown,oldtour,B,전통 체험 코스요.,Jeontong cheheom koseu-yo.,The traditional experience course.
-oldtown,oldtour,A,얼마나 걸려요?,Eolmana geollyeoyo?,How long does it take?
-oldtown,oldtour,B,약 3시간이요.,Yak se-sigan-iyo.,About 3 hours.
-oldtown,oldtour,A,가이드가 있어요?,Gaideuga isseoyo?,Is there a guide?
-oldtown,oldtour,B,네 영어 가이드도 있어요.,Ne yeongeo gaideudo isseoyo.,Yes there's an English guide too.
-oldtown,oldexp,A,한복 체험 하고 싶어요.,Hanbok cheheom hago sipeoyo.,I want to try wearing hanbok.
-oldtown,oldexp,B,여기서 대여 가능해요.,Yeogiseo daeyo ganeunghaeyo.,You can rent here.
-oldtown,oldexp,A,1시간에 얼마예요?,Han-sigane eolmayeyo?,How much for an hour?
-oldtown,oldexp,B,1시간 15000원이요.,Han-sigan man-ocheon-won-iyo.,15,000 won for one hour.
-oldtown,oldexp,A,사진도 찍어줘요?,Sajindo jjigeojwoyo?,Do you take photos too?
-oldtown,oldexp,B,네 추가 비용 있어요.,Ne chuga biyong isseoyo.,Yes for an additional fee.
-oldtown,oldexp,A,머리도 해줘요?,Meorido haejwoyo?,Do you do hair styling too?
-oldtown,oldexp,B,네 전통 머리 5000원이요.,Ne jeontong meori ocheon-won-iyo.,Yes traditional hair styling is 5,000 won.
-oldtown,oldphoto,A,사진 찍기 좋은 곳 어디예요?,Sajin jjikgi joeun got eodiyeyo?,Where's a good photo spot?
-oldtown,oldphoto,B,경회루가 제일 유명해요.,Gyeonghoerunga jeil yumyeonghaeyo.,Gyeonghoeru is the most famous.
-oldtown,oldphoto,A,어디로 가요?,Eodiro gayo?,How do I get there?
-oldtown,oldphoto,B,이 길 따라 직진하세요.,I gil ttara jikjinhaseyo.,Go straight along this path.
-oldtown,oldphoto,A,일몰 때 예뻐요?,Ilmol ttae yeppeoyo?,Is it pretty at sunset?
-oldtown,oldphoto,B,네 정말 아름다워요.,Ne jeongmal areumdawoyo.,Yes it's really beautiful.
-oldtown,oldphoto,A,삼각대 써도 돼요?,Samgakdae sseodo dwaeyo?,Can I use a tripod?
-oldtown,oldphoto,B,네 괜찮아요.,Ne gwaenchanayo.,Yes that's fine.
+placeType,scenario,order,speaker,korean,english,romanization,vocabulary
+hospital,1. Describing Symptoms (증상 설명),1,Staff,안녕하세요. 어디가 아프세요?,Hello. Where does it hurt?,Annyeonghaseyo. Eodiga apeuseyo?,
+hospital,1. Describing Symptoms (증상 설명),2,Customer,머리가 너무 아파요.,I have a terrible headache.,Meoriga neomu apayo.,
+hospital,1. Describing Symptoms (증상 설명),3,Staff,언제부터 아프셨어요?,Since when have you been in pain?,Eonjebuteo apeusyeosseoyo?,
+hospital,1. Describing Symptoms (증상 설명),4,Customer,어제부터요. 열도 있는 것 같아요.,Since yesterday. I think I have a fever too.,Eojebuteoyo. Yeoldo inneun geot gatayo.,
+hospital,1. Describing Symptoms (증상 설명),5,Staff,체온을 재 볼게요.,Let me take your temperature.,Cheoneul jae bolgeyo.,
+hospital,1. Describing Symptoms (증상 설명),6,Customer,감사합니다.,Thank you.,Gamsahamnida.,
+hospital,1. Describing Symptoms (증상 설명),7,Staff,38도네요. 감기인 것 같아요.,It's 38 degrees. It seems like you have a cold.,Samsippal doneyo. Gamgiin geot gatayo.,
+hospital,1. Describing Symptoms (증상 설명),8,Customer,약을 받을 수 있나요?,Can I get some medicine?,Yageul badeul su innayo?,
+hospital,2. Getting Prescription (처방 받기),1,Staff,처방전 드릴게요.,I'll give you a prescription.,Cheobangjeon deurilgeyo.,
+hospital,2. Getting Prescription (처방 받기),2,Customer,이 약은 어떻게 먹어요?,How do I take this medicine?,I yageun eotteoke meogeoyo?,
+hospital,2. Getting Prescription (처방 받기),3,Staff,하루에 세 번 식후에 드세요.,Take it three times a day after meals.,Harue se beon sikue deuseyo.,
+hospital,2. Getting Prescription (처방 받기),4,Customer,며칠 동안 먹어야 해요?,How many days should I take it?,Myeochil dongan meogeoya haeyo?,
+hospital,2. Getting Prescription (처방 받기),5,Staff,5일 동안 드세요.,Take it for 5 days.,O-il dongan deuseyo.,
+hospital,2. Getting Prescription (처방 받기),6,Customer,알겠습니다. 감사합니다.,I understand. Thank you.,Algessseumnida. Gamsahamnida.,
+hospital,2. Getting Prescription (처방 받기),7,Staff,다 나으면 다시 오세요.,Come back after you recover.,Da naeumyeon dasi oseyo.,
+hospital,2. Getting Prescription (처방 받기),8,Customer,네 안녕히 계세요.,Yes goodbye.,Ne annyeonghi gyeseyo.,
+hospital,3. Emergency Room (응급실),1,Staff,응급실이 어디예요?,Where is the emergency room?,Eunggeupsiri eodiyeyo?,
+hospital,3. Emergency Room (응급실),2,Customer,저쪽 빨간 표지판 따라가세요.,Follow the red sign over there.,Jeojjok ppalgan pyojipan ttaragaseyo.,
+hospital,3. Emergency Room (응급실),3,Staff,친구가 다쳤어요!,My friend is injured!,Chinguga dachyeosseoyo!,
+hospital,3. Emergency Room (응급실),4,Customer,어디를 다쳤어요?,Where is the injury?,Eodireul dachyeosseoyo?,
+hospital,3. Emergency Room (응급실),5,Staff,팔이 부러진 것 같아요.,I think the arm is broken.,Pari bureojin geot gatayo.,
+hospital,3. Emergency Room (응급실),6,Customer,의사 선생님을 바로 부를게요.,I'll call the doctor right away.,Uisa seonsaengnimeul baro bureulgeyo.,
+hospital,3. Emergency Room (응급실),7,Staff,빨리 부탁드려요!,Please hurry!,Ppalli butakdeuryeoyo!,
+hospital,3. Emergency Room (응급실),8,Customer,걱정 마세요. 곧 오실 거예요.,Don't worry. They'll come soon.,Geokjeong maseyo. Got osil geoyeyo.,
+hospital,4. At Pharmacy (약국에서),1,Staff,이 처방전으로 약 주세요.,Please give me medicine for this prescription.,I cheobangjeoneullo yak juseyo.,
+hospital,4. At Pharmacy (약국에서),2,Customer,네 잠시만요. 5분 정도 걸려요.,Yes just a moment. It takes about 5 minutes.,Ne jamsimanyo. O-bun jeongdo geollyeoyo.,
+hospital,4. At Pharmacy (약국에서),3,Staff,진통제도 있나요?,Do you have painkillers too?,Jintongje-do innayo?,
+hospital,4. At Pharmacy (약국에서),4,Customer,네 타이레놀 드릴까요?,Yes would you like Tylenol?,Ne Tailenol deurilkkayo?,
+hospital,4. At Pharmacy (약국에서),5,Staff,네 주세요. 얼마예요?,Yes please. How much is it?,Ne juseyo. Eolmayeyo?,
+hospital,4. At Pharmacy (약국에서),6,Customer,총 15000원입니다.,It's 15,Chong man-ocheon-wonimida.,
+hospital,4. At Pharmacy (약국에서),7,Staff,카드로 해도 돼요?,Can I pay by card?,Kadeuro haedo dwaeyo?,
+hospital,4. At Pharmacy (약국에서),8,Customer,네 카드도 됩니다.,Yes card is fine.,Ne kadeudo doemnida.,
+restaurant,1. Ordering Food (음식 주문),1,Staff,주문하시겠어요?,Would you like to order?,Jumunhasigesseoyo?,
+restaurant,1. Ordering Food (음식 주문),2,Customer,네 비빔밥 하나 주세요.,Yes one bibimbap please.,Ne bibimbap hana juseyo.,
+restaurant,1. Ordering Food (음식 주문),3,Staff,매운 거 괜찮으세요?,Is spicy food okay for you?,Maeun geo gwaenchaneuseyo?,
+restaurant,1. Ordering Food (음식 주문),4,Customer,조금만 매운 걸로 해 주세요.,Please make it a little spicy.,Jogeumman maeun geollo hae juseyo.,
+restaurant,1. Ordering Food (음식 주문),5,Staff,음료는 뭐로 하시겠어요?,What would you like to drink?,Eumryoneun mworo hasigesseoyo?,
+restaurant,1. Ordering Food (음식 주문),6,Customer,물 주세요.,Water please.,Mul juseyo.,
+restaurant,1. Ordering Food (음식 주문),7,Staff,네 알겠습니다. 잠시만 기다려 주세요.,Okay. Please wait a moment.,Ne algessseumnida. Jamsiman gidaryeo juseyo.,
+restaurant,1. Ordering Food (음식 주문),8,Customer,감사합니다.,Thank you.,Gamsahamnida.,
+restaurant,2. Asking for Recommendations (추천 받기),1,Staff,뭐가 맛있어요?,What's delicious here?,Mwoga masisseoyo?,
+restaurant,2. Asking for Recommendations (추천 받기),2,Customer,여기는 삼겹살이 유명해요.,This place is famous for samgyeopsal.,Yeogineun samgyeopsari yumyeonghaeyo.,
+restaurant,2. Asking for Recommendations (추천 받기),3,Staff,삼겹살이 뭐예요?,What is samgyeopsal?,Samgyeopsari mwoyeyo?,
+restaurant,2. Asking for Recommendations (추천 받기),4,Customer,돼지고기 구이예요. 아주 맛있어요.,It's grilled pork belly. Very delicious.,Dwaejigogi guiyeyo. Aju masisseoyo.,
+restaurant,2. Asking for Recommendations (추천 받기),5,Staff,그럼 삼겹살 2인분 주세요.,Then two servings of samgyeopsal please.,Geureom samgyeopsal i-inbun juseyo.,
+restaurant,2. Asking for Recommendations (추천 받기),6,Customer,네 좋은 선택이에요!,Yes good choice!,Ne joeun seontaegieyo!,
+restaurant,2. Asking for Recommendations (추천 받기),7,Staff,반찬은 뭐가 나와요?,What side dishes come with it?,Banchaneun mwoga nawayo?,
+restaurant,2. Asking for Recommendations (추천 받기),8,Customer,김치 쌈 그리고 여러 가지 나와요.,Kimchi,Gimchi ssam geurigo yeoreo gaji nawayo.,
+restaurant,3. Paying the Bill (계산하기),1,Staff,계산해 주세요.,Check please.,Gyesanhae juseyo.,
+restaurant,3. Paying the Bill (계산하기),2,Customer,네 총 25000원입니다.,Yes it's 25,Ne chong iman-ocheon-wonimida.,
+restaurant,3. Paying the Bill (계산하기),3,Staff,카드 되나요?,Do you accept cards?,Kadeu doenayo?,
+restaurant,3. Paying the Bill (계산하기),4,Customer,네 됩니다.,Yes we do.,Ne doemnida.,
+restaurant,3. Paying the Bill (계산하기),5,Staff,영수증 주세요.,Receipt please.,Yeongsujeung juseyo.,
+restaurant,3. Paying the Bill (계산하기),6,Customer,여기 있습니다.,Here you are.,Yeogi isseumnida.,
+restaurant,3. Paying the Bill (계산하기),7,Staff,맛있었어요. 감사합니다.,It was delicious. Thank you.,Masissseosseoyo. Gamsahamnida.,
+restaurant,3. Paying the Bill (계산하기),8,Customer,감사합니다. 또 오세요!,Thank you. Please come again!,Gamsahamnida. Tto oseyo!,
+restaurant,4. Making Reservation (예약하기),1,Staff,예약하고 싶은데요.,I'd like to make a reservation.,Yeyakhago sipeundeyo.,
+restaurant,4. Making Reservation (예약하기),2,Customer,몇 분이세요?,How many people?,Myeot buniseyo?,
+restaurant,4. Making Reservation (예약하기),3,Staff,4명이요. 오늘 저녁 7시에요.,Four people. Today at 7 PM.,Ne-myeong-iyo. Oneul jeonyeok ilgopsi-eyo.,
+restaurant,4. Making Reservation (예약하기),4,Customer,네 자리 있어요. 성함이 어떻게 되세요?,Yes we have a table. What is your name?,Ne jari isseoyo. Seonghami eotteoke doeseyo?,
+restaurant,4. Making Reservation (예약하기),5,Staff,제 이름은 존이에요.,My name is John.,Je ireumeun Jon-ieyo.,
+restaurant,4. Making Reservation (예약하기),6,Customer,존 님 4분 저녁 7시 예약했습니다.,John,Jon nim ne-bun jeonyeok ilgopsi yeyakhaesseumnida.,
+restaurant,4. Making Reservation (예약하기),7,Staff,창가 자리로 부탁해요.,Window seat please.,Changga jariro butakhaeyo.,
+restaurant,4. Making Reservation (예약하기),8,Customer,네 준비해 드릴게요.,Yes I'll arrange that.,Ne junbihae deurilgeyo.,
+hotel,1. Check-in (체크인),1,Staff,체크인하려고요.,I'd like to check in.,Chekeuinharyeogoyo.,
+hotel,1. Check-in (체크인),2,Customer,예약하셨어요?,Do you have a reservation?,Yeyakasyeosseoyo?,
+hotel,1. Check-in (체크인),3,Staff,네 제 이름은 마이클입니다.,Yes my name is Michael.,Ne je ireumeun Maikeul-imnida.,
+hotel,1. Check-in (체크인),4,Customer,네 찾았어요. 2박이시죠?,Yes found it. Two nights right?,Ne chajasseoyo. I-bagisijyo?,
+hotel,1. Check-in (체크인),5,Staff,네 맞아요.,Yes that's right.,Ne majayo.,
+hotel,1. Check-in (체크인),6,Customer,여권 보여주시겠어요?,May I see your passport?,Yeogwon boyeojusigesseoyo?,
+hotel,1. Check-in (체크인),7,Staff,여기 있습니다.,Here it is.,Yeogi isseumnida.,
+hotel,1. Check-in (체크인),8,Customer,감사합니다. 방은 705호입니다.,Thank you. Your room is 705.,Gamsahamnida. Bangeun chilbaeg-o-hoimnida.,
+hotel,2. Check-out (체크아웃),1,Staff,체크아웃하려고요.,I'd like to check out.,Chekeuautharyeogoyo.,
+hotel,2. Check-out (체크아웃),2,Customer,방 번호가 어떻게 되세요?,What is your room number?,Bang beonhoga eotteoke doeseyo?,
+hotel,2. Check-out (체크아웃),3,Staff,705호요.,Room 705.,Chilbaeg-o-hoyo.,
+hotel,2. Check-out (체크아웃),4,Customer,미니바 이용하셨어요?,Did you use the minibar?,Miniba iyongasyeosseoyo?,
+hotel,2. Check-out (체크아웃),5,Staff,아니요 안 했어요.,No I didn't.,Aniyo an haesseoyo.,
+hotel,2. Check-out (체크아웃),6,Customer,총 240000원입니다.,The total is 240,Chong isipsa-man-wonimida.,
+hotel,2. Check-out (체크아웃),7,Staff,카드로 계산할게요.,I'll pay by card.,Kadeuro gyesanhalgeyo.,
+hotel,2. Check-out (체크아웃),8,Customer,감사합니다. 좋은 여행 되세요.,Thank you. Have a nice trip.,Gamsahamnida. Joeun yeohaeng doeseyo.,
+hotel,3. Room Service (서비스 요청),1,Staff,룸서비스 부탁드려요.,Room service please.,Rumseobiseu butakdeuryeoyo.,
+hotel,3. Room Service (서비스 요청),2,Customer,네 무엇을 도와드릴까요?,Yes how may I help you?,Ne mueoseul dowadeurilkkayo?,
+hotel,3. Room Service (서비스 요청),3,Staff,수건 좀 더 주세요.,Please bring more towels.,Sugeon jom deo juseyo.,
+hotel,3. Room Service (서비스 요청),4,Customer,네 바로 보내드릴게요.,Yes I'll send them right away.,Ne baro bonaedeurilgeyo.,
+hotel,3. Room Service (서비스 요청),5,Staff,그리고 아침 식사는 몇 시예요?,And what time is breakfast?,Geurigo achim siksaneun myeot siyeyo?,
+hotel,3. Room Service (서비스 요청),6,Customer,7시부터 10시까지요.,From 7 to 10 AM.,Ilgopsibuteo yeolsikkkajiyo.,
+hotel,3. Room Service (서비스 요청),7,Staff,감사합니다.,Thank you.,Gamsahamnida.,
+hotel,3. Room Service (서비스 요청),8,Customer,더 필요한 거 있으시면 말씀해 주세요.,Please let us know if you need anything else.,Deo piryohan geo isseusimyeon malsseumhae juseyo.,
+hotel,4. Asking About Amenities (시설 문의),1,Staff,수영장이 있어요?,Is there a swimming pool?,Suyeongjang-i isseoyo?,
+hotel,4. Asking About Amenities (시설 문의),2,Customer,네 지하 1층에 있어요.,Yes it's in basement level 1.,Ne jiha il-cheunge isseoyo.,
+hotel,4. Asking About Amenities (시설 문의),3,Staff,몇 시까지 이용할 수 있어요?,Until what time can I use it?,Myeot sikkaji iyonghal su isseoyo?,
+hotel,4. Asking About Amenities (시설 문의),4,Customer,밤 10시까지요.,Until 10 PM.,Bam yeolsikkkajiyo.,
+hotel,4. Asking About Amenities (시설 문의),5,Staff,헬스장도 있나요?,Is there a gym too?,Helseujangdo innayo?,
+hotel,4. Asking About Amenities (시설 문의),6,Customer,네 수영장 옆에 있어요.,Yes it's next to the pool.,Ne suyeongjang yeope isseoyo.,
+hotel,4. Asking About Amenities (시설 문의),7,Staff,무료인가요?,Is it free?,Muryoingayo?,
+hotel,4. Asking About Amenities (시설 문의),8,Customer,네 투숙객은 무료예요.,Yes it's free for hotel guests.,Ne tusukgaegeun muryoyeyo.,
+trainstation,1. Buying Tickets (표 구매),1,Staff,서울행 기차표 한 장 주세요.,One ticket to Seoul please.,Seoul-haeng gichapyo han jang juseyo.,
+trainstation,1. Buying Tickets (표 구매),2,Customer,몇 시 기차로 드릴까요?,What time train would you like?,Myeot si gicharo deurilkkayo?,
+trainstation,1. Buying Tickets (표 구매),3,Staff,오전 10시 있어요?,Is there one at 10 AM?,Ojeon yeolsi isseoyo?,
+trainstation,1. Buying Tickets (표 구매),4,Customer,네 있어요. KTX로 하시겠어요?,Yes there is. Would you like KTX?,Ne isseoyo. KTX-ro hasigesseoyo?,
+trainstation,1. Buying Tickets (표 구매),5,Staff,네 KTX로 주세요.,Yes KTX please.,Ne KTX-ro juseyo.,
+trainstation,1. Buying Tickets (표 구매),6,Customer,일반석 특실 중에 어떤 걸로요?,Regular or first class?,Ilbanseok teuksil junge eotteon geollo-yo?,
+trainstation,1. Buying Tickets (표 구매),7,Staff,일반석이요. 얼마예요?,Regular please. How much?,Ilbanseog-iyo. Eolmayeyo?,
+trainstation,1. Buying Tickets (표 구매),8,Customer,59800원입니다.,It's 59,Ogubaek-wonimida.,
+trainstation,2. Checking Schedule (시간표 확인),1,Staff,부산행 기차 시간표 볼 수 있어요?,Can I see the timetable for Busan?,Busan-haeng gicha siganpyo bol su isseoyo?,
+trainstation,2. Checking Schedule (시간표 확인),2,Customer,네 여기 화면에서 보세요.,Yes look at this screen.,Ne yeogi hwamyeoneseo boseyo.,
+trainstation,2. Checking Schedule (시간표 확인),3,Staff,다음 기차는 몇 시예요?,What time is the next train?,Daeum gichaneun myeot siyeyo?,
+trainstation,2. Checking Schedule (시간표 확인),4,Customer,11시 30분이요.,At 11:30.,Yeolhansi samsip-bun-iyo.,
+trainstation,2. Checking Schedule (시간표 확인),5,Staff,얼마나 걸려요?,How long does it take?,Eolmana geollyeoyo?,
+trainstation,2. Checking Schedule (시간표 확인),6,Customer,약 2시간 30분이요.,About 2 hours 30 minutes.,Yak du-sigan samsip-bun-iyo.,
+trainstation,2. Checking Schedule (시간표 확인),7,Staff,알겠습니다. 감사합니다.,I see. Thank you.,Algessseumnida. Gamsahamnida.,
+trainstation,2. Checking Schedule (시간표 확인),8,Customer,좋은 여행 되세요.,Have a good trip.,Joeun yeohaeng doeseyo.,
+trainstation,3. Finding Platform (승강장 찾기),1,Staff,서울행 기차는 몇 번 승강장이에요?,Which platform for Seoul train?,Seoul-haeng gichaneun myeot beon seunggangjangi-eyo?,
+trainstation,3. Finding Platform (승강장 찾기),2,Customer,3번 승강장이요.,Platform 3.,Sam-beon seunggangjang-iyo.,
+trainstation,3. Finding Platform (승강장 찾기),3,Staff,어디로 가면 돼요?,How do I get there?,Eodiro gamyeon dwaeyo?,
+trainstation,3. Finding Platform (승강장 찾기),4,Customer,저쪽 계단으로 내려가세요.,Go down those stairs over there.,Jeojjok gyedaneuro naeryeogaseyo.,
+trainstation,3. Finding Platform (승강장 찾기),5,Staff,기차가 몇 분 후에 와요?,How many minutes until the train comes?,Gichaga myeot bun hue wayo?,
+trainstation,3. Finding Platform (승강장 찾기),6,Customer,약 10분 후에요.,About 10 minutes.,Yak sip-bun hueyo.,
+trainstation,3. Finding Platform (승강장 찾기),7,Staff,감사합니다.,Thank you.,Gamsahamnida.,
+trainstation,3. Finding Platform (승강장 찾기),8,Customer,천만에요.,You're welcome.,Cheonmaneyo.,
+trainstation,4. Taking KTX (KTX 이용),1,Staff,KTX가 뭐예요?,What is KTX?,KTX-ga mwoyeyo?,
+trainstation,4. Taking KTX (KTX 이용),2,Customer,한국의 고속철도예요.,It's Korea's high-speed rail.,Hangugui gosokcholdoyeyo.,
+trainstation,4. Taking KTX (KTX 이용),3,Staff,얼마나 빨라요?,How fast is it?,Eolmana ppallayo?,
+trainstation,4. Taking KTX (KTX 이용),4,Customer,시속 300km까지 가요.,Up to 300km per hour.,Sisok sambaek kilomiteokkaji gayo.,
+trainstation,4. Taking KTX (KTX 이용),5,Staff,일반 기차보다 비싸요?,Is it more expensive than regular trains?,Ilban gichaboda bissayo?,
+trainstation,4. Taking KTX (KTX 이용),6,Customer,네 조금 더 비싸지만 빨라요.,Yes a bit more expensive but faster.,Ne jogeum deo bissajiman ppallayo.,
+trainstation,4. Taking KTX (KTX 이용),7,Staff,그럼 KTX로 할게요.,Then I'll take KTX.,Geureom KTX-ro halgeyo.,
+trainstation,4. Taking KTX (KTX 이용),8,Customer,좋은 선택이에요.,Good choice.,Joeun seontaeg-ieyo.,
+busstation,1. Buying Tickets (표 구매),1,Staff,대전행 버스표 주세요.,One ticket to Daejeon please.,Daejeon-haeng beoseupyo juseyo.,
+busstation,1. Buying Tickets (표 구매),2,Customer,몇 시 출발로요?,What time departure?,Myeot si chulballo-yo?,
+busstation,1. Buying Tickets (표 구매),3,Staff,가장 빠른 버스로요.,The earliest bus please.,Gajang ppareun beoseuro-yo.,
+busstation,1. Buying Tickets (표 구매),4,Customer,1시 30분 있어요.,There's one at 1:30.,Han-si samsip-bun isseoyo.,
+busstation,1. Buying Tickets (표 구매),5,Staff,좋아요. 얼마예요?,Good. How much?,Joayo. Eolmayeyo?,
+busstation,1. Buying Tickets (표 구매),6,Customer,18000원이요.,18,Man-palcheon-won-iyo.,
+busstation,1. Buying Tickets (표 구매),7,Staff,카드로 해도 돼요?,Can I pay by card?,Kadeuro haedo dwaeyo?,
+busstation,1. Buying Tickets (표 구매),8,Customer,네 됩니다.,Yes you can.,Ne doemnida.,
+busstation,2. Checking Schedule (시간표 확인),1,Staff,경주행 버스는 얼마나 자주 있어요?,How often do buses to Gyeongju run?,Gyeongju-haeng beoseuneun eolmana jaju isseoyo?,
+busstation,2. Checking Schedule (시간표 확인),2,Customer,30분마다 있어요.,Every 30 minutes.,Samsip-bunmada isseoyo.,
+busstation,2. Checking Schedule (시간표 확인),3,Staff,마지막 버스는 몇 시예요?,What time is the last bus?,Majimak beoseuneun myeot siyeyo?,
+busstation,2. Checking Schedule (시간표 확인),4,Customer,밤 9시요.,9 PM.,Bam ahupssiyo.,
+busstation,2. Checking Schedule (시간표 확인),5,Staff,경주까지 얼마나 걸려요?,How long to Gyeongju?,Gyeongjukkaji eolmana geollyeoyo?,
+busstation,2. Checking Schedule (시간표 확인),6,Customer,약 4시간이요.,About 4 hours.,Yak ne-sigan-iyo.,
+busstation,2. Checking Schedule (시간표 확인),7,Staff,알겠어요. 감사합니다.,I see. Thank you.,Algesseoyo. Gamsahamnida.,
+busstation,2. Checking Schedule (시간표 확인),8,Customer,안녕히 가세요.,Goodbye.,Annyeonghi gaseyo.,
+busstation,3. Asking Destination (목적지 문의),1,Staff,이 버스 인천공항 가요?,Does this bus go to Incheon Airport?,I beoseu Incheon-gonghang gayo?,
+busstation,3. Asking Destination (목적지 문의),2,Customer,아니요. 저쪽 버스 타세요.,No. Take that bus over there.,Aniyo. Jeojjok beoseu taseyo.,
+busstation,3. Asking Destination (목적지 문의),3,Staff,몇 번 버스예요?,What number bus?,Myeot beon beoseu-yeyo?,
+busstation,3. Asking Destination (목적지 문의),4,Customer,6002번이요.,Number 6002.,Yukcheon-i-beon-iyo.,
+busstation,3. Asking Destination (목적지 문의),5,Staff,어디서 타요?,Where do I board?,Eodiseo tayo?,
+busstation,3. Asking Destination (목적지 문의),6,Customer,5번 정류장에서요.,At stop number 5.,O-beon jeongnyujang-eseoyo.,
+busstation,3. Asking Destination (목적지 문의),7,Staff,공항까지 얼마나 걸려요?,How long to the airport?,Gonghangkkaji eolmana geollyeoyo?,
+busstation,3. Asking Destination (목적지 문의),8,Customer,약 1시간이요.,About 1 hour.,Yak han-sigan-iyo.,
+airport,1. Check-in (체크인),1,Staff,체크인 카운터가 어디예요?,Where is the check-in counter?,Chekeuin kaunteoga eodiyeyo?,
+airport,1. Check-in (체크인),2,Customer,어느 항공사예요?,Which airline?,Eoneu hanggongsayeyo?,
+airport,1. Check-in (체크인),3,Staff,대한항공이요.,Korean Air.,Daehan-hanggong-iyo.,
+airport,1. Check-in (체크인),4,Customer,F구역 3층에 있어요.,It's in Zone F 3rd floor.,F-guyeok sam-cheunge isseoyo.,
+airport,1. Check-in (체크인),5,Staff,창가 좌석으로 해 주세요.,Window seat please.,Changga jwaseogeuro hae juseyo.,
+airport,1. Check-in (체크인),6,Customer,네 가능해요. 여권 주세요.,Yes possible. Passport please.,Ne ganeunghaeyo. Yeogwon juseyo.,
+airport,1. Check-in (체크인),7,Staff,짐은 여기서 부치면 돼요?,Can I check my luggage here?,Jimeun yeogiseo buchimyeon dwaeyo?,
+airport,1. Check-in (체크인),8,Customer,네 저울 위에 올려주세요.,Yes put it on the scale.,Ne jeoul wie ollyeojuseyo.,
+airport,2. Security Check (보안검색),1,Staff,보안검색대가 어디예요?,Where is security?,Boangeomsakdaega eodiyeyo?,
+airport,2. Security Check (보안검색),2,Customer,체크인 후 오른쪽으로 가세요.,Go right after check-in.,Chekeuin hu oreunjjogeuro gaseyo.,
+airport,2. Security Check (보안검색),3,Staff,노트북을 꺼내야 해요?,Do I need to take out my laptop?,Noteubuk-eul kkeonaeya haeyo?,
+airport,2. Security Check (보안검색),4,Customer,네 따로 트레이에 넣으세요.,Yes put it in a separate tray.,Ne ttaro teure-ie neoeuseyo.,
+airport,2. Security Check (보안검색),5,Staff,신발도 벗어야 해요?,Do I need to remove my shoes?,Sinbaldo beoseoya haeyo?,
+airport,2. Security Check (보안검색),6,Customer,네 벗어주세요.,Yes please remove them.,Ne beoseojuseyo.,
+airport,2. Security Check (보안검색),7,Staff,액체류는 안 돼요?,Liquids are not allowed?,Aekcheryuneun an dwaeyo?,
+airport,2. Security Check (보안검색),8,Customer,100ml 이하만 돼요.,Only under 100ml.,Baek ml ihaman dwaeyo.,
+airport,3. Boarding (탑승),1,Staff,탑승구가 어디예요?,Where is the boarding gate?,Tapseungguga eodiyeyo?,
+airport,3. Boarding (탑승),2,Customer,탑승권 보여주세요.,Show me your boarding pass.,Tapseunggwon boyeojuseyo.,
+airport,3. Boarding (탑승),3,Staff,여기요.,Here.,Yeogiyo.,
+airport,3. Boarding (탑승),4,Customer,32번 게이트예요. 저쪽이요.,Gate 32. Over there.,Samsip-i-beon geiteu-yeyo. Jeojjog-iyo.,
+airport,3. Boarding (탑승),5,Staff,탑승 시간이 언제예요?,What time is boarding?,Tapseung sigani eonjeyeyo?,
+airport,3. Boarding (탑승),6,Customer,2시 30분부터요.,From 2:30.,Du-si samsip-bunbuteoyo.,
+airport,3. Boarding (탑승),7,Staff,감사합니다.,Thank you.,Gamsahamnida.,
+airport,3. Boarding (탑승),8,Customer,좋은 비행 되세요.,Have a good flight.,Joeun bihaeng doeseyo.,
+airport,4. Immigration (입국심사),1,Staff,여권 보여주세요.,Passport please.,Yeogwon boyeojuseyo.,
+airport,4. Immigration (입국심사),2,Customer,여기요.,Here.,Yeogiyo.,
+airport,4. Immigration (입국심사),3,Staff,한국에 온 목적이 뭐예요?,What is your purpose in Korea?,Hanguge on mokjeogi mwoyeyo?,
+airport,4. Immigration (입국심사),4,Customer,관광이요.,Tourism.,Gwangwang-iyo.,
+airport,4. Immigration (입국심사),5,Staff,며칠 동안 머물러요?,How many days will you stay?,Myeochil dongan meomulleoyo?,
+airport,4. Immigration (입국심사),6,Customer,일주일이요.,One week.,Iljuil-iyo.,
+airport,4. Immigration (입국심사),7,Staff,어디서 묵어요?,Where will you stay?,Eodiseo mugeoyo?,
+airport,4. Immigration (입국심사),8,Customer,명동 호텔이요.,A hotel in Myeongdong.,Myeongdong hotel-iyo.,
+airport,5. Lost Luggage (수하물 분실),1,Staff,제 짐이 안 나왔어요.,My luggage didn't come out.,Je jimi an nawasseoyo.,
+airport,5. Lost Luggage (수하물 분실),2,Customer,탑승권 보여주세요.,Show me your boarding pass.,Tapseunggwon boyeojuseyo.,
+airport,5. Lost Luggage (수하물 분실),3,Staff,가방이 검정색 캐리어예요.,It's a black suitcase.,Gabangi geomjeongsaek kaerieo-yeyo.,
+airport,5. Lost Luggage (수하물 분실),4,Customer,찾아볼게요. 연락처 남겨주세요.,I'll look for it. Leave your contact.,Chajavolgeyo. Yeollakcheo namgyeojuseyo.,
+airport,5. Lost Luggage (수하물 분실),5,Staff,호텔로 배송해 줄 수 있어요?,Can you deliver it to my hotel?,Hotello baesong hae jul su isseoyo?,
+airport,5. Lost Luggage (수하물 분실),6,Customer,네 가능해요.,Yes that's possible.,Ne ganeunghaeyo.,
+airport,5. Lost Luggage (수하물 분실),7,Staff,감사합니다. 걱정됐어요.,Thank you. I was worried.,Gamsahamnida. Geokjeongdwaesseoyo.,
+airport,5. Lost Luggage (수하물 분실),8,Customer,걱정 마세요. 꼭 찾아드릴게요.,Don't worry. We'll definitely find it.,Geokjeong maseyo. Kkok chajadeurilgeyo.,
+market,1. Bargaining (흥정하기),1,Staff,이거 얼마예요?,How much is this?,Igeo eolmayeyo?,
+market,1. Bargaining (흥정하기),2,Customer,10000원이요.,10,Man-won-iyo.,
+market,1. Bargaining (흥정하기),3,Staff,너무 비싸요. 깎아 주세요.,Too expensive. Give me a discount.,Neomu bissayo. Kkakka juseyo.,
+market,1. Bargaining (흥정하기),4,Customer,그럼 8000원에 드릴게요.,Then I'll give it to you for 8,Geureom palcheon-wone deurilgeyo.,
+market,1. Bargaining (흥정하기),5,Staff,5000원은 안 돼요?,How about 5,Ocheon-woneun an dwaeyo?,
+market,1. Bargaining (흥정하기),6,Customer,그건 너무 싸요. 7000원이요.,That's too cheap. 7,Geugeon neomu ssayo. Chilcheon-won-iyo.,
+market,1. Bargaining (흥정하기),7,Staff,좋아요. 살게요.,Okay. I'll buy it.,Joayo. Salgeyo.,
+market,1. Bargaining (흥정하기),8,Customer,감사합니다!,Thank you!,Gamsahamnida!,
+market,2. Choosing Items (상품 선택),1,Staff,이거 뭐예요?,What is this?,Igeo mwoyeyo?,
+market,2. Choosing Items (상품 선택),2,Customer,이건 떡이에요. 한국 전통 음식이요.,This is tteok. Korean traditional food.,Igeon tteog-ieyo. Hanguk jeontong eumsig-iyo.,
+market,2. Choosing Items (상품 선택),3,Staff,맛볼 수 있어요?,Can I taste it?,Matbol su isseoyo?,
+market,2. Choosing Items (상품 선택),4,Customer,네 여기요. 드셔보세요.,Yes here. Try it.,Ne yeogiyo. Deusyeoboseyo.,
+market,2. Choosing Items (상품 선택),5,Staff,맛있네요! 한 봉지 주세요.,Delicious! One bag please.,Masinneyo! Han bongji juseyo.,
+market,2. Choosing Items (상품 선택),6,Customer,5000원이요.,5,Ocheon-won-iyo.,
+market,2. Choosing Items (상품 선택),7,Staff,두 봉지 사면 얼마예요?,How much for two bags?,Du bongji samyeon eolmayeyo?,
+market,2. Choosing Items (상품 선택),8,Customer,8000원에 드릴게요.,I'll give them for 8,Palcheon-wone deurilgeyo.,
+market,3. Payment (결제하기),1,Staff,현금만 돼요?,Cash only?,Hyeongeum-man dwaeyo?,
+market,3. Payment (결제하기),2,Customer,아니요. 카드도 돼요.,No. Cards are okay too.,Aniyo. Kadeudo dwaeyo.,
+market,3. Payment (결제하기),3,Staff,여기 20000원이요.,Here's 20,Yeogi iman-won-iyo.,
+market,3. Payment (결제하기),4,Customer,5000원 거슬러 드릴게요.,Here's 5,Ocheon-won geoseulleo deurilgeyo.,
+market,3. Payment (결제하기),5,Staff,봉투 있어요?,Do you have a bag?,Bongtu isseoyo?,
+market,3. Payment (결제하기),6,Customer,100원이요.,100 won.,Baek-won-iyo.,
+market,3. Payment (결제하기),7,Staff,괜찮아요. 제 가방에 넣을게요.,That's okay. I'll put it in my bag.,Gwaenchanayo. Je gabange neoeulgeyo.,
+market,3. Payment (결제하기),8,Customer,네 감사합니다!,Yes thank you!,Ne gamsahamnida!,
+bank,1. Opening Account (계좌 개설),1,Staff,계좌 개설하고 싶어요.,I want to open an account.,Gyejwa gaesulhago sipeoyo.,
+bank,1. Opening Account (계좌 개설),2,Customer,여권하고 비자 보여주세요.,Show me your passport and visa.,Yeogwon-hago bija boyeojuseyo.,
+bank,1. Opening Account (계좌 개설),3,Staff,여기 있어요.,Here you are.,Yeogi isseoyo.,
+bank,1. Opening Account (계좌 개설),4,Customer,한국 전화번호 있으세요?,Do you have a Korean phone number?,Hanguk jeonhwabeonho isseuseyo?,
+bank,1. Opening Account (계좌 개설),5,Staff,네 있어요.,Yes I do.,Ne isseoyo.,
+bank,1. Opening Account (계좌 개설),6,Customer,이 양식 작성해 주세요.,Please fill out this form.,I yangsik jakseong hae juseyo.,
+bank,1. Opening Account (계좌 개설),7,Staff,비밀번호는 몇 자리예요?,How many digits for the PIN?,Bimilbeonhoneun myeot jariyeyo?,
+bank,1. Opening Account (계좌 개설),8,Customer,4자리요.,4 digits.,Ne-jariyo.,
+bank,2. Currency Exchange (환전),1,Staff,환전하고 싶어요.,I want to exchange money.,Hwanjeonhago sipeoyo.,
+bank,2. Currency Exchange (환전),2,Customer,어떤 통화요?,What currency?,Eotteon tonghwayo?,
+bank,2. Currency Exchange (환전),3,Staff,달러를 원화로요.,Dollars to won.,Dalleoreul wonhwaro-yo.,
+bank,2. Currency Exchange (환전),4,Customer,얼마를 바꾸실 거예요?,How much do you want to exchange?,Eolmareul bakkusil geoyeyo?,
+bank,2. Currency Exchange (환전),5,Staff,500달러요.,500 dollars.,Obaek-dalleo-yo.,
+bank,2. Currency Exchange (환전),6,Customer,오늘 환율이 1달러에 1300원이에요.,Today's rate is 1,Oneul hwallyuri il-dalleoe cheonsambaek-won-ieyo.,
+bank,2. Currency Exchange (환전),7,Staff,좋아요. 바꿔주세요.,Okay. Please exchange it.,Joayo. Bakkwojuseyo.,
+bank,2. Currency Exchange (환전),8,Customer,650000원입니다. 여기요.,Here's 650,Yuksipoman-wonimida. Yeogiyo.,
+bank,3. Using ATM (ATM 이용),1,Staff,ATM이 어디 있어요?,Where is the ATM?,ATM-i eodi isseoyo?,
+bank,3. Using ATM (ATM 이용),2,Customer,저쪽 입구 옆에 있어요.,It's next to the entrance over there.,Jeojjok ipgu yeope isseoyo.,
+bank,3. Using ATM (ATM 이용),3,Staff,외국 카드도 돼요?,Does it accept foreign cards?,Oeguk kadeudo dwaeyo?,
+bank,3. Using ATM (ATM 이용),4,Customer,네 국제카드 다 돼요.,Yes all international cards work.,Ne gukjekadeu da dwaeyo.,
+bank,3. Using ATM (ATM 이용),5,Staff,영어로 할 수 있어요?,Can I use it in English?,Yeongeoro hal su isseoyo?,
+bank,3. Using ATM (ATM 이용),6,Customer,네 언어 선택하시면 돼요.,Yes just select the language.,Ne eoneo seontakasimyeon dwaeyo.,
+bank,3. Using ATM (ATM 이용),7,Staff,수수료가 있어요?,Is there a fee?,Susuryoga isseoyo?,
+bank,3. Using ATM (ATM 이용),8,Customer,네 3000원이요.,Yes 3,Ne samcheon-won-iyo.,
+bank,4. Wire Transfer (송금),1,Staff,해외 송금하고 싶어요.,I want to make an international transfer.,Haeoe songgeumhago sipeoyo.,
+bank,4. Wire Transfer (송금),2,Customer,어느 나라로요?,To which country?,Eoneu nararo-yo?,
+bank,4. Wire Transfer (송금),3,Staff,미국이요.,United States.,Migug-iyo.,
+bank,4. Wire Transfer (송금),4,Customer,금액이 얼마예요?,What is the amount?,Geumaegi eolmayeyo?,
+bank,4. Wire Transfer (송금),5,Staff,100만원이요.,1,Baengman-won-iyo.,
+bank,4. Wire Transfer (송금),6,Customer,수수료가 20000원이에요.,The fee is 20,Susuryoga iman-won-ieyo.,
+bank,4. Wire Transfer (송금),7,Staff,며칠 걸려요?,How many days will it take?,Myeochil geollyeoyo?,
+bank,4. Wire Transfer (송금),8,Customer,2~3일 정도요.,About 2-3 days.,I-sam-il jeongdoyo.,
+communication,1. Buying SIM Card (유심 구매),1,Staff,유심 카드 사고 싶어요.,I want to buy a SIM card.,Yusim kadeu sago sipeoyo.,
+communication,1. Buying SIM Card (유심 구매),2,Customer,여권 보여주세요.,Show me your passport.,Yeogwon boyeojuseyo.,
+communication,1. Buying SIM Card (유심 구매),3,Staff,프리페이드로요.,Prepaid please.,Peuripeideu-royo.,
+communication,1. Buying SIM Card (유심 구매),4,Customer,며칠짜리로요?,For how many days?,Myeochil-jjariro-yo?,
+communication,1. Buying SIM Card (유심 구매),5,Staff,일주일이요.,One week.,Iljuil-iyo.,
+communication,1. Buying SIM Card (유심 구매),6,Customer,데이터 무제한 33000원이요.,Unlimited data is 33,Deiteo mujeh-an samman-samcheon-won-iyo.,
+communication,1. Buying SIM Card (유심 구매),7,Staff,좋아요. 설치도 해주세요.,Good. Please install it too.,Joayo. Seolchido haejuseyo.,
+communication,1. Buying SIM Card (유심 구매),8,Customer,네 5분이면 돼요.,Yes it takes 5 minutes.,Ne o-bun-imyeon dwaeyo.,
+communication,1. phoneplan,1,Staff,한 달 요금제 뭐가 있어요?,What monthly plans do you have?,Han dal yogeumje mwoga isseoyo?,
+communication,1. phoneplan,2,Customer,55000원에 무제한 데이터요.,55,Oman-ocheon-wone mujeh-an deiteoyo.,
+communication,1. phoneplan,3,Staff,통화도 무제한이에요?,Are calls unlimited too?,Tonghwado mujeh-an-ieyo?,
+communication,1. phoneplan,4,Customer,네 국내 통화 무제한이요.,Yes unlimited domestic calls.,Ne guknae tonghwa mujeh-an-iyo.,
+communication,1. phoneplan,5,Staff,국제전화는요?,What about international calls?,Gukjejeonhwaneunyo?,
+communication,1. phoneplan,6,Customer,분당 300원이요.,300 won per minute.,Bundang sambaek-won-iyo.,
+communication,1. phoneplan,7,Staff,그 요금제로 할게요.,I'll take that plan.,Geu yogeumjero halgeyo.,
+communication,1. phoneplan,8,Customer,신분증 필요해요.,I need your ID.,Sinbunjeung piryohaeyo.,
+communication,1. recharge,1,Staff,데이터 충전하고 싶어요.,I want to recharge data.,Deiteo chungjeonhago sipeoyo.,
+communication,1. recharge,2,Customer,몇 기가요?,How many gigabytes?,Myeot gigayo?,
+communication,1. recharge,3,Staff,5기가요. 얼마예요?,5 gigabytes. How much?,O-gigayo. Eolmayeyo?,
+communication,1. recharge,4,Customer,11000원이요.,11,Man-cheon-won-iyo.,
+communication,1. recharge,5,Staff,바로 되나요?,Will it be activated immediately?,Baro doenayo?,
+communication,1. recharge,6,Customer,네 바로 충전돼요.,Yes it activates immediately.,Ne baro chungjeondwaeyo.,
+communication,1. recharge,7,Staff,현금으로 할게요.,I'll pay cash.,Hyeongeumuro halgeyo.,
+communication,1. recharge,8,Customer,감사합니다. 여기 영수증이요.,Thank you. Here's your receipt.,Gamsahamnida. Yeogi yeongsujeung-iyo.,
+police,1. Filing Report (신고하기),1,Staff,신고하러 왔어요.,I came to file a report.,Singoharo wasseoyo.,
+police,1. Filing Report (신고하기),2,Customer,무슨 일이세요?,What happened?,Museun iriseyo?,
+police,1. Filing Report (신고하기),3,Staff,지갑을 도둑맞았어요.,My wallet was stolen.,Jigabeul dodungmajasseoyo.,
+police,1. Filing Report (신고하기),4,Customer,어디서요?,Where?,Eodiseoyo?,
+police,1. Filing Report (신고하기),5,Staff,명동 지하철역에서요.,At Myeongdong subway station.,Myeongdong jihacheol-yeog-eseoyo.,
+police,1. Filing Report (신고하기),6,Customer,몇 시쯤이요?,Around what time?,Myeot sijjeum-iyo?,
+police,1. Filing Report (신고하기),7,Staff,오후 3시쯤이요.,Around 3 PM.,Ohu se-sijjeum-iyo.,
+police,1. Filing Report (신고하기),8,Customer,이 양식 작성해 주세요.,Please fill out this form.,I yangsik jakseong hae juseyo.,
+police,2. Lost Item (분실물),1,Staff,분실물 센터가 어디예요?,Where is the lost and found?,Bunsilmul senteoga eodiyeyo?,
+police,2. Lost Item (분실물),2,Customer,저쪽 2층에 있어요.,It's on the 2nd floor over there.,Jeojjok i-cheunge isseoyo.,
+police,2. Lost Item (분실물),3,Staff,휴대폰을 잃어버렸어요.,I lost my phone.,Hyudaeponeul ireobeolyeosseoyo.,
+police,2. Lost Item (분실물),4,Customer,어디서 잃어버리셨어요?,Where did you lose it?,Eodiseo ireobeorisyeosseoyo?,
+police,2. Lost Item (분실물),5,Staff,버스에서요.,On the bus.,Beoseu-eseoyo.,
+police,2. Lost Item (분실물),6,Customer,버스 번호 아세요?,Do you know the bus number?,Beoseu beonho aseyo?,
+police,2. Lost Item (분실물),7,Staff,143번이요.,Number 143.,Baek-sasip-sam-beon-iyo.,
+police,2. Lost Item (분실물),8,Customer,연락처 남겨주세요. 찾으면 연락드릴게요.,Leave your contact. We'll call if we find it.,Yeollakcheo namgyeojuseyo. Chajeumyeon yeollakdeurilgeyo.,
+police,3. Asking for Help (도움 요청),1,Staff,도와주세요!,Help me!,Dowajuseyo!,
+police,3. Asking for Help (도움 요청),2,Customer,무슨 일이에요?,What's wrong?,Museun irieyo?,
+police,3. Asking for Help (도움 요청),3,Staff,누가 저를 따라와요.,Someone is following me.,Nuga jeoreul ttarawayo.,
+police,3. Asking for Help (도움 요청),4,Customer,어디 있어요?,Where are you?,Eodi isseoyo?,
+police,3. Asking for Help (도움 요청),5,Staff,홍대입구역 근처요.,Near Hongdae Station.,Hongdae-ipguyeok geuncheo-yo.,
+police,3. Asking for Help (도움 요청),6,Customer,거기 있으세요. 경찰 바로 보낼게요.,Stay there. I'll send police right away.,Geogi isseuseyo. Gyeongchal baro bonaelgeyo.,
+police,3. Asking for Help (도움 요청),7,Staff,감사합니다. 무서워요.,Thank you. I'm scared.,Gamsahamnida. Museowoyo.,
+police,3. Asking for Help (도움 요청),8,Customer,걱정 마세요. 곧 도착해요.,Don't worry. They'll arrive soon.,Geokjeong maseyo. Got dochakhaeyo.,
+electronics,1. purchase,1,Staff,노트북 사고 싶어요.,I want to buy a laptop.,Noteubuk sago sipeoyo.,
+electronics,1. purchase,2,Customer,어떤 용도로 쓰실 거예요?,What will you use it for?,Eotteon yongdoro sseusil geoyeyo?,
+electronics,1. purchase,3,Staff,일반 업무용이요.,For general office work.,Ilban eommuyong-iyo.,
+electronics,1. purchase,4,Customer,이 모델 추천해요. 가성비 좋아요.,I recommend this model. Good value.,I model chucheonhaeyo. Gaseongbi joayo.,
+electronics,1. purchase,5,Staff,얼마예요?,How much is it?,Eolmayeyo?,
+electronics,1. purchase,6,Customer,89만원이요.,890,Palsipgu-man-won-iyo.,
+electronics,1. purchase,7,Staff,보증기간이 얼마예요?,What's the warranty period?,Bojeunggigan-i eolmayeyo?,
+electronics,1. purchase,8,Customer,1년이요. 연장도 가능해요.,1 year. Extension is possible.,Il-lyeon-iyo. Yeonjangdo ganeunghaeyo.,
+electronics,3. Repair Service (수리 서비스),1,Staff,폰 수리하러 왔어요.,I came to repair my phone.,Pon surihareo wasseoyo.,
+electronics,3. Repair Service (수리 서비스),2,Customer,어떤 문제예요?,What's the problem?,Eotteon munjeyeyo?,
+electronics,3. Repair Service (수리 서비스),3,Staff,화면이 깨졌어요.,The screen is cracked.,Hwamyeoni kkaejyeosseoyo.,
+electronics,3. Repair Service (수리 서비스),4,Customer,화면 교체 비용이 15만원이에요.,Screen replacement costs 150,Hwamyeon gyoche biyong-i siboman-won-ieyo.,
+electronics,3. Repair Service (수리 서비스),5,Staff,얼마나 걸려요?,How long will it take?,Eolmana geollyeoyo?,
+electronics,3. Repair Service (수리 서비스),6,Customer,약 2시간이요.,About 2 hours.,Yak du-sigan-iyo.,
+electronics,3. Repair Service (수리 서비스),7,Staff,오늘 할 수 있어요?,Can you do it today?,Oneul hal su isseoyo?,
+electronics,3. Repair Service (수리 서비스),8,Customer,네 가능해요.,Yes we can.,Ne ganeunghaeyo.,
+electronics,1. compare,1,Staff,이 두 모델 차이가 뭐예요?,What's the difference between these two?,I du model chaiga mwoyeyo?,
+electronics,1. compare,2,Customer,이건 더 가볍고 배터리가 오래 가요.,This one is lighter with longer battery.,Igeon deo gabyeopgo baeteori-ga orae gayo.,
+electronics,1. compare,3,Staff,가격 차이는요?,What's the price difference?,Gagyeok chaineunyo?,
+electronics,1. compare,4,Customer,20만원 차이요.,200,Isipman-won chaiyo.,
+electronics,1. compare,5,Staff,성능은 비슷해요?,Is the performance similar?,Seongneungeun biseutae-yo?,
+electronics,1. compare,6,Customer,네 거의 같아요.,Yes almost the same.,Ne geoui gatayo.,
+electronics,1. compare,7,Staff,그럼 싼 걸로 할게요.,Then I'll take the cheaper one.,Geureom ssan geollo halgeyo.,
+electronics,1. compare,8,Customer,좋은 선택이에요.,Good choice.,Joeun seontaeg-ieyo.,
+salon,1. Getting Haircut (커트하기),1,Staff,커트하러 왔어요.,I came for a haircut.,Keoteuharo wasseoyo.,
+salon,1. Getting Haircut (커트하기),2,Customer,어떻게 해 드릴까요?,How would you like it?,Eotteoke hae deurilkkayo?,
+salon,1. Getting Haircut (커트하기),3,Staff,조금만 다듬어 주세요.,Just a little trim please.,Jogeumman dadeumeo juseyo.,
+salon,1. Getting Haircut (커트하기),4,Customer,몇 센치 자를까요?,How many centimeters?,Myeot senchi jareulaklkayo?,
+salon,1. Getting Haircut (커트하기),5,Staff,2센치 정도요.,About 2 centimeters.,I-senchi jeongdoyo.,
+salon,1. Getting Haircut (커트하기),6,Customer,앞머리도 잘라요?,Should I cut the bangs too?,Apmeorido jallayo?,
+salon,1. Getting Haircut (커트하기),7,Staff,네 눈 위까지 해 주세요.,Yes above my eyes please.,Ne nun wikkaji hae juseyo.,
+salon,1. Getting Haircut (커트하기),8,Customer,알겠어요. 시작할게요.,Okay. I'll start.,Algesseoyo. Sijakhalgeyo.,
+salon,1. haircolor,1,Staff,염색하고 싶어요.,I want to dye my hair.,Yeomsaekago sipeoyo.,
+salon,1. haircolor,2,Customer,어떤 색으로요?,What color?,Eotteon saek-euroyo?,
+salon,1. haircolor,3,Staff,밝은 갈색이요.,Light brown.,Balgeun galsaeg-iyo.,
+salon,1. haircolor,4,Customer,이 색 어떠세요?,How about this color?,I saek eotteuseyo?,
+salon,1. haircolor,5,Staff,좋아요. 이걸로요.,Good. This one.,Joayo. Igeolloyo.,
+salon,1. haircolor,6,Customer,시간이 2시간 정도 걸려요.,It takes about 2 hours.,Sigan-i du-sigan jeongdo geollyeoyo.,
+salon,1. haircolor,7,Staff,얼마예요?,How much is it?,Eolmayeyo?,
+salon,1. haircolor,8,Customer,8만원이요.,80,Palman-won-iyo.,
+salon,1. hairstyle,1,Staff,스타일 추천해 주세요.,Please recommend a style.,Seutail chucheonhae juseyo.,
+salon,1. hairstyle,2,Customer,얼굴형에 이 스타일이 잘 어울려요.,This style suits your face shape.,Eolgulhyeonge i seutail-i jal eoullyeoyo.,
+salon,1. hairstyle,3,Staff,사진 보여주세요.,Show me a picture.,Sajin boyeojuseyo.,
+salon,1. hairstyle,4,Customer,이런 느낌이요.,Like this.,Ireon neukkim-iyo.,
+salon,1. hairstyle,5,Staff,좋아요. 이렇게 해 주세요.,Good. Do it like this.,Joayo. Ireoke hae juseyo.,
+salon,1. hairstyle,6,Customer,파마도 하시겠어요?,Would you like a perm too?,Pamado hasigesseoyo?,
+salon,1. hairstyle,7,Staff,아니요 자연스럽게요.,No just natural.,Aniyo jayeonseureobgeyo.,
+salon,1. hairstyle,8,Customer,알겠어요.,Understood.,Algesseoyo.,
+bakery,1. Ordering Coffee (커피 주문),1,Staff,아메리카노 한 잔 주세요.,One Americano please.,Amerikano han jan juseyo.,
+bakery,1. Ordering Coffee (커피 주문),2,Customer,뜨거운 거요 차가운 거요?,Hot or iced?,Tteugeoun geoyo chagaun geoyo?,
+bakery,1. Ordering Coffee (커피 주문),3,Staff,아이스로요.,Iced please.,Aiseu-royo.,
+bakery,1. Ordering Coffee (커피 주문),4,Customer,사이즈 뭐로 하시겠어요?,What size?,Saijeu mworo hasigesseoyo?,
+bakery,1. Ordering Coffee (커피 주문),5,Staff,레귤러로요.,Regular please.,Regyulleoro-yo.,
+bakery,1. Ordering Coffee (커피 주문),6,Customer,빵도 드시겠어요?,Would you like bread too?,Ppangdo deusigesseoyo?,
+bakery,1. Ordering Coffee (커피 주문),7,Staff,네 크루아상 하나요.,Yes one croissant.,Ne keuruasang hanayo.,
+bakery,1. Ordering Coffee (커피 주문),8,Customer,9500원입니다.,That's 9,Gucheonobaek-wonimida.,
+bakery,1. caferec,1,Staff,제일 인기 있는 게 뭐예요?,What's the most popular?,Jeil ingi inneun ge mwoyeyo?,
+bakery,1. caferec,2,Customer,소금빵이 요즘 인기 많아요.,Salt bread is popular these days.,Sogeumppang-i yojeum ingi manayo.,
+bakery,1. caferec,3,Staff,맛있어요?,Is it good?,Masisseoyo?,
+bakery,1. caferec,4,Customer,네 버터향이 정말 좋아요.,Yes the butter flavor is really nice.,Ne beoteo-hyang-i jeongmal joayo.,
+bakery,1. caferec,5,Staff,그럼 하나 주세요.,Then one please.,Geureom hana juseyo.,
+bakery,1. caferec,6,Customer,따뜻하게 데워드릴까요?,Should I warm it up?,Ttatteutage dewodeurilkkayo?,
+bakery,1. caferec,7,Staff,네 부탁해요.,Yes please.,Ne butakhaeyo.,
+bakery,1. caferec,8,Customer,잠시만요.,Just a moment.,Jamsimanyo.,
+bakery,1. cafetake,1,Staff,포장해 주세요.,For takeout please.,Pojang hae juseyo.,
+bakery,1. cafetake,2,Customer,네 잠시만요.,Yes just a moment.,Ne jamsimanyo.,
+bakery,1. cafetake,3,Staff,케이크도 포장 돼요?,Can I get cake to go too?,Keikeu-do pojang dwaeyo?,
+bakery,1. cafetake,4,Customer,네 상자에 넣어드릴게요.,Yes I'll put it in a box.,Ne sangjae neeodeurilgeyo.,
+bakery,1. cafetake,5,Staff,아이스팩 있어요?,Do you have ice packs?,Aiseupak isseoyo?,
+bakery,1. cafetake,6,Customer,네 드릴게요. 500원이요.,Yes I'll give you one. 500 won.,Ne deurilgeyo. Obaek-won-iyo.,
+bakery,1. cafetake,7,Staff,좋아요. 같이 해 주세요.,Good. Please add it.,Joayo. Gachi hae juseyo.,
+bakery,1. cafetake,8,Customer,총 32000원입니다.,The total is 32,Chong samman-icheon-wonimida.,
+massage,1. spaservice,1,Staff,마사지 받고 싶어요.,I want to get a massage.,Masaji batgo sipeoyo.,
+massage,1. spaservice,2,Customer,어떤 마사지로 하시겠어요?,What type of massage?,Eotteon masajiro hasigesseoyo?,
+massage,1. spaservice,3,Staff,전신 마사지요.,Full body massage.,Jeonsin masajiyo.,
+massage,1. spaservice,4,Customer,60분이요 90분이요?,60 minutes or 90 minutes?,Yuksip-bun-iyo gusip-bun-iyo?,
+massage,1. spaservice,5,Staff,90분이요. 얼마예요?,90 minutes. How much?,Gusip-bun-iyo. Eolmayeyo?,
+massage,1. spaservice,6,Customer,12만원이요.,120,Sibiman-won-iyo.,
+massage,1. spaservice,7,Staff,좋아요. 할게요.,Good. I'll do it.,Joayo. Halgeyo.,
+massage,1. spaservice,8,Customer,탈의실은 저쪽이요.,The changing room is over there.,Taruisil-eun jeojjog-iyo.,
+massage,1. sparesv,1,Staff,예약하고 싶어요.,I want to make a reservation.,Yeyakhago sipeoyo.,
+massage,1. sparesv,2,Customer,언제로요?,For when?,Eonjeroyo?,
+massage,1. sparesv,3,Staff,내일 오후 3시요.,Tomorrow 3 PM.,Naeil ohu se-siyo.,
+massage,1. sparesv,4,Customer,몇 분이세요?,How many people?,Myeot buniseyo?,
+massage,1. sparesv,5,Staff,두 명이요.,Two people.,Du myeong-iyo.,
+massage,1. sparesv,6,Customer,커플 마사지 원하세요?,Would you like couples massage?,Keopeul masaji wonhaseyo?,
+massage,1. sparesv,7,Staff,네 부탁해요.,Yes please.,Ne butakhaeyo.,
+massage,1. sparesv,8,Customer,예약됐어요. 내일 봬요.,Reserved. See you tomorrow.,Yeyakdwaesseoyo. Naeil boeyo.,
+massage,1. spafeed,1,Staff,어땠어요?,How was it?,Eottaesseoyo?,
+massage,1. spafeed,2,Customer,아주 좋았어요. 시원해요.,Very good. Refreshing.,Aju joasseoyo. Siwonhaeyo.,
+massage,1. spafeed,3,Staff,어깨가 많이 뭉쳤었네요.,Your shoulders were very tense.,Eokkaega mani mungchyeosseonne-yo.,
+massage,1. spafeed,4,Customer,맞아요. 스트레스가 많았어요.,Yes I've been stressed.,Majayo. Seuteuleseu-ga manasseoyo.,
+massage,1. spafeed,5,Staff,다음에 또 오세요.,Please come again.,Daeume tto oseyo.,
+massage,1. spafeed,6,Customer,네 다음 주에 또 올게요.,Yes I'll come again next week.,Ne daeum jue tto olgeyo.,
+massage,1. spafeed,7,Staff,예약해 드릴까요?,Should I make a reservation?,Yeyakhae deurilkkayo?,
+massage,1. spafeed,8,Customer,네 같은 시간으로요.,Yes same time.,Ne gateun siganeu-royo.,
+cinema,1. Buying Tickets (표 구매),1,Staff,영화표 두 장 주세요.,Two movie tickets please.,Yeonghwapyo du jang juseyo.,
+cinema,1. Buying Tickets (표 구매),2,Customer,어떤 영화요?,Which movie?,Eotteon yeonghwayo?,
+cinema,1. Buying Tickets (표 구매),3,Staff,가장 인기 있는 영화로요.,The most popular one.,Gajang ingi inneun yeonghwaro-yo.,
+cinema,1. Buying Tickets (표 구매),4,Customer,지금 범죄도시가 인기예요.,Crime City is popular now.,Jigeum Beomoedosi-ga ingi-yeyo.,
+cinema,1. Buying Tickets (표 구매),5,Staff,그걸로 주세요. 몇 시에 시작해요?,That one please. What time does it start?,Geugeol-lo juseyo. Myeot sie sijakae-yo?,
+cinema,1. Buying Tickets (표 구매),6,Customer,4시 30분이요.,4:30 PM.,Ne-si samsip-bun-iyo.,
+cinema,1. Buying Tickets (표 구매),7,Staff,좋아요.,Good.,Joayo.,
+cinema,1. Buying Tickets (표 구매),8,Customer,총 26000원이요.,Total is 26,Chong iman-yukcheon-won-iyo.,
+cinema,1. moviesnack,1,Staff,팝콘 큰 거 하나요.,One large popcorn please.,Papkon keun geo hanayo.,
+cinema,1. moviesnack,2,Customer,콜라도 드릴까요?,Would you like cola too?,Kollado deurilkkayo?,
+cinema,1. moviesnack,3,Staff,네 중간 사이즈로요.,Yes medium size.,Ne junggan saijeu-ro-yo.,
+cinema,1. moviesnack,4,Customer,세트로 하시면 3000원 할인이에요.,You save 3,Seteuro hasimyeon samcheon-won harineyo.,
+cinema,1. moviesnack,5,Staff,그럼 세트로요.,Then a set please.,Geureom seteu-ro-yo.,
+cinema,1. moviesnack,6,Customer,나쵸도 있어요. 추가하실래요?,We have nachos too. Want to add?,Nachyodo isseoyo. Chugahasilraeyo?,
+cinema,1. moviesnack,7,Staff,아니요 괜찮아요.,No thanks.,Aniyo gwaenchanayo.,
+cinema,1. moviesnack,8,Customer,총 11000원이요.,Total is 11,Chong man-cheon-won-iyo.,
+cinema,1. movieseat,1,Staff,좌석 선택할게요.,I'll choose my seats.,Jwaseok seontaekhalgeyo.,
+cinema,1. movieseat,2,Customer,어디로 하시겠어요?,Where would you like?,Eodiro hasigesseoyo?,
+cinema,1. movieseat,3,Staff,중간 쪽이요.,Middle section.,Junggan jjog-iyo.,
+cinema,1. movieseat,4,Customer,H열 8번 9번 어떠세요?,How about H row seats 8 and 9?,H-yeol pal-beon gu-beon eotteuseyo?,
+cinema,1. movieseat,5,Staff,좋아요. 그걸로요.,Good. Those please.,Joayo. Geugeol-lo-yo.,
+cinema,1. movieseat,6,Customer,커플석도 있어요.,We also have couple seats.,Keopeul-seokdo isseoyo.,
+cinema,1. movieseat,7,Staff,아니요 일반석으로요.,No regular seats please.,Aniyo ilbanseok-euro-yo.,
+cinema,1. movieseat,8,Customer,네 예약 완료됐어요.,Your booking is complete.,Ne yeyak wanryodwaesseoyo.,
+park,1. parkdir,1,Staff,화장실이 어디예요?,Where is the restroom?,Hwajangsil-i eodiyeyo?,
+park,1. parkdir,2,Customer,저쪽 분수대 옆에 있어요.,It's next to the fountain over there.,Jeojjok bunsudae yeope isseoyo.,
+park,1. parkdir,3,Staff,공원 입구는요?,What about the park entrance?,Gongwon ipguneunyo?,
+park,1. parkdir,4,Customer,여기서 직진하세요.,Go straight from here.,Yeogiseo jikjinhaseyo.,
+park,1. parkdir,5,Staff,자전거 대여소가 있어요?,Is there a bike rental?,Jajeongeo daeyeosoga isseoyo?,
+park,1. parkdir,6,Customer,네 동문 쪽에 있어요.,Yes near the east gate.,Ne dongmun jjoge isseoyo.,
+park,1. parkdir,7,Staff,걸어서 얼마나 걸려요?,How long on foot?,Georeoseo eolmana geollyeoyo?,
+park,1. parkdir,8,Customer,약 10분이요.,About 10 minutes.,Yak sip-bun-iyo.,
+park,1. parkfac,1,Staff,여기 피크닉 할 수 있어요?,Can we have a picnic here?,Yeogi pikeunik hal su isseoyo?,
+park,1. parkfac,2,Customer,네 잔디밭에서 가능해요.,Yes you can on the lawn.,Ne jandibare-seo ganeunghaeyo.,
+park,1. parkfac,3,Staff,돗자리 빌릴 수 있어요?,Can I rent a mat?,Dotjari billil su isseoyo?,
+park,1. parkfac,4,Customer,관리소에서 대여해요. 3000원이요.,You can rent at the office. 3,Gwanrisoeseo daeyeohaeyo. Samcheon-won-iyo.,
+park,1. parkfac,5,Staff,음식 반입 가능해요?,Can we bring food?,Eumsik banip ganeunghaeyo?,
+park,1. parkfac,6,Customer,네 근데 쓰레기는 가져가세요.,Yes but take your trash.,Ne geunde sseuregineunn gajyeogaseyo.,
+park,1. parkfac,7,Staff,알겠어요. 감사합니다.,I understand. Thank you.,Algesseoyo. Gamsahamnida.,
+park,1. parkfac,8,Customer,즐거운 시간 보내세요.,Have a good time.,Jeulgeoun sigan bonaeseyo.,
+park,1. parkact,1,Staff,여기서 뭘 할 수 있어요?,What can we do here?,Yeogiseo mwol hal su isseoyo?,
+park,1. parkact,2,Customer,산책 자전거 보트 타기 가능해요.,Walking cycling boating are available.,Sanchaek jajeongeo boteu tagi ganeunghaeyo.,
+park,1. parkact,3,Staff,보트는 어디서 타요?,Where can we ride boats?,Boteuneun eodiseo tayo?,
+park,1. parkact,4,Customer,호수 옆 선착장에서요.,At the dock by the lake.,Hosu yeop seonchaekjang-eseoyo.,
+park,1. parkact,5,Staff,1인당 얼마예요?,How much per person?,Il-indang eolmayeyo?,
+park,1. parkact,6,Customer,30분에 5000원이요.,5,Samsip-bune ocheon-won-iyo.,
+park,1. parkact,7,Staff,두 명이요. 할게요.,Two people. We'll do it.,Du myeong-iyo. Halgeyo.,
+park,1. parkact,8,Customer,여기 구명조끼 입으세요.,Please wear these life jackets.,Yeogi gumyeongjokki ibeuseyo.,
+department,2. Shopping (쇼핑하기),1,Staff,화장품 코너가 어디예요?,Where is the cosmetics section?,Hwajangpum koneoga eodiyeyo?,
+department,2. Shopping (쇼핑하기),2,Customer,1층에 있어요. 에스컬레이터 옆이요.,1st floor. Next to the escalator.,Il-cheunge isseoyo. Eseukolleiteo yeob-iyo.,
+department,2. Shopping (쇼핑하기),3,Staff,세일하고 있어요?,Is there a sale?,Seilhago isseoyo?,
+department,2. Shopping (쇼핑하기),4,Customer,네 지금 20% 할인 중이에요.,Yes 20% off now.,Ne jigeum isip-peosenteu harin jung-ieyo.,
+department,2. Shopping (쇼핑하기),5,Staff,면세 가능해요?,Is duty-free available?,Myeonse ganeunghaeyo?,
+department,2. Shopping (쇼핑하기),6,Customer,네 여권 보여주시면 돼요.,Yes just show your passport.,Ne yeogwon boyeojusimyeon dwaeyo.,
+department,2. Shopping (쇼핑하기),7,Staff,좋아요. 갈게요.,Good. I'll go there.,Joayo. Galgeyo.,
+department,2. Shopping (쇼핑하기),8,Customer,즐거운 쇼핑 되세요.,Enjoy your shopping.,Jeulgeoun syoping doeseyo.,
+department,1. deptreturn,1,Staff,교환하러 왔어요.,I came to exchange this.,Gyohwanharo wasseoyo.,
+department,1. deptreturn,2,Customer,영수증 있으세요?,Do you have the receipt?,Yeongsujeung isseuseyo?,
+department,1. deptreturn,3,Staff,네 여기요.,Yes here.,Ne yeogiyo.,
+department,1. deptreturn,4,Customer,무슨 문제예요?,What's the problem?,Museun munjeyeyo?,
+department,1. deptreturn,5,Staff,사이즈가 안 맞아요.,The size doesn't fit.,Saijeu-ga an majayo.,
+department,1. deptreturn,6,Customer,다른 사이즈로 바꿔드릴게요.,I'll exchange it for a different size.,Dareun saijeu-ro bakkwodeurilgeyo.,
+department,1. deptreturn,7,Staff,L사이즈로 주세요.,Large size please.,L-saijeu-ro juseyo.,
+department,1. deptreturn,8,Customer,네 잠시만요.,Yes just a moment.,Ne jamsimanyo.,
+department,1. deptinquiry,1,Staff,영업시간이 어떻게 돼요?,What are the business hours?,Yeongeopsiganl eotteoke dwaeyo?,
+department,1. deptinquiry,2,Customer,10시부터 밤 10시까지요.,10 AM to 10 PM.,Yeol-sibuteo bam yeolsikkajiyo.,
+department,1. deptinquiry,3,Staff,주차장 있어요?,Is there parking?,Juchajang isseoyo?,
+department,1. deptinquiry,4,Customer,네 지하에 있어요. 3시간 무료예요.,Yes in the basement. 3 hours free.,Ne jiha-e isseoyo. Se-sigan muryoyeyo.,
+department,1. deptinquiry,5,Staff,식당가는 몇 층이에요?,Which floor is the food court?,Sikdangganeun myeot cheung-ieyo?,
+department,1. deptinquiry,6,Customer,6층이요.,6th floor.,Yuk-cheung-iyo.,
+department,1. deptinquiry,7,Staff,감사합니다.,Thank you.,Gamsahamnida.,
+department,1. deptinquiry,8,Customer,천만에요.,You're welcome.,Cheonmaneyo.,
+scenic,3. Photo Spots (사진 명소),1,Staff,여기서 사진 찍어도 돼요?,Can I take photos here?,Yeogiseo sajin jjigeodo dwaeyo?,
+scenic,3. Photo Spots (사진 명소),2,Customer,네 괜찮아요.,Yes that's fine.,Ne gwaenchanayo.,
+scenic,3. Photo Spots (사진 명소),3,Staff,사진 좀 찍어주실 수 있어요?,Could you take a photo for me?,Sajin jom jjigeojusil su isseoyo?,
+scenic,3. Photo Spots (사진 명소),4,Customer,네 물론이죠. 카메라 주세요.,Yes of course. Give me your camera.,Ne mullon-ijyo. Kamera juseyo.,
+scenic,3. Photo Spots (사진 명소),5,Staff,여기 버튼 누르시면 돼요.,Just press this button.,Yeogi beoteun nureuseumyeon dwaeyo.,
+scenic,3. Photo Spots (사진 명소),6,Customer,하나 둘 셋! 찍었어요.,One two three! Done.,Hana dul set! Jjigeosseoyo.,
+scenic,3. Photo Spots (사진 명소),7,Staff,감사합니다!,Thank you!,Gamsahamnida!,
+scenic,3. Photo Spots (사진 명소),8,Customer,잘 나왔어요.,It came out well.,Jal nawasseoyo.,
+scenic,1. scenicinfo,1,Staff,이 건물이 뭐예요?,What is this building?,I geonmul-i mwoyeyo?,
+scenic,1. scenicinfo,2,Customer,경복궁이요. 조선시대 궁궐이에요.,It's Gyeongbokgung. A Joseon Dynasty palace.,Gyeongbokgung-iyo. Joseon-sidae gunggwol-ieyo.,
+scenic,1. scenicinfo,3,Staff,언제 지어졌어요?,When was it built?,Eonje jieojyeosseoyo?,
+scenic,1. scenicinfo,4,Customer,1395년이요.,In 1395.,Cheonsambaek-gusib-o-nyeon-iyo.,
+scenic,1. scenicinfo,5,Staff,입장료가 얼마예요?,What's the admission fee?,Ipjangryoga eolmayeyo?,
+scenic,1. scenicinfo,6,Customer,3000원이요. 한복 입으면 무료예요.,3,Samcheon-won-iyo. Hanbok ibeumyeon muryoyeyo.,
+scenic,1. scenicinfo,7,Staff,한복 빌릴 수 있어요?,Can I rent a hanbok?,Hanbok billil su isseoyo?,
+scenic,1. scenicinfo,8,Customer,네 근처에 대여점 많아요.,Yes there are many rental shops nearby.,Ne geuncheoe daeyeojeom manayo.,
+scenic,2. Getting Guide (가이드 안내),1,Staff,가이드 투어 있어요?,Are there guided tours?,Gaideu tueo isseoyo?,
+scenic,2. Getting Guide (가이드 안내),2,Customer,네 영어 투어도 있어요.,Yes there's an English tour too.,Ne yeongeo tueodo isseoyo.,
+scenic,2. Getting Guide (가이드 안내),3,Staff,몇 시에 시작해요?,What time does it start?,Myeot si-e sijakae-yo?,
+scenic,2. Getting Guide (가이드 안내),4,Customer,11시하고 2시에 있어요.,At 11 AM and 2 PM.,Yeolhan-sihago du-sie isseoyo.,
+scenic,2. Getting Guide (가이드 안내),5,Staff,얼마나 걸려요?,How long is it?,Eolmana geollyeoyo?,
+scenic,2. Getting Guide (가이드 안내),6,Customer,약 1시간 30분이요.,About 1 hour 30 minutes.,Yak han-sigan samsip-bun-iyo.,
+scenic,2. Getting Guide (가이드 안내),7,Staff,예약해야 해요?,Do I need to reserve?,Yeyakhaeya haeyo?,
+scenic,2. Getting Guide (가이드 안내),8,Customer,아니요. 그냥 오시면 돼요.,No. Just come.,Aniyo. Geunyang osimyeon dwaeyo.,
+apartment,1. aptview,1,Staff,집 보러 왔어요.,I came to see an apartment.,Jip boreo wasseoyo.,
+apartment,1. aptview,2,Customer,어떤 조건을 원하세요?,What conditions are you looking for?,Eotteon jogeonuel wonhaseyo?,
+apartment,1. aptview,3,Staff,방 2개짜리로요.,Two bedrooms please.,Bang du-gaejjariro-yo.,
+apartment,1. aptview,4,Customer,보증금 얼마까지 생각하세요?,What's your deposit budget?,Bojeunggeum eolmakkaji saenggakaseyo?,
+apartment,1. aptview,5,Staff,5000만원 정도요.,About 50 million won.,Ocheonman-won jeongdoyo.,
+apartment,1. aptview,6,Customer,좋은 매물 있어요. 보실래요?,There's a good listing. Want to see it?,Joeun maemul isseoyo. Bosillaeyo?,
+apartment,1. aptview,7,Staff,네 언제 볼 수 있어요?,Yes when can I see it?,Ne eonje bol su isseoyo?,
+apartment,1. aptview,8,Customer,오늘 오후에 가능해요.,This afternoon is possible.,Oneul ohue ganeunghaeyo.,
+apartment,1. aptcontract,1,Staff,이 집으로 계약하고 싶어요.,I want to sign a contract for this place.,I jibeuro gyeyakhago sipeoyo.,
+apartment,1. aptcontract,2,Customer,보증금은 5000만원 월세 80만원이에요.,Deposit is 50 million and rent is 800,Bojeunggeunmeun ocheonman-won wolse palsipman-won-ieyo.,
+apartment,1. aptcontract,3,Staff,월세 좀 깎아주실 수 있어요?,Can you lower the rent?,Wolse jom kkakkajusil su isseoyo?,
+apartment,1. aptcontract,4,Customer,집주인한테 여쭤볼게요.,I'll ask the landlord.,Jipjuinhante yeojjweobolgeyo.,
+apartment,1. aptcontract,5,Staff,입주는 언제부터 가능해요?,When can I move in?,Ipjuneun eonjebuteo ganeunghaeyo?,
+apartment,1. aptcontract,6,Customer,다음 달 1일부터요.,From the 1st of next month.,Daeum dal il-ilbuteoyo.,
+apartment,1. aptcontract,7,Staff,좋아요. 계약할게요.,Good. I'll sign the contract.,Joayo. Gyeyakhalgeyo.,
+apartment,1. aptcontract,8,Customer,신분증 가져오셨어요?,Did you bring your ID?,Sinbunjeung gajyeoosyeosseoyo?,
+apartment,1. aptinquiry,1,Staff,전세도 있어요?,Do you have jeonse options?,Jeonsedo isseoyo?,
+apartment,1. aptinquiry,2,Customer,네 몇 개 있어요.,Yes we have a few.,Ne myeot gae isseoyo.,
+apartment,1. aptinquiry,3,Staff,전세가 뭐예요?,What is jeonse?,Jeonsega mwoyeyo?,
+apartment,1. aptinquiry,4,Customer,목돈을 맡기고 월세 없이 사는 거예요.,You deposit a lump sum and live rent-free.,Mokdoneul matgigo wolse eopsi saneun geoyeyo.,
+apartment,1. aptinquiry,5,Staff,보증보험 들 수 있어요?,Can I get deposit insurance?,Bojeungboheom deul su isseoyo?,
+apartment,1. aptinquiry,6,Customer,네 가능해요. 안전해요.,Yes you can. It's safe.,Ne ganeunghaeyo. Anjeonhaeyo.,
+apartment,1. aptinquiry,7,Staff,좋은 정보 감사합니다.,Thank you for the good information.,Joeun jeongbo gamsahamnida.,
+apartment,1. aptinquiry,8,Customer,언제든 연락주세요.,Contact us anytime.,Eonjedeunn yeollakjuseyo.,
+ktv,1. Getting Room (방 배정),1,Staff,노래방 하고 싶어요.,We want to do karaoke.,Noraebang hago sipeoyo.,
+ktv,1. Getting Room (방 배정),2,Customer,몇 분이세요?,How many people?,Myeot buniseyo?,
+ktv,1. Getting Room (방 배정),3,Staff,4명이요.,Four people.,Ne-myeong-iyo.,
+ktv,1. Getting Room (방 배정),4,Customer,중간 방으로 드릴까요?,Would you like a medium room?,Junggan bangeuro deurilkkayo?,
+ktv,1. Getting Room (방 배정),5,Staff,네 좋아요. 시간당 얼마예요?,Yes. How much per hour?,Ne joayo. Sigandang eolmayeyo?,
+ktv,1. Getting Room (방 배정),6,Customer,1시간에 15000원이요.,15,Han-sigane man-ocheon-won-iyo.,
+ktv,1. Getting Room (방 배정),7,Staff,2시간이요.,Two hours please.,Du-sigan-iyo.,
+ktv,1. Getting Room (방 배정),8,Customer,3번 방이요. 이쪽으로요.,Room 3. This way.,Sam-beon bang-iyo. Ijjok-euro-yo.,
+ktv,2. Choosing Songs (노래 선택),1,Staff,영어 노래도 있어요?,Do you have English songs?,Yeongeo noraedo isseoyo?,
+ktv,2. Choosing Songs (노래 선택),2,Customer,네 많아요. 리모컨 여기 있어요.,Yes many. Here's the remote.,Ne manayo. Rimokon yeogi isseoyo.,
+ktv,2. Choosing Songs (노래 선택),3,Staff,인기 있는 노래 추천해 주세요.,Recommend popular songs please.,Ingi inneun norae chucheonhae juseyo.,
+ktv,2. Choosing Songs (노래 선택),4,Customer,요즘 이 노래가 인기예요.,This song is popular now.,Yojeum i noraega ingi-yeyo.,
+ktv,2. Choosing Songs (노래 선택),5,Staff,예약 어떻게 해요?,How do I queue a song?,Yeyak eotteoke haeyo?,
+ktv,2. Choosing Songs (노래 선택),6,Customer,번호 누르고 예약 버튼 누르세요.,Press the number then the reserve button.,Beonho nureugo yeyak beoteun nureuseyo.,
+ktv,2. Choosing Songs (노래 선택),7,Staff,알겠어요. 감사합니다.,Got it. Thanks.,Algesseoyo. Gamsahamnida.,
+ktv,2. Choosing Songs (노래 선택),8,Customer,즐거운 시간 보내세요!,Have fun!,Jeulgeoun sigan bonaeseyo!,
+ktv,1. ktvpay,1,Staff,계산할게요.,I'd like to pay.,Gyesanhalgeyo.,
+ktv,1. ktvpay,2,Customer,2시간 30분 하셨어요. 45000원이요.,You used 2 hours 30 minutes. 45,Du-sigan samsip-bun hasyeosseoyo. Saman-ocheon-won-iyo.,
+ktv,1. ktvpay,3,Staff,음료 값도 포함이에요?,Does that include drinks?,Eumnyo gapdo poham-ieyo?,
+ktv,1. ktvpay,4,Customer,네 다 포함이에요.,Yes everything included.,Ne da poham-ieyo.,
+ktv,1. ktvpay,5,Staff,카드로 해도 돼요?,Can I pay by card?,Kadeuro haedo dwaeyo?,
+ktv,1. ktvpay,6,Customer,네 됩니다.,Yes you can.,Ne doemnida.,
+ktv,1. ktvpay,7,Staff,재밌었어요!,It was fun!,Jaemisseosseoyo!,
+ktv,1. ktvpay,8,Customer,감사합니다. 또 오세요!,Thank you. Come again!,Gamsahamnida. Tto oseyo!,
+theater,1. theaterticket,1,Staff,오늘 공연 표 있어요?,Are there tickets for today's show?,Oneul gongyeon pyo isseoyo?,
+theater,1. theaterticket,2,Customer,몇 시 공연이요?,Which showing?,Myeot si gongyeon-iyo?,
+theater,1. theaterticket,3,Staff,저녁 7시요.,7 PM evening.,Jeonyeok ilgopsi-yo.,
+theater,1. theaterticket,4,Customer,좌석이 조금 남았어요.,A few seats are left.,Jwaseogi jogeum namasseoyo.,
+theater,1. theaterticket,5,Staff,얼마예요?,How much?,Eolmayeyo?,
+theater,1. theaterticket,6,Customer,R석 8만원 S석 6만원이에요.,R seats 80,R-seok palman-won S-seok yungman-won-ieyo.,
+theater,1. theaterticket,7,Staff,S석 두 장 주세요.,Two S seats please.,S-seok du jang juseyo.,
+theater,1. theaterticket,8,Customer,12만원입니다.,That's 120,Sibiman-wonimida.,
+theater,1. theaterseat,1,Staff,좋은 좌석 추천해 주세요.,Recommend good seats please.,Joeun jwaseok chucheonhae juseyo.,
+theater,1. theaterseat,2,Customer,중앙 앞쪽이 무대가 잘 보여요.,Center front has a good view of the stage.,Jungang apjjogi mudaega jal boyeoyo.,
+theater,1. theaterseat,3,Staff,너무 앞은 불편하지 않아요?,Isn't too front uncomfortable?,Neomu apeun bulpyeonhaji anayo?,
+theater,1. theaterseat,4,Customer,10열 정도가 좋아요.,Row 10 is good.,Sip-yeol jeongdoga joayo.,
+theater,1. theaterseat,5,Staff,그럼 10열로 주세요.,Then row 10 please.,Geureom sip-yeol-lo juseyo.,
+theater,1. theaterseat,6,Customer,10열 12번 13번 어떠세요?,How about row 10 seats 12 and 13?,Sip-yeol sib-i-beon sip-sam-beon eotteuseyo?,
+theater,1. theaterseat,7,Staff,좋아요.,Good.,Joayo.,
+theater,1. theaterseat,8,Customer,예매 완료됐어요.,Booking complete.,Yemae wanryodwaesseoyo.,
+theater,1. theaterprogram,1,Staff,지금 어떤 공연 해요?,What shows are on now?,Jigeum eotteon gongyeon haeyo?,
+theater,1. theaterprogram,2,Customer,뮤지컬 오페라의 유령이요.,The musical Phantom of the Opera.,Myujikeol Operaui Yuryeong-iyo.,
+theater,1. theaterprogram,3,Staff,공연 시간이 얼마나 돼요?,How long is the show?,Gongyeon sigani eolmana dwaeyo?,
+theater,1. theaterprogram,4,Customer,인터미션 포함 3시간이요.,3 hours including intermission.,Inteomisyeon poham se-sigan-iyo.,
+theater,1. theaterprogram,5,Staff,자막이 있어요?,Are there subtitles?,Jamagi isseoyo?,
+theater,1. theaterprogram,6,Customer,네 영어 자막 있어요.,Yes there are English subtitles.,Ne yeongeo jamak isseoyo.,
+theater,1. theaterprogram,7,Staff,좋네요.,Great.,Joeunneyo.,
+theater,1. theaterprogram,8,Customer,즐거운 관람 되세요.,Enjoy the show.,Jeulgeoun gwallam doeseyo.,
+stadium,1. stadiumticket,1,Staff,야구 표 사고 싶어요.,I want to buy baseball tickets.,Yagu pyo sago sipeoyo.,
+stadium,1. stadiumticket,2,Customer,어느 경기요?,Which game?,Eoneu gyeonggi-yo?,
+stadium,1. stadiumticket,3,Staff,이번 주 토요일이요.,This Saturday.,Ibeon ju toyoil-iyo.,
+stadium,1. stadiumticket,4,Customer,삼성 대 LG요.,Samsung vs LG.,Samsung dae LG-yo.,
+stadium,1. stadiumticket,5,Staff,외야석으로 주세요.,Outfield seats please.,Oeyaseok-euro juseyo.,
+stadium,1. stadiumticket,6,Customer,1인당 15000원이요.,15,Il-indang man-ocheon-won-iyo.,
+stadium,1. stadiumticket,7,Staff,두 장이요.,Two tickets.,Du jang-iyo.,
+stadium,1. stadiumticket,8,Customer,3만원입니다.,30,Samman-wonimida.,
+stadium,1. stadiumseat,1,Staff,우리 좌석이 어디예요?,Where are our seats?,Uri jwaseogi eodiyeyo?,
+stadium,1. stadiumseat,2,Customer,표 보여주세요.,Show me your tickets.,Pyo boyeojuseyo.,
+stadium,1. stadiumseat,3,Staff,여기요.,Here.,Yeogiyo.,
+stadium,1. stadiumseat,4,Customer,3루 쪽 K블록 15열이요.,3rd base side K block row 15.,Sam-lu jjok K-beullok sib-o-yeol-iyo.,
+stadium,1. stadiumseat,5,Staff,어디로 가요?,How do I get there?,Eodiro gayo?,
+stadium,1. stadiumseat,6,Customer,저쪽 계단으로 올라가세요.,Go up those stairs.,Jeojjok gyedaneuro ollagaseyo.,
+stadium,1. stadiumseat,7,Staff,감사합니다.,Thank you.,Gamsahamnida.,
+stadium,1. stadiumseat,8,Customer,경기 잘 보세요!,Enjoy the game!,Gyeonggi jal boseyo!,
+stadium,1. stadiumfac,1,Staff,매점이 어디 있어요?,Where is the concession stand?,Maejeon-i eodi isseoyo?,
+stadium,1. stadiumfac,2,Customer,각 층마다 있어요.,On every level.,Gak cheungmada isseoyo.,
+stadium,1. stadiumfac,3,Staff,맥주도 팔아요?,Do they sell beer?,Maekjudo parayo?,
+stadium,1. stadiumfac,4,Customer,네 치킨도 있어요.,Yes and fried chicken too.,Ne chikindo isseoyo.,
+stadium,1. stadiumfac,5,Staff,화장실은요?,Restrooms?,Hwajangsireunyo?,
+stadium,1. stadiumfac,6,Customer,매점 옆에 있어요.,Next to the concession stand.,Maejeonn yeope isseoyo.,
+stadium,1. stadiumfac,7,Staff,응원도구 파는 데 있어요?,Is there a place selling cheering goods?,Eungwondogu paneun de isseoyo?,
+stadium,1. stadiumfac,8,Customer,입구 근처에 기념품점이 있어요.,There's a souvenir shop near the entrance.,Ipgu geuncheoe ginyeompumjeom-i isseoyo.,
+asset,1. assetaccount,1,Staff,증권 계좌 개설하고 싶어요.,I want to open a securities account.,Jeunggwon gyejwa gaesulhago sipeoyo.,
+asset,1. assetaccount,2,Customer,여권하고 비자 보여주세요.,Show your passport and visa.,Yeogwon-hago bija boyeojuseyo.,
+asset,1. assetaccount,3,Staff,외국인도 가능해요?,Is it possible for foreigners?,Oegugin-do ganeunghaeyo?,
+asset,1. assetaccount,4,Customer,네 외국인등록증 있으면 돼요.,Yes if you have an ARC.,Ne oegugindeungrokjeung isseumyeon dwaeyo.,
+asset,1. assetaccount,5,Staff,한국 주식 살 수 있어요?,Can I buy Korean stocks?,Hanguk jusik sal su isseoyo?,
+asset,1. assetaccount,6,Customer,네 가능해요. 앱도 영어로 돼요.,Yes you can. The app is in English too.,Ne ganeunghaeyo. Aepdo yeongeoro dwaeyo.,
+asset,1. assetaccount,7,Staff,수수료는 얼마예요?,What are the fees?,Susuryoneun eolmayeyo?,
+asset,1. assetaccount,8,Customer,거래당 0.015%예요.,0.015% per trade.,Georaedang yeongjeon-ilgo-peosenteu-yeyo.,
+asset,1. assetinvest,1,Staff,좋은 투자 상품 있어요?,Are there good investment products?,Joeun tuja sangpum isseoyo?,
+asset,1. assetinvest,2,Customer,어떤 투자 스타일이세요?,What's your investment style?,Eotteon tuja seutail-iseyo?,
+asset,1. assetinvest,3,Staff,안전한 걸 원해요.,I want something safe.,Anjeonhan geol wonhaeyo.,
+asset,1. assetinvest,4,Customer,적금이나 채권 추천해요.,I recommend savings or bonds.,Jeokgeum-ina chaegwon chucheonhaeyo.,
+asset,1. assetinvest,5,Staff,수익률이 얼마예요?,What's the return rate?,Suignyuri eolmayeyo?,
+asset,1. assetinvest,6,Customer,연 3~4% 정도요.,About 3-4% annually.,Yeon sam-sa-peosenteu jeongdoyo.,
+asset,1. assetinvest,7,Staff,생각해 볼게요.,I'll think about it.,Saenggakae bolgeyo.,
+asset,1. assetinvest,8,Customer,자료 드릴게요.,I'll give you some materials.,Jaryo deurilgeyo.,
+asset,1. assetconsult,1,Staff,재정 상담 받고 싶어요.,I want financial consultation.,Jaejeong sangdam batgo sipeoyo.,
+asset,1. assetconsult,2,Customer,어떤 부분이요?,What aspect?,Eotteon bubun-iyo?,
+asset,1. assetconsult,3,Staff,은퇴 준비요.,Retirement planning.,Euntoe junbiyo.,
+asset,1. assetconsult,4,Customer,현재 자산 상황을 알려주세요.,Tell me your current asset situation.,Hyeonjae jasan sanghwang-eul allyeojuseyo.,
+asset,1. assetconsult,5,Staff,상담비가 있어요?,Is there a consultation fee?,Sangdambiga isseoyo?,
+asset,1. assetconsult,6,Customer,첫 상담은 무료예요.,First consultation is free.,Cheot sangdameun muryoyeyo.,
+asset,1. assetconsult,7,Staff,좋아요. 시작해요.,Good. Let's start.,Joayo. Sijakhaeyo.,
+asset,1. assetconsult,8,Customer,네 이쪽으로 앉으세요.,Yes please sit this way.,Ne ijjogeuro anjeuseyo.,
+company,2. Business Meeting (미팅),1,Staff,회의실이 어디예요?,Where is the meeting room?,Hoeuisiri eodiyeyo?,
+company,2. Business Meeting (미팅),2,Customer,몇 층 회의실이요?,Which floor meeting room?,Myeot cheung hoeuisiriyo?,
+company,2. Business Meeting (미팅),3,Staff,10층 A회의실이요.,10th floor room A.,Sip-cheung A-hoeuisiriyo.,
+company,2. Business Meeting (미팅),4,Customer,엘리베이터 타고 왼쪽이요.,Take the elevator then go left.,Ellibeiteo tago oenjjog-iyo.,
+company,2. Business Meeting (미팅),5,Staff,와이파이 비밀번호 뭐예요?,What's the WiFi password?,Waipai bimilbeonho mwoyeyo?,
+company,2. Business Meeting (미팅),6,Customer,guest1234예요.,It's guest1234.,Guest-il-i-sam-sa-yeyo.,
+company,2. Business Meeting (미팅),7,Staff,감사합니다.,Thank you.,Gamsahamnida.,
+company,2. Business Meeting (미팅),8,Customer,좋은 회의 되세요.,Have a good meeting.,Joeun hoeui doeseyo.,
+company,1. Company Visit (회사 방문),1,Staff,김 과장님 만나러 왔어요.,I came to see Manager Kim.,Kim gwajangnim mannaro wasseoyo.,
+company,1. Company Visit (회사 방문),2,Customer,약속하셨어요?,Do you have an appointment?,Yaksokhasyeosseoyo?,
+company,1. Company Visit (회사 방문),3,Staff,네 2시에요.,Yes at 2 PM.,Ne du-siyeyo.,
+company,1. Company Visit (회사 방문),4,Customer,성함이 어떻게 되세요?,What is your name?,Seonghami eotteoke doeseyo?,
+company,1. Company Visit (회사 방문),5,Staff,존 스미스예요.,John Smith.,Jon Seumiseu-yeyo.,
+company,1. Company Visit (회사 방문),6,Customer,잠시만요. 안내해 드릴게요.,Just a moment. I'll escort you.,Jamsimanyo. Annaehae deurilgeyo.,
+company,1. Company Visit (회사 방문),7,Staff,감사합니다.,Thank you.,Gamsahamnida.,
+company,1. Company Visit (회사 방문),8,Customer,이쪽으로 오세요.,Please come this way.,Ijjogeuro oseyo.,
+company,1. companyinquiry,1,Staff,영업시간이 어떻게 돼요?,What are your business hours?,Yeongeopsiganl eotteoke dwaeyo?,
+company,1. companyinquiry,2,Customer,9시부터 6시까지요.,9 AM to 6 PM.,Ahopsibuteo yeoseot-sikkkajiyo.,
+company,1. companyinquiry,3,Staff,토요일도 해요?,Are you open on Saturdays?,Toyoil-do haeyo?,
+company,1. companyinquiry,4,Customer,아니요. 주말은 쉬어요.,No. We're closed on weekends.,Aniyo. Jumareun swioyo.,
+company,1. companyinquiry,5,Staff,담당자 연락처 알 수 있어요?,Can I get the contact person's number?,Damdangja yeollakcheo al su isseoyo?,
+company,1. companyinquiry,6,Customer,명함 드릴게요.,I'll give you a business card.,Myeongham deurilgeyo.,
+company,1. companyinquiry,7,Staff,감사합니다.,Thank you.,Gamsahamnida.,
+company,1. companyinquiry,8,Customer,천만에요.,You're welcome.,Cheonmaneyo.,
+golf,1. golfreserve,1,Staff,내일 라운드 예약하고 싶어요.,I want to reserve a round for tomorrow.,Naeil laundeu yeyakhago sipeoyo.,
+golf,1. golfreserve,2,Customer,몇 시로 하시겠어요?,What time would you like?,Myeot siro hasigesseoyo?,
+golf,1. golfreserve,3,Staff,오전 7시요.,7 AM.,Ojeon ilgopsiyo.,
+golf,1. golfreserve,4,Customer,몇 분이세요?,How many people?,Myeot buniseyo?,
+golf,1. golfreserve,5,Staff,4명이요.,Four people.,Ne-myeong-iyo.,
+golf,1. golfreserve,6,Customer,그린피가 1인당 15만원이에요.,Green fee is 150,Geurinpi-ga il-indang siboman-won-ieyo.,
+golf,1. golfreserve,7,Staff,카트 포함이에요?,Does that include a cart?,Kateu poham-ieyo?,
+golf,1. golfreserve,8,Customer,네 카트 캐디 포함이에요.,Yes cart and caddy included.,Ne kateu kaedi poham-ieyo.,
+golf,1. golfequip,1,Staff,클럽 렌탈 할 수 있어요?,Can I rent clubs?,Keulleop rental hal su isseoyo?,
+golf,1. golfequip,2,Customer,네 풀세트 5만원이에요.,Yes a full set is 50,Ne pulseteu oman-won-ieyo.,
+golf,1. golfequip,3,Staff,공도 팔아요?,Do you sell balls?,Gongdo parayo?,
+golf,1. golfequip,4,Customer,네 프로샵에서요.,Yes at the pro shop.,Ne peuroshap-eseoyo.,
+golf,1. golfequip,5,Staff,장갑도 있어요?,Do you have gloves?,Janggapdo isseoyo?,
+golf,1. golfequip,6,Customer,네 다 있어요.,Yes we have everything.,Ne da isseoyo.,
+golf,1. golfequip,7,Staff,프로샵은 어디예요?,Where is the pro shop?,Peuroshap-eun eodiyeyo?,
+golf,1. golfequip,8,Customer,클럽하우스 1층이요.,1st floor of the clubhouse.,Keulleophauseu il-cheung-iyo.,
+golf,1. golfcourse,1,Staff,코스가 어떻게 돼요?,What's the course like?,Koseuga eotteoke dwaeyo?,
+golf,1. golfcourse,2,Customer,18홀 파72예요.,18 holes par 72.,Sip-pal-hol pa-chilsip-i-yeyo.,
+golf,1. golfcourse,3,Staff,난이도 어때요?,How difficult is it?,Nanido eottaeyo?,
+golf,1. golfcourse,4,Customer,중급자용이에요.,It's for intermediate players.,Junggeubjayong-ieyo.,
+golf,1. golfcourse,5,Staff,드라이빙 레인지 있어요?,Is there a driving range?,Deuraibing reinji isseoyo?,
+golf,1. golfcourse,6,Customer,네 50타석 있어요.,Yes 50 bays.,Ne osip-taseok isseoyo.,
+golf,1. golfcourse,7,Staff,연습하고 나갈게요.,I'll practice before going out.,Yeonseupago nagalgeyo.,
+golf,1. golfcourse,8,Customer,1시간 전에 오세요.,Come an hour early.,Han-sigan jeone oseyo.,
+elementary,1. School Visit (학교 방문),1,Staff,학교 방문하러 왔어요.,I came to visit the school.,Hakgyo bangmunhareo wasseoyo.,
+elementary,1. School Visit (학교 방문),2,Customer,무슨 일로 오셨어요?,What brings you here?,Museun illo osyeosseoyo?,
+elementary,1. School Visit (학교 방문),3,Staff,아이 입학 상담이요.,School admission consultation for my child.,Ai iphak sangdam-iyo.,
+elementary,1. School Visit (학교 방문),4,Customer,교무실로 안내해 드릴게요.,I'll guide you to the office.,Gyomusillo annaehae deurilgeyo.,
+elementary,1. School Visit (학교 방문),5,Staff,외국인 자녀도 입학 가능해요?,Can foreign children enroll?,Oegugin janyeodo iphak ganeunghaeyo?,
+elementary,1. School Visit (학교 방문),6,Customer,네 서류만 준비하시면 돼요.,Yes just prepare the documents.,Ne seoryuman junbihaseumyeon dwaeyo.,
+elementary,1. School Visit (학교 방문),7,Staff,어떤 서류가 필요해요?,What documents are needed?,Eotteon seoryuga piryohaeyo?,
+elementary,1. School Visit (학교 방문),8,Customer,여권 외국인등록증 건강검진서요.,Passport ARC and health certificate.,Yeogwon oegugindeungrokjeung geonganggoemjinseoyo.,
+elementary,1. eleminquiry,1,Staff,급식이 있어요?,Is there school lunch?,Geupsi-gi isseoyo?,
+elementary,1. eleminquiry,2,Customer,네 매일 급식 제공해요.,Yes lunch is provided daily.,Ne maeil geupsi jegonghaeyo.,
+elementary,1. eleminquiry,3,Staff,영어 수업 있어요?,Are there English classes?,Yeongeo sueop isseoyo?,
+elementary,1. eleminquiry,4,Customer,네 원어민 선생님이 계세요.,Yes there's a native teacher.,Ne woneomini seonsaengnim-i gyeseyo.,
+elementary,1. eleminquiry,5,Staff,방과후 프로그램 있어요?,Are there after-school programs?,Banggwahu peurogeuraem isseoyo?,
+elementary,1. eleminquiry,6,Customer,네 여러 가지 있어요.,Yes there are many.,Ne yeoreo gaji isseoyo.,
+elementary,1. eleminquiry,7,Staff,목록 볼 수 있어요?,Can I see the list?,Mongnok bol su isseoyo?,
+elementary,1. eleminquiry,8,Customer,여기 안내책자요.,Here's a brochure.,Yeogi annaechaekjayo.,
+elementary,2. School Events (학교 행사),1,Staff,학예회가 언제예요?,When is the school festival?,Hagyehoe-ga eonjeyeyo?,
+elementary,2. School Events (학교 행사),2,Customer,다음 달 15일이요.,The 15th of next month.,Daeum dal sib-o-il-iyo.,
+elementary,2. School Events (학교 행사),3,Staff,학부모도 갈 수 있어요?,Can parents attend?,Hakbumodo gal su isseoyo?,
+elementary,2. School Events (학교 행사),4,Customer,네 물론이죠.,Yes of course.,Ne mullon-ijyo.,
+elementary,2. School Events (학교 행사),5,Staff,몇 시에 시작해요?,What time does it start?,Myeot si-e sijakae-yo?,
+elementary,2. School Events (학교 행사),6,Customer,오전 10시요.,10 AM.,Ojeon yeolsiyo.,
+elementary,2. School Events (학교 행사),7,Staff,카메라 가져가도 돼요?,Can I bring a camera?,Kamera gajyeogado dwaeyo?,
+elementary,2. School Events (학교 행사),8,Customer,네 괜찮아요.,Yes that's fine.,Ne gwaenchanayo.,
+highschool,1. School Visit (학교 방문),1,Staff,학교 투어 할 수 있어요?,Can I tour the school?,Hakgyo tueo hal su isseoyo?,
+highschool,1. School Visit (학교 방문),2,Customer,네 예약하셨어요?,Yes did you make a reservation?,Ne yeyakhasyeosseoyo?,
+highschool,1. School Visit (학교 방문),3,Staff,네 오늘 오후 2시요.,Yes today at 2 PM.,Ne oneul ohu du-siyo.,
+highschool,1. School Visit (학교 방문),4,Customer,교무실에서 대기해 주세요.,Please wait at the office.,Gyomusil-eseo daegihae juseyo.,
+highschool,1. School Visit (학교 방문),5,Staff,시설 구경도 가능해요?,Can I see the facilities?,Siseol gugyeongdo ganeunghaeyo?,
+highschool,1. School Visit (학교 방문),6,Customer,네 안내해 드릴게요.,Yes I'll show you around.,Ne annaehae deurilgeyo.,
+highschool,1. School Visit (학교 방문),7,Staff,감사합니다.,Thank you.,Gamsahamnida.,
+highschool,1. School Visit (학교 방문),8,Customer,이쪽으로 오세요.,Please come this way.,Ijjogeuro oseyo.,
+highschool,1. highinquiry,1,Staff,특수 프로그램이 있어요?,Are there special programs?,Teuksu peurogeuraem-i isseoyo?,
+highschool,1. highinquiry,2,Customer,네 국제반이 있어요.,Yes there's an international class.,Ne gukjeban-i isseoyo.,
+highschool,1. highinquiry,3,Staff,영어로 수업해요?,Are classes in English?,Yeongeoro sueopaeyo?,
+highschool,1. highinquiry,4,Customer,일부 과목은요.,Some subjects are.,Ilbu gwamok-eunyo.,
+highschool,1. highinquiry,5,Staff,대학 진학률이 어때요?,What's the university admission rate?,Daehak jinhangnyuri eottaeyo?,
+highschool,1. highinquiry,6,Customer,작년에 90%였어요.,It was 90% last year.,Jaknyeone gusip-peosenteu-yeosseoyo.,
+highschool,1. highinquiry,7,Staff,좋네요.,That's good.,Joeunneyo.,
+highschool,1. highinquiry,8,Customer,더 궁금한 거 있으세요?,Any other questions?,Deo gunggeumhan geo isseuseyo?,
+highschool,2. School Events (학교 행사),1,Staff,체육대회가 언제예요?,When is the sports day?,Cheyukdaehoe-ga eonjeyeyo?,
+highschool,2. School Events (학교 행사),2,Customer,이번 주 금요일이요.,This Friday.,Ibeon ju geumyoil-iyo.,
+highschool,2. School Events (학교 행사),3,Staff,어디서 해요?,Where is it held?,Eodiseo haeyo?,
+highschool,2. School Events (학교 행사),4,Customer,운동장에서요.,At the sports field.,Undongjang-eseoyo.,
+highschool,2. School Events (학교 행사),5,Staff,관람 가능해요?,Can I watch?,Gwallam ganeunghaeyo?,
+highschool,2. School Events (학교 행사),6,Customer,네 가족은 환영해요.,Yes family is welcome.,Ne gajogeun hwanyeonghaeyo.,
+highschool,2. School Events (학교 행사),7,Staff,몇 시에 끝나요?,What time does it end?,Myeot si-e kkeunayo?,
+highschool,2. School Events (학교 행사),8,Customer,오후 4시쯤이요.,Around 4 PM.,Ohu ne-sijjeum-iyo.,
+university,1. unicampus,1,Staff,캠퍼스 투어 할 수 있어요?,Can I take a campus tour?,Kaempeoseu tueo hal su isseoyo?,
+university,1. unicampus,2,Customer,네 입학처에서 신청하세요.,Yes apply at the admissions office.,Ne iphakcheoseo sincheongaseyo.,
+university,1. unicampus,3,Staff,영어 투어 있어요?,Is there an English tour?,Yeongeo tueo isseoyo?,
+university,1. unicampus,4,Customer,네 매주 화요일이요.,Yes every Tuesday.,Ne maeju hwayoil-iyo.,
+university,1. unicampus,5,Staff,도서관 볼 수 있어요?,Can I see the library?,Doseogwan bol su isseoyo?,
+university,1. unicampus,6,Customer,네 투어에 포함돼요.,Yes it's included in the tour.,Ne tueoe pohamdwaeyo.,
+university,1. unicampus,7,Staff,학생 식당도요?,The student cafeteria too?,Haksaeng sikdangdoyo?,
+university,1. unicampus,8,Customer,네 모든 시설 보여드려요.,Yes we show all facilities.,Ne modeun siseol boyeodeuryeoyo.,
+university,1. uniinquiry,1,Staff,외국인 입학 조건이 뭐예요?,What are the requirements for foreign students?,Oegugin iphak jogeon-i mwoyeyo?,
+university,1. uniinquiry,2,Customer,토픽 4급 이상이요.,TOPIK level 4 or above.,Topik sa-geup isang-iyo.,
+university,1. uniinquiry,3,Staff,장학금 있어요?,Are there scholarships?,Janghakgeum isseoyo?,
+university,1. uniinquiry,4,Customer,네 성적 우수자에게요.,Yes for excellent students.,Ne seongjeok usuja-ege-yo.,
+university,1. uniinquiry,5,Staff,기숙사 있어요?,Is there a dormitory?,Gisuksa isseoyo?,
+university,1. uniinquiry,6,Customer,네 외국인 전용 기숙사 있어요.,Yes there's a dorm for foreigners.,Ne oegugin jeonyong gisuksa isseoyo.,
+university,1. uniinquiry,7,Staff,학비가 얼마예요?,How much is tuition?,Hakbi-ga eolmayeyo?,
+university,1. uniinquiry,8,Customer,전공마다 달라요. 여기 안내서요.,It varies by major. Here's a guide.,Jeongongmada dallayo. Yeogi annae-seoyo.,
+university,1. unitour,1,Staff,오늘 가이드 투어 있어요?,Is there a guided tour today?,Oneul gaideu tueo isseoyo?,
+university,1. unitour,2,Customer,네 오후 1시에 시작해요.,Yes it starts at 1 PM.,Ne ohu han-sie sijakae-yo.,
+university,1. unitour,3,Staff,어디서 모여요?,Where do we meet?,Eodiseo moyeoyo?,
+university,1. unitour,4,Customer,정문 앞 안내소요.,At the information center in front of the main gate.,Jeongmun ap annaesoyo.,
+university,1. unitour,5,Staff,얼마나 걸려요?,How long does it take?,Eolmana geollyeoyo?,
+university,1. unitour,6,Customer,약 2시간이요.,About 2 hours.,Yak du-sigan-iyo.,
+university,1. unitour,7,Staff,무료예요?,Is it free?,Muryoyeyo?,
+university,1. unitour,8,Customer,네 무료예요.,Yes it's free.,Ne muryoyeyo.,
+oldtown,1. oldtour,1,Staff,한옥마을 투어 있어요?,Are there Hanok Village tours?,Hanongmaeul tueo isseoyo?,
+oldtown,1. oldtour,2,Customer,네 여러 코스 있어요.,Yes there are several courses.,Ne yeoreo koseu isseoyo.,
+oldtown,1. oldtour,3,Staff,추천 코스가 뭐예요?,What course do you recommend?,Chucheon koseu-ga mwoyeyo?,
+oldtown,1. oldtour,4,Customer,전통 체험 코스요.,The traditional experience course.,Jeontong cheheom koseu-yo.,
+oldtown,1. oldtour,5,Staff,얼마나 걸려요?,How long does it take?,Eolmana geollyeoyo?,
+oldtown,1. oldtour,6,Customer,약 3시간이요.,About 3 hours.,Yak se-sigan-iyo.,
+oldtown,1. oldtour,7,Staff,가이드가 있어요?,Is there a guide?,Gaideuga isseoyo?,
+oldtown,1. oldtour,8,Customer,네 영어 가이드도 있어요.,Yes there's an English guide too.,Ne yeongeo gaideudo isseoyo.,
+oldtown,1. oldexp,1,Staff,한복 체험 하고 싶어요.,I want to try wearing hanbok.,Hanbok cheheom hago sipeoyo.,
+oldtown,1. oldexp,2,Customer,여기서 대여 가능해요.,You can rent here.,Yeogiseo daeyo ganeunghaeyo.,
+oldtown,1. oldexp,3,Staff,1시간에 얼마예요?,How much for an hour?,Han-sigane eolmayeyo?,
+oldtown,1. oldexp,4,Customer,1시간 15000원이요.,15,Han-sigan man-ocheon-won-iyo.,
+oldtown,1. oldexp,5,Staff,사진도 찍어줘요?,Do you take photos too?,Sajindo jjigeojwoyo?,
+oldtown,1. oldexp,6,Customer,네 추가 비용 있어요.,Yes for an additional fee.,Ne chuga biyong isseoyo.,
+oldtown,1. oldexp,7,Staff,머리도 해줘요?,Do you do hair styling too?,Meorido haejwoyo?,
+oldtown,1. oldexp,8,Customer,네 전통 머리 5000원이요.,Yes traditional hair styling is 5,Ne jeontong meori ocheon-won-iyo.,
+oldtown,1. oldphoto,1,Staff,사진 찍기 좋은 곳 어디예요?,Where's a good photo spot?,Sajin jjikgi joeun got eodiyeyo?,
+oldtown,1. oldphoto,2,Customer,경회루가 제일 유명해요.,Gyeonghoeru is the most famous.,Gyeonghoerunga jeil yumyeonghaeyo.,
+oldtown,1. oldphoto,3,Staff,어디로 가요?,How do I get there?,Eodiro gayo?,
+oldtown,1. oldphoto,4,Customer,이 길 따라 직진하세요.,Go straight along this path.,I gil ttara jikjinhaseyo.,
+oldtown,1. oldphoto,5,Staff,일몰 때 예뻐요?,Is it pretty at sunset?,Ilmol ttae yeppeoyo?,
+oldtown,1. oldphoto,6,Customer,네 정말 아름다워요.,Yes it's really beautiful.,Ne jeongmal areumdawoyo.,
+oldtown,1. oldphoto,7,Staff,삼각대 써도 돼요?,Can I use a tripod?,Samgakdae sseodo dwaeyo?,
+oldtown,1. oldphoto,8,Customer,네 괜찮아요.,Yes that's fine.,Ne gwaenchanayo.,

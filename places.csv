@@ -1,30 +1,30 @@
-place_id,place_name_en,place_name_ko,icon
-hospital,Hospital,병원,🏥
-restaurant,Restaurant,식당,🍽️
-hotel,Hotel,호텔,🏨
-trainstation,Train Station,기차역,🚉
-busstation,Bus Terminal,버스터미널,🚌
-airport,Airport,공항,✈️
-market,Traditional Market,시장,🏪
-bank,Bank,은행,🏦
-communication,Phone Store,통신사,📱
-police,Police Station,경찰서,👮
-electronics,Electronics Store,전자제품점,💻
-salon,Hair Salon,미용실,💇
-bakery,Bakery/Cafe,빵집/카페,🥐
-massage,Spa/Massage,마사지,💆
-cinema,Movie Theater,영화관,🎬
-park,Park,공원,🌳
-department,Department Store,백화점,🏬
-scenic,Tourist Attraction,관광명소,📸
-apartment,Real Estate,부동산,🏠
-ktv,Karaoke,노래방,🎤
-theater,Performance Hall,공연장,🎭
-stadium,Sports Stadium,경기장,🏟️
-asset,Securities/Bank,증권사,📈
-company,Office/Company,회사,🏢
-golf,Golf Course,골프장,⛳
-elementary,Elementary School,초등학교,🎒
-highschool,High School,고등학교,📚
-university,University,대학교,🎓
-oldtown,Traditional Village,한옥마을,🏛️
+placeType,name,placeKeywords,category
+hospital,Hospital,"hospital,병원,clinic,emergency,doctor,nurse,pharmacy,의원,health center",medical
+restaurant,Restaurant,"restaurant,식당,food,dining,meal,음식점,맛집,korean food,eat",food
+police,Police Station,"police,경찰서,emergency,crime,report,lost,theft,help,파출소",service
+bank,Bank,"bank,은행,money,exchange,ATM,account,currency,금융,transfer",service
+busstation,Bus Terminal,"bus,버스터미널,bus station,terminal,coach,express bus,시외버스",transport
+airport,Airport,"airport,공항,flight,airplane,check-in,boarding,immigration,departure,arrival",transport
+trainstation,Train Station,"train,기차역,railway,KTX,station,platform,ticket,고속철,SRT",transport
+market,Traditional Market,"market,시장,traditional market,shopping,bargain,전통시장,남대문,동대문",shopping
+apartment,Real Estate,"apartment,부동산,rent,house,room,monthly rent,deposit,lease,아파트,집",residence
+cinema,Movie Theater,"cinema,영화관,movie,film,theater,screening,CGV,롯데시네마,메가박스",entertainment
+theater,Theater,"theater,극장,performance,musical,play,concert,show,공연,뮤지컬",entertainment
+stadium,Sports Stadium,"stadium,경기장,sports,soccer,baseball,match,game,운동장,체육관",sports
+park,Park,"park,공원,walking,jogging,picnic,nature,relax,산책,한강",sports
+department,Department Store,"department store,백화점,shopping,mall,brand,luxury,신세계,롯데,현대",shopping
+golf,Golf Course,"golf,골프장,golf course,driving range,green,round,골프,연습장",sports
+massage,Spa/Massage,"massage,마사지,spa,relax,sauna,jjimjilbang,찜질방,사우나,healing",wellness
+ktv,Karaoke,"karaoke,노래방,KTV,singing,song,music,노래,코인노래방",entertainment
+hotel,Hotel,"hotel,호텔,accommodation,room,check-in,check-out,reservation,숙소,모텔,게스트하우스",accommodation
+scenic,Tourist Attraction,"scenic,관광지,tourist,attraction,sightseeing,palace,temple,명소,관광",tourism
+oldtown,Traditional Village,"traditional village,한옥마을,hanok,old town,heritage,전주,북촌,문화유산",tourism
+company,Company,"company,회사,office,business,meeting,work,사무실,미팅,방문",service
+salon,Hair Salon,"salon,미용실,hair,haircut,perm,color,beauty,머리,헤어",wellness
+bakery,Bakery/Cafe,"bakery,빵집,cafe,coffee,bread,dessert,pastry,카페,커피,케이크",food
+elementary,Elementary School,"elementary,초등학교,school,student,teacher,children,education,학교",education
+highschool,High School,"high school,고등학교,student,education,teenager,학생,교육",education
+university,University,"university,대학교,college,campus,student,professor,학교,강의",education
+communication,Phone Store,"phone,통신사,mobile,SIM card,data plan,SKT,KT,LG,핸드폰,스마트폰",telecom
+asset,Real Estate Agency,"real estate,부동산,rent,buy,house,apartment,monthly,deposit,lease",realestate
+electronics,Electronics Store,"electronics,전자제품,phone,computer,laptop,appliance,가전,디지털",electronics

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>KoreaTalk - Korean Travel Phrases</title>
     <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#FF6B6B">
+    <meta name="theme-color" content="#2B9E9E">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="apple-touch-icon" href="icon-192.png">
@@ -19,18 +19,118 @@
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+            background: linear-gradient(180deg, #f5f7fa 0%, #e8ecf1 100%);
             min-height: 100vh;
             color: #333;
         }
         
+        /* ===== LANDING PAGE ===== */
+        .landing-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .landing-title {
+            font-size: 42px;
+            font-weight: 700;
+            font-style: italic;
+            color: #2B9E9E;
+            margin-bottom: 8px;
+            letter-spacing: 2px;
+        }
+        
+        .landing-subtitle {
+            font-size: 20px;
+            font-style: italic;
+            color: #D97659;
+            margin-bottom: 40px;
+        }
+        
+        .landing-description {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .landing-search-box {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 15px;
+        }
+        
+        .landing-search-input {
+            width: 100%;
+            padding: 16px 24px;
+            font-size: 16px;
+            border: 2px solid #2B9E9E;
+            border-radius: 30px;
+            outline: none;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        
+        .landing-search-input:focus {
+            box-shadow: 0 0 15px rgba(43, 158, 158, 0.3);
+        }
+        
+        .landing-search-input::placeholder {
+            color: #999;
+        }
+        
+        .landing-hint {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 20px;
+        }
+        
+        .go-button {
+            background: linear-gradient(135deg, #D97659 0%, #C4634A 100%);
+            color: white;
+            border: none;
+            padding: 16px 60px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(217, 118, 89, 0.4);
+        }
+        
+        .go-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(217, 118, 89, 0.5);
+        }
+        
+        .go-button:active {
+            transform: translateY(0);
+        }
+        
+        .landing-brand {
+            margin-top: 50px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #2B9E9E;
+            letter-spacing: 3px;
+        }
+        
+        /* ===== APP PAGE ===== */
+        .app-page {
+            display: none;
+        }
+        
         .header {
-            background: rgba(255,255,255,0.95);
+            background: rgba(255,255,255,0.98);
             padding: 15px 20px;
             display: flex;
             align-items: center;
             gap: 15px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -42,17 +142,12 @@
             font-size: 24px;
             cursor: pointer;
             padding: 5px;
-            display: none;
-            color: #FF6B6B;
-        }
-        
-        .back-btn.visible {
-            display: block;
+            color: #2B9E9E;
         }
         
         .header h1 {
             font-size: 20px;
-            color: #FF6B6B;
+            color: #2B9E9E;
             flex: 1;
         }
         
@@ -75,7 +170,8 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            border: 1px solid #e0e0e0;
         }
         
         .search-box input {
@@ -87,7 +183,7 @@
         }
         
         .search-icon {
-            color: #999;
+            color: #2B9E9E;
             font-size: 18px;
         }
         
@@ -101,20 +197,22 @@
         .place-card {
             background: white;
             border-radius: 16px;
-            padding: 20px 10px;
+            padding: 20px 12px;
             text-align: center;
             cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: all 0.2s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border: 1px solid #f0f0f0;
         }
         
         .place-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(43, 158, 158, 0.15);
+            border-color: #2B9E9E;
         }
         
         .place-card:active {
-            transform: scale(0.95);
+            transform: scale(0.97);
         }
         
         .place-icon {
@@ -123,75 +221,71 @@
         }
         
         .place-name {
-            font-size: 12px;
+            font-size: 13px;
             font-weight: 600;
             color: #333;
-            margin-bottom: 3px;
+            margin-bottom: 4px;
         }
         
         .place-name-ko {
             font-size: 11px;
-            color: #666;
+            color: #888;
         }
         
-        /* Categories List */
-        .categories-list {
-            display: flex;
-            flex-direction: column;
+        /* Categories */
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: 12px;
         }
         
         .category-card {
             background: white;
-            border-radius: 12px;
-            padding: 18px 20px;
+            border-radius: 14px;
+            padding: 20px 16px;
+            text-align: center;
             cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: all 0.2s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border: 1px solid #f0f0f0;
         }
         
         .category-card:hover {
-            transform: translateX(5px);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(217, 118, 89, 0.2);
+            border-color: #D97659;
         }
         
         .category-card:active {
             transform: scale(0.98);
         }
         
-        .category-info h3 {
-            font-size: 16px;
+        .category-name {
+            font-size: 15px;
+            font-weight: 600;
             color: #333;
             margin-bottom: 4px;
         }
         
-        .category-info p {
+        .category-name-ko {
             font-size: 13px;
-            color: #666;
-        }
-        
-        .category-arrow {
-            color: #FF6B6B;
-            font-size: 20px;
+            color: #888;
         }
         
         /* Dialogues */
-        .dialogues-container {
+        .dialogue-container {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 12px;
         }
         
         .dialogue-bubble {
-            max-width: 85%;
-            padding: 15px 18px;
+            padding: 16px;
             border-radius: 18px;
+            max-width: 90%;
             cursor: pointer;
-            transition: all 0.2s ease;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: all 0.2s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
         }
         
         .dialogue-bubble:active {
@@ -202,10 +296,11 @@
             background: white;
             align-self: flex-start;
             border-bottom-left-radius: 5px;
+            border: 1px solid #e8e8e8;
         }
         
         .dialogue-bubble.speaker-b {
-            background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+            background: linear-gradient(135deg, #2B9E9E 0%, #238B8B 100%);
             color: white;
             align-self: flex-end;
             border-bottom-right-radius: 5px;
@@ -265,14 +360,14 @@
         .loading {
             text-align: center;
             padding: 40px;
-            color: white;
+            color: #666;
         }
         
         .loading-spinner {
             width: 40px;
             height: 40px;
-            border: 3px solid rgba(255,255,255,0.3);
-            border-top-color: white;
+            border: 3px solid #e0e0e0;
+            border-top-color: #2B9E9E;
             border-radius: 50%;
             animation: spin 1s linear infinite;
             margin: 0 auto 15px;
@@ -284,11 +379,11 @@
         
         /* Section title */
         .section-title {
-            color: white;
+            color: #D97659;
             font-size: 14px;
+            font-weight: 600;
             margin-bottom: 15px;
             padding-left: 5px;
-            text-shadow: 0 1px 3px rgba(0,0,0,0.2);
         }
         
         /* Hidden */
@@ -300,12 +395,16 @@
         .footer {
             text-align: center;
             padding: 30px 20px;
-            color: rgba(255,255,255,0.7);
+            color: #999;
             font-size: 12px;
         }
         
         /* Responsive */
         @media (max-width: 400px) {
+            .landing-title {
+                font-size: 32px;
+            }
+            
             .places-grid {
                 grid-template-columns: repeat(3, 1fr);
                 gap: 10px;
@@ -326,108 +425,136 @@
     </style>
 </head>
 <body>
-    <header class="header">
-        <button class="back-btn" id="backBtn" onclick="goBack()">←</button>
-        <div>
-            <h1 id="headerTitle">KoreaTalk</h1>
-            <div class="header-subtitle" id="headerSubtitle">Korean Travel Phrases</div>
-        </div>
-    </header>
-    
-    <div class="container">
-        <!-- Search Box -->
-        <div class="search-box" id="searchBox">
-            <span class="search-icon">🔍</span>
-            <input type="text" id="searchInput" placeholder="Search places..." oninput="filterPlaces()">
+    <!-- ===== LANDING PAGE ===== -->
+    <div class="landing-page" id="landingPage">
+        <h1 class="landing-title">KOREATALK</h1>
+        <p class="landing-subtitle">for Travelers</p>
+        
+        <p class="landing-description">
+            Practice conversations you'll need<br>
+            at your destination
+        </p>
+        
+        <div class="landing-search-box">
+            <input type="text" class="landing-search-input" id="landingSearchInput" 
+                   placeholder="Enter destination" 
+                   onkeypress="handleLandingSearch(event)">
         </div>
         
-        <!-- Places View -->
-        <div id="placesView">
-            <div class="section-title">Choose a Location</div>
-            <div class="places-grid" id="placesGrid">
-                <!-- Places will be loaded here -->
-            </div>
-        </div>
+        <p class="landing-hint">Click Go to see conversation topics</p>
         
-        <!-- Categories View -->
-        <div id="categoriesView" class="hidden">
-            <div class="section-title">Choose a Scenario</div>
-            <div class="categories-list" id="categoriesList">
-                <!-- Categories will be loaded here -->
-            </div>
-        </div>
+        <button class="go-button" onclick="showApp()">Go ›</button>
         
-        <!-- Dialogues View -->
-        <div id="dialoguesView" class="hidden">
-            <div class="section-title">Tap any phrase to hear pronunciation</div>
-            <div class="dialogues-container" id="dialoguesContainer">
-                <!-- Dialogues will be loaded here -->
-            </div>
-        </div>
-        
-        <!-- Loading -->
-        <div id="loading" class="loading hidden">
-            <div class="loading-spinner"></div>
-            <p>Loading...</p>
-        </div>
+        <p class="landing-brand">KOREATALK</p>
     </div>
     
-    <footer class="footer">
-        <p>KoreaTalk v1.0 - Learn Korean for Travel</p>
-        <p>Tap phrases to hear pronunciation</p>
-    </footer>
-    
+    <!-- ===== APP PAGE ===== -->
+    <div class="app-page" id="appPage">
+        <header class="header">
+            <button class="back-btn" id="backBtn" onclick="goBack()">←</button>
+            <div>
+                <h1 id="headerTitle">KoreaTalk</h1>
+                <div class="header-subtitle" id="headerSubtitle">Korean Travel Phrases</div>
+            </div>
+        </header>
+        
+        <div class="container">
+            <!-- Search Box -->
+            <div class="search-box" id="searchBox">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" placeholder="Search places..." oninput="filterPlaces()">
+            </div>
+            
+            <!-- Places View -->
+            <div id="placesView">
+                <div class="section-title">Choose a Location</div>
+                <div class="places-grid" id="placesGrid">
+                    <!-- Places will be loaded here -->
+                </div>
+            </div>
+            
+            <!-- Categories View -->
+            <div id="categoriesView" class="hidden">
+                <div class="section-title" id="categoriesTitle">Select a Topic</div>
+                <div class="categories-grid" id="categoriesGrid">
+                    <!-- Categories will be loaded here -->
+                </div>
+            </div>
+            
+            <!-- Dialogues View -->
+            <div id="dialoguesView" class="hidden">
+                <div class="section-title" id="dialoguesTitle">Conversation</div>
+                <div class="dialogue-container" id="dialogueContainer">
+                    <!-- Dialogues will be loaded here -->
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>KOREATALK</p>
+            <p>Tap any phrase to hear pronunciation</p>
+        </footer>
+    </div>
+
     <script>
         // Data storage
         let places = [];
         let categories = [];
         let dialogues = [];
-        let currentView = 'places';
+        let currentView = 'landing'; // landing, places, categories, dialogues
         let currentPlace = null;
         let currentCategory = null;
         
         // Initialize
-        document.addEventListener('DOMContentLoaded', async () => {
-            showLoading(true);
-            await loadData();
-            renderPlaces();
-            showLoading(false);
+        document.addEventListener('DOMContentLoaded', () => {
+            loadData();
         });
         
         // Load CSV data
         async function loadData() {
             try {
-                const [placesRes, categoriesRes, dialoguesRes] = await Promise.all([
-                    fetch('places.csv'),
-                    fetch('categories.csv'),
-                    fetch('dialogues.csv')
-                ]);
+                // Load places
+                const placesRes = await fetch('places.csv');
+                const placesText = await placesRes.text();
+                places = parseCSV(placesText);
                 
-                places = parseCSV(await placesRes.text());
-                categories = parseCSV(await categoriesRes.text());
-                dialogues = parseCSV(await dialoguesRes.text());
+                // Load categories
+                const catRes = await fetch('categories.csv');
+                const catText = await catRes.text();
+                categories = parseCSV(catText);
+                
+                // Load dialogues
+                const diagRes = await fetch('dialogues.csv');
+                const diagText = await diagRes.text();
+                dialogues = parseCSV(diagText);
+                
+                console.log('Data loaded:', places.length, 'places,', categories.length, 'categories');
             } catch (error) {
                 console.error('Error loading data:', error);
             }
         }
         
-        // Parse CSV
-        function parseCSV(csv) {
-            const lines = csv.trim().split('\n');
-            const headers = lines[0].split(',');
-            return lines.slice(1).map(line => {
-                const values = parseCSVLine(line);
-                const obj = {};
-                headers.forEach((header, i) => {
-                    obj[header.trim()] = values[i] ? values[i].trim() : '';
-                });
-                return obj;
-            });
+        // Parse CSV with proper quote handling
+        function parseCSV(text) {
+            const lines = text.trim().split('\n');
+            const headers = parseCSVLine(lines[0]);
+            const data = [];
+            
+            for (let i = 1; i < lines.length; i++) {
+                const values = parseCSVLine(lines[i]);
+                if (values.length === headers.length) {
+                    const row = {};
+                    headers.forEach((h, idx) => {
+                        row[h] = values[idx];
+                    });
+                    data.push(row);
+                }
+            }
+            return data;
         }
         
-        // Parse CSV line (handle commas in quoted strings)
         function parseCSVLine(line) {
-            const result = [];
+            const values = [];
             let current = '';
             let inQuotes = false;
             
@@ -436,37 +563,62 @@
                 if (char === '"') {
                     inQuotes = !inQuotes;
                 } else if (char === ',' && !inQuotes) {
-                    result.push(current);
+                    values.push(current.trim());
                     current = '';
                 } else {
                     current += char;
                 }
             }
-            result.push(current);
-            return result;
+            values.push(current.trim());
+            return values;
         }
         
-        // Render places
-        function renderPlaces(filter = '') {
-            const grid = document.getElementById('placesGrid');
-            const filteredPlaces = places.filter(p => 
-                p.place_name_en.toLowerCase().includes(filter.toLowerCase()) ||
-                p.place_name_ko.includes(filter)
-            );
+        // Landing page functions
+        function handleLandingSearch(event) {
+            if (event.key === 'Enter') {
+                showApp();
+            }
+        }
+        
+        function showApp() {
+            const searchTerm = document.getElementById('landingSearchInput').value.trim();
+            document.getElementById('landingPage').style.display = 'none';
+            document.getElementById('appPage').style.display = 'block';
+            currentView = 'places';
+            renderPlaces();
             
-            grid.innerHTML = filteredPlaces.map(place => `
+            if (searchTerm) {
+                document.getElementById('searchInput').value = searchTerm;
+                filterPlaces();
+            }
+        }
+        
+        // Render places grid
+        function renderPlaces() {
+            const grid = document.getElementById('placesGrid');
+            grid.innerHTML = places.map(place => `
                 <div class="place-card" onclick="selectPlace('${place.place_id}')">
                     <div class="place-icon">${place.icon}</div>
                     <div class="place-name">${place.place_name_en}</div>
                     <div class="place-name-ko">${place.place_name_ko}</div>
                 </div>
             `).join('');
+            
+            showView('places');
         }
         
         // Filter places
         function filterPlaces() {
-            const filter = document.getElementById('searchInput').value;
-            renderPlaces(filter);
+            const search = document.getElementById('searchInput').value.toLowerCase();
+            const cards = document.querySelectorAll('.place-card');
+            
+            cards.forEach((card, idx) => {
+                const place = places[idx];
+                const match = place.place_name_en.toLowerCase().includes(search) ||
+                             place.place_name_ko.includes(search) ||
+                             place.place_id.toLowerCase().includes(search);
+                card.style.display = match ? 'block' : 'none';
+            });
         }
         
         // Select place
@@ -474,109 +626,91 @@
             currentPlace = places.find(p => p.place_id === placeId);
             const placeCategories = categories.filter(c => c.place_id === placeId);
             
-            document.getElementById('categoriesList').innerHTML = placeCategories.map(cat => `
+            document.getElementById('headerTitle').textContent = currentPlace.place_name_en;
+            document.getElementById('headerSubtitle').textContent = currentPlace.place_name_ko;
+            document.getElementById('categoriesTitle').textContent = `${currentPlace.place_name_en} Topics`;
+            
+            const grid = document.getElementById('categoriesGrid');
+            grid.innerHTML = placeCategories.map(cat => `
                 <div class="category-card" onclick="selectCategory('${cat.category_id}')">
-                    <div class="category-info">
-                        <h3>${cat.category_name_en}</h3>
-                        <p>${cat.category_name_ko}</p>
-                    </div>
-                    <span class="category-arrow">→</span>
+                    <div class="category-name">${cat.category_name_en}</div>
+                    <div class="category-name-ko">${cat.category_name_ko}</div>
                 </div>
             `).join('');
             
+            currentView = 'categories';
             showView('categories');
-            updateHeader(currentPlace.place_name_en, currentPlace.place_name_ko);
         }
         
         // Select category
         function selectCategory(categoryId) {
             currentCategory = categories.find(c => c.category_id === categoryId);
             const categoryDialogues = dialogues.filter(d => 
-                d.place_id === currentPlace.place_id && 
-                d.category_id === categoryId
+                d.place_id === currentPlace.place_id && d.category_id === categoryId
             );
             
-            document.getElementById('dialoguesContainer').innerHTML = categoryDialogues.map(d => `
+            document.getElementById('headerTitle').textContent = currentCategory.category_name_en;
+            document.getElementById('headerSubtitle').textContent = currentCategory.category_name_ko;
+            document.getElementById('dialoguesTitle').textContent = `${currentCategory.category_name_en}`;
+            
+            const container = document.getElementById('dialogueContainer');
+            container.innerHTML = categoryDialogues.map((d, idx) => `
                 <div class="dialogue-bubble speaker-${d.speaker.toLowerCase()}" onclick="speak('${escapeHtml(d.korean)}', this)">
-                    <div class="speaker-label">${d.speaker === 'A' ? '🇰🇷 Korean' : '🌍 You'}</div>
-                    <div class="dialogue-korean">${d.korean}<span class="audio-indicator">🔊</span></div>
+                    <div class="speaker-label">Speaker ${d.speaker}</div>
+                    <div class="dialogue-korean">${d.korean} <span class="audio-indicator">🔊</span></div>
                     <div class="dialogue-romanization">${d.romanization}</div>
                     <div class="dialogue-english">${d.english}</div>
                 </div>
             `).join('');
             
+            currentView = 'dialogues';
             showView('dialogues');
-            updateHeader(currentCategory.category_name_en, currentCategory.category_name_ko);
         }
         
-        // Escape HTML
-        function escapeHtml(text) {
-            return text.replace(/'/g, "\\'").replace(/"/g, '\\"');
-        }
-        
-        // Show view
+        // Show/hide views
         function showView(view) {
-            currentView = view;
             document.getElementById('placesView').classList.toggle('hidden', view !== 'places');
             document.getElementById('categoriesView').classList.toggle('hidden', view !== 'categories');
             document.getElementById('dialoguesView').classList.toggle('hidden', view !== 'dialogues');
             document.getElementById('searchBox').classList.toggle('hidden', view !== 'places');
-            document.getElementById('backBtn').classList.toggle('visible', view !== 'places');
-        }
-        
-        // Update header
-        function updateHeader(title, subtitle) {
-            document.getElementById('headerTitle').textContent = title;
-            document.getElementById('headerSubtitle').textContent = subtitle;
+            document.getElementById('backBtn').style.display = view === 'places' ? 'none' : 'block';
         }
         
         // Go back
         function goBack() {
             if (currentView === 'dialogues') {
-                showView('categories');
-                updateHeader(currentPlace.place_name_en, currentPlace.place_name_ko);
+                selectPlace(currentPlace.place_id);
             } else if (currentView === 'categories') {
+                document.getElementById('headerTitle').textContent = 'KoreaTalk';
+                document.getElementById('headerSubtitle').textContent = 'Korean Travel Phrases';
+                currentView = 'places';
                 showView('places');
-                updateHeader('KoreaTalk', 'Korean Travel Phrases');
-                currentPlace = null;
             }
         }
         
-        // Text-to-speech
+        // Text to speech
         function speak(text, element) {
             if ('speechSynthesis' in window) {
-                window.speechSynthesis.cancel();
+                speechSynthesis.cancel();
+                
                 const utterance = new SpeechSynthesisUtterance(text);
                 utterance.lang = 'ko-KR';
                 utterance.rate = 1.1;
                 utterance.pitch = 1.4;
                 
                 const indicator = element.querySelector('.audio-indicator');
-                indicator.classList.add('playing');
+                if (indicator) {
+                    indicator.classList.add('playing');
+                    utterance.onend = () => indicator.classList.remove('playing');
+                }
                 
-                utterance.onend = () => {
-                    indicator.classList.remove('playing');
-                };
-                
-                utterance.onerror = () => {
-                    indicator.classList.remove('playing');
-                };
-                
-                window.speechSynthesis.speak(utterance);
+                speechSynthesis.speak(utterance);
             }
         }
         
-        // Show/hide loading
-        function showLoading(show) {
-            document.getElementById('loading').classList.toggle('hidden', !show);
-            document.getElementById('placesView').classList.toggle('hidden', show);
-        }
-        
-        // Service Worker registration for PWA
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js').catch(err => {
-                console.log('ServiceWorker registration failed:', err);
-            });
+        // Escape HTML
+        function escapeHtml(text) {
+            return text.replace(/'/g, "\\'").replace(/"/g, '\\"');
         }
     </script>
 </body>

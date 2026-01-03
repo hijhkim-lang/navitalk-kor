@@ -1,14 +1,95 @@
-category,name,korean,emoji
-medical,Medical,의료,🏥
-food,Food & Dining,음식,🍽️
-accommodation,Accommodation,숙박,🏨
-transportation,Transportation,교통,🚆
-shopping,Shopping,쇼핑,🛒
-finance,Finance,금융,💰
-communication,Communication,통신,📱
-public,Public Services,공공,🏛️
-lifestyle,Lifestyle,생활,💇
-entertainment,Entertainment,오락,🎬
-tourism,Tourism,관광,🏛️
-education,Education,교육,🎓
-business,Business,비즈니스,💼
+category_id,place_id,category_name_en,category_name_ko
+symptoms,hospital,Describing Symptoms,증상 설명
+prescription,hospital,Getting Prescription,처방 받기
+emergency,hospital,Emergency Room,응급실
+pharmacy,hospital,At Pharmacy,약국에서
+ordering,restaurant,Ordering Food,음식 주문
+recommendation,restaurant,Asking for Recommendations,추천 받기
+payment,restaurant,Paying the Bill,계산하기
+reservation,restaurant,Making Reservation,예약하기
+checkin,hotel,Check-in,체크인
+checkout,hotel,Check-out,체크아웃
+service,hotel,Room Service,서비스 요청
+amenities,hotel,Asking About Amenities,시설 문의
+ticket,trainstation,Buying Tickets,표 구매
+schedule,trainstation,Checking Schedule,시간표 확인
+platform,trainstation,Finding Platform,승강장 찾기
+ktx,trainstation,Taking KTX,KTX 이용
+busticket,busstation,Buying Tickets,표 구매
+busschedule,busstation,Checking Schedule,시간표 확인
+busdest,busstation,Asking Destination,목적지 문의
+aircheck,airport,Check-in,체크인
+security,airport,Security Check,보안검색
+boarding,airport,Boarding,탑승
+immigration,airport,Immigration,입국심사
+luggage,airport,Lost Luggage,수하물 분실
+bargain,market,Bargaining,흥정하기
+selection,market,Choosing Items,상품 선택
+marketpay,market,Payment,결제하기
+account,bank,Opening Account,계좌 개설
+exchange,bank,Currency Exchange,환전
+atm,bank,Using ATM,ATM 이용
+transfer,bank,Money Transfer,송금
+simcard,communication,Buying SIM Card,유심 구매
+phoneplan,communication,Phone Plans,요금제
+recharge,communication,Recharging,충전하기
+report,police,Filing Report,신고하기
+lostitem,police,Lost Items,분실물
+policehelp,police,Asking for Help,도움 요청
+purchase,electronics,Making Purchase,구매하기
+repair,electronics,Repair Service,수리 서비스
+compare,electronics,Comparing Products,제품 비교
+haircut,salon,Getting Haircut,커트하기
+haircolor,salon,Hair Coloring,염색하기
+hairstyle,salon,Discussing Style,스타일 상담
+cafeorder,bakery,Ordering,주문하기
+caferec,bakery,Recommendations,추천 받기
+cafetake,bakery,Takeout,포장하기
+spaservice,massage,Choosing Service,서비스 선택
+sparesv,massage,Making Reservation,예약하기
+spafeed,massage,Giving Feedback,피드백
+movieticket,cinema,Buying Tickets,표 구매
+moviesnack,cinema,Buying Snacks,간식 구매
+movieseat,cinema,Choosing Seats,좌석 선택
+parkdir,park,Asking Directions,길 찾기
+parkfac,park,Park Facilities,시설 이용
+parkact,park,Activities,활동하기
+deptshopping,department,Shopping,쇼핑하기
+deptreturn,department,Returns/Exchange,교환/환불
+deptinquiry,department,General Inquiry,일반 문의
+scenicphoto,scenic,Taking Photos,사진 촬영
+scenicinfo,scenic,Getting Information,정보 얻기
+scenicguide,scenic,Guided Tour,가이드 투어
+aptview,apartment,Viewing Property,집 보기
+aptcontract,apartment,Contract Discussion,계약 상담
+aptinquiry,apartment,General Inquiry,일반 문의
+ktvroom,ktv,Getting Room,방 잡기
+ktvsong,ktv,Requesting Songs,노래 요청
+ktvpay,ktv,Payment,결제하기
+theaterticket,theater,Buying Tickets,표 구매
+theaterseat,theater,Seat Selection,좌석 선택
+theaterprogram,theater,About Program,프로그램 문의
+stadiumticket,stadium,Buying Tickets,표 구매
+stadiumseat,stadium,Finding Seats,좌석 찾기
+stadiumfac,stadium,Stadium Facilities,시설 이용
+assetaccount,asset,Opening Account,계좌 개설
+assetinvest,asset,Investment Inquiry,투자 상담
+assetconsult,asset,Consultation,상담하기
+companymeeting,company,Attending Meeting,회의 참석
+companyvisit,company,Office Visit,방문하기
+companyinquiry,company,General Inquiry,일반 문의
+golfreserve,golf,Making Reservation,예약하기
+golfequip,golf,Equipment Rental,장비 대여
+golfcourse,golf,About Course,코스 문의
+elemvisit,elementary,School Visit,학교 방문
+eleminquiry,elementary,General Inquiry,일반 문의
+elemevent,elementary,School Events,행사 참여
+highvisit,highschool,School Visit,학교 방문
+highinquiry,highschool,General Inquiry,일반 문의
+highevent,highschool,School Events,행사 참여
+unicampus,university,Campus Tour,캠퍼스 투어
+uniinquiry,university,General Inquiry,일반 문의
+unitour,university,Guided Tour,가이드 투어
+oldtour,oldtown,Village Tour,마을 투어
+oldexp,oldtown,Cultural Experience,체험하기
+oldphoto,oldtown,Photo Spots,사진 명소

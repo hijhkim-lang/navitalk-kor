@@ -1,30 +1,30 @@
-placeType,name,korean,emoji,category,placeKeywords
-hospital,Hospital,병원,🏥,medical,hospital doctor nurse emergency
-restaurant,Restaurant,식당,🍽️,food,restaurant food eat dining korean bbq
-hotel,Hotel,호텔,🏨,accommodation,hotel room stay sleep accommodation
-trainstation,Train Station,기차역,🚄,transportation,train station KTX rail
-busstation,Bus Station,버스터미널,🚌,transportation,bus terminal intercity express
-airport,Airport,공항,✈️,transportation,airport flight plane check-in
-market,Market,시장,🏪,shopping,market traditional shopping bargain
-bank,Bank,은행,🏦,finance,bank exchange money ATM currency
-communication,Phone Store,통신사,📱,communication,phone SIM card mobile data
-police,Police Station,경찰서,🚔,public,police lost report emergency
-electronics,Electronics Store,전자제품,📺,shopping,electronics phone computer camera
-salon,Hair Salon,미용실,💇,lifestyle,hair salon haircut beauty
-bakery,Bakery,베이커리,🥐,food,bakery bread cafe coffee
-massage,Massage,마사지,💆,lifestyle,massage spa relax
-cinema,Cinema,영화관,🎬,entertainment,movie cinema film theater
-park,Park,공원,🌳,tourism,park nature walk outdoor
-department,Department Store,백화점,🛍️,shopping,department store shopping brand
-scenic,Tourist Attraction,관광지,🏛️,tourism,tourist attraction sightseeing tour
-apartment,Apartment,아파트,🏢,accommodation,apartment housing rent
-ktv,Karaoke,노래방,🎤,entertainment,karaoke singing noraebang
-theater,Theater,공연장,🎭,entertainment,theater performance show concert
-stadium,Stadium,경기장,🏟️,entertainment,stadium sports game
-asset,Real Estate,부동산,🏠,lifestyle,real estate rent house apartment
-company,Company,회사,🏢,business,company office work meeting
-golf,Golf Course,골프장,⛳,lifestyle,golf course club
-elementary,Elementary School,초등학교,🏫,education,elementary school student
-highschool,High School,고등학교,🏫,education,high school student
-university,University,대학교,🎓,education,university college student campus
-oldtown,Traditional Village,전통마을,🏘️,tourism,traditional village hanok culture
+place_id,place_name_en,place_name_ko,icon
+hospital,Hospital,병원,🏥
+restaurant,Restaurant,식당,🍽️
+hotel,Hotel,호텔,🏨
+trainstation,Train Station,기차역,🚉
+busstation,Bus Terminal,버스터미널,🚌
+airport,Airport,공항,✈️
+market,Traditional Market,시장,🏪
+bank,Bank,은행,🏦
+communication,Phone Store,통신사,📱
+police,Police Station,경찰서,👮
+electronics,Electronics Store,전자제품점,💻
+salon,Hair Salon,미용실,💇
+bakery,Bakery/Cafe,빵집/카페,🥐
+massage,Spa/Massage,마사지,💆
+cinema,Movie Theater,영화관,🎬
+park,Park,공원,🌳
+department,Department Store,백화점,🏬
+scenic,Tourist Attraction,관광명소,📸
+apartment,Real Estate,부동산,🏠
+ktv,Karaoke,노래방,🎤
+theater,Performance Hall,공연장,🎭
+stadium,Sports Stadium,경기장,🏟️
+asset,Securities/Bank,증권사,📈
+company,Office/Company,회사,🏢
+golf,Golf Course,골프장,⛳
+elementary,Elementary School,초등학교,🎒
+highschool,High School,고등학교,📚
+university,University,대학교,🎓
+oldtown,Traditional Village,한옥마을,🏛️

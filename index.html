@@ -1,1023 +1,431 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🗺️ KoreaTalk - 목적지에서 대화하기</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>KoreaTalk - Korean Travel Phrases</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#FF6B6B">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="icon-192.png">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
         }
-
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: linear-gradient(180deg, #f5f7fa 0%, #e8ecf1 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
             min-height: 100vh;
-            padding: 20px;
-        }
-
-        /* 첫 페이지 전용 스타일 */
-        .landing-page {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 85vh;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .landing-title {
-            color: #008B8B;
-            font-size: 42px;
-            font-weight: bold;
-            letter-spacing: 2px;
-            margin-bottom: 5px;
-        }
-
-        .landing-subtitle {
-            color: #E07A5F;
-            font-size: 24px;
-            font-style: italic;
-        }
-
-        .landing-header-clickable {
-            cursor: pointer;
-            transition: all 0.3s;
-            margin-bottom: 40px;
-        }
-
-        .landing-header-clickable:hover {
-            opacity: 0.8;
-            transform: scale(1.02);
-        }
-
-        .landing-description {
-            color: #555;
-            font-size: 18px;
-            margin-bottom: 35px;
-            line-height: 1.6;
-        }
-
-        .landing-input-wrapper {
-            width: 100%;
-            max-width: 400px;
-            margin-bottom: 20px;
-        }
-
-        .landing-input {
-            width: 100%;
-            padding: 18px 25px;
-            font-size: 16px;
-            border: 2px solid #008B8B;
-            border-radius: 50px;
-            outline: none;
-            text-align: center;
             color: #333;
-            background: white;
         }
-
-        .landing-input::placeholder {
-            color: #999;
-        }
-
-        .landing-input:focus {
-            border-color: #006666;
-            box-shadow: 0 0 15px rgba(0, 139, 139, 0.2);
-        }
-
-        .landing-hint {
-            color: #777;
-            font-size: 14px;
-            margin-bottom: 25px;
-        }
-
-        .landing-go-btn {
-            background: linear-gradient(135deg, #E07A5F 0%, #D4644A 100%);
-            color: white;
-            border: none;
-            padding: 18px 80px;
-            font-size: 24px;
-            font-weight: bold;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s;
-            box-shadow: 0 5px 20px rgba(224, 122, 95, 0.4);
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .landing-go-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(224, 122, 95, 0.5);
-        }
-
-        .landing-go-btn:active {
-            transform: translateY(-1px);
-        }
-
-        .landing-brand {
-            margin-top: 60px;
-            color: #008B8B;
-            font-size: 20px;
-            font-weight: bold;
-            letter-spacing: 3px;
-        }
-
-        /* 내부 페이지용 헤더 */
-        .header-new {
-            text-align: center;
-            padding: 20px 0;
-            margin-bottom: 20px;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .header-new:hover {
-            opacity: 0.85;
-            transform: scale(1.02);
-        }
-
-        .header-title {
-            color: #008B8B;
-            font-size: 32px;
-            font-weight: bold;
-            letter-spacing: 2px;
-            margin-bottom: 2px;
-        }
-
-        .header-subtitle {
-            color: #E07A5F;
-            font-size: 18px;
-            font-style: italic;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
+        
         .header {
-            text-align: center;
-            color: white;
-            margin-bottom: 30px;
-        }
-
-        .header h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: inline-block;
-        }
-
-        .header h1:hover {
-            transform: scale(1.05);
-            opacity: 0.9;
-        }
-
-        .card {
-            background: white;
-            border-radius: 20px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-
-        .search-box {
-            margin-bottom: 30px;
-        }
-
-        .search-box input {
-            width: 100%;
-            padding: 15px;
-            font-size: 18px;
-            border: 2px solid #e0e0e0;
-            border-radius: 10px;
-            outline: none;
-        }
-
-        .search-box input:focus {
-            border-color: #667eea;
-        }
-
-        .button-group {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-bottom: 30px;
-        }
-
-        .btn {
-            padding: 15px 25px;
-            font-size: 18px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.3s;
-            font-weight: 600;
-        }
-
-        .btn-primary {
-            background: #667eea;
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background: #5568d3;
-            transform: translateY(-2px);
-        }
-
-        .btn-secondary {
-            background: #20d9d2;
-            color: white;
-        }
-
-        .btn-secondary:hover {
-            background: #1bb8b2;
-            transform: translateY(-2px);
-        }
-
-        .hidden {
-            display: none !important;
-        }
-
-        /* 시나리오 카드 스타일 */
-        .scenarios-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 12px;
-            margin: 15px 0;
-        }
-
-        .scenario-card {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            border-radius: 12px;
+            background: rgba(255,255,255,0.95);
             padding: 15px 20px;
-            cursor: pointer;
-            transition: all 0.3s;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            color: white;
-            text-align: left;
-            font-size: 13px;
-            font-weight: 600;
-            min-height: 50px;
             display: flex;
             align-items: center;
-            justify-content: flex-start;
-        }
-
-        .scenario-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-            background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
-        }
-
-        .scenario-card:active {
-            transform: translateY(-2px);
-        }
-
-        /* 뒤로가기 버튼 */
-        .back-btn {
-            background: #f5f5f5;
-            color: #333;
-            padding: 8px 14px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 11px;
-            font-weight: 600;
-            margin-bottom: 15px;
-            transition: all 0.3s;
-        }
-
-        .back-btn:hover {
-            background: #e0e0e0;
-        }
-
-        /* Listen All 버튼 */
-        .play-all-btn {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
-            padding: 18px 30px;
-            border: none;
-            border-radius: 15px;
-            cursor: pointer;
-            font-size: 20px;
-            font-weight: 700;
-            width: 100%;
-            margin-top: 30px;
-            transition: all 0.3s;
-            box-shadow: 0 5px 15px rgba(30, 60, 114, 0.3);
-        }
-
-        .play-all-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(30, 60, 114, 0.4);
-        }
-
-        /* 새로운 액션 버튼 스타일 */
-        .action-btn {
-            flex: 1;
-            padding: 12px;
-            border: none;
-            border-radius: 10px;
-            font-size: 12px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s;
-            color: white;
-        }
-
-        .action-btn-primary {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            box-shadow: 0 5px 15px rgba(30, 60, 114, 0.3);
-        }
-
-        .action-btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(30, 60, 114, 0.4);
-        }
-
-        .action-btn-navy {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            box-shadow: 0 5px 15px rgba(30, 60, 114, 0.3);
-        }
-
-        .action-btn-navy:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(30, 60, 114, 0.4);
-        }
-
-        .action-btn-secondary {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
-        }
-
-        .action-btn-secondary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
-        }
-
-        /* 모달 스타일 */
-        .modal {
-            position: fixed;
+            gap: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
             top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
+            z-index: 100;
         }
-
-        .modal-content {
-            background: white;
-            border-radius: 15px;
-            padding: 25px;
-            max-width: 400px;
-            width: 90%;
-            position: relative;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-            animation: modalSlideIn 0.3s ease-out;
-            font-size: 14px;
-        }
-
-        @keyframes modalSlideIn {
-            from {
-                opacity: 0;
-                transform: translateY(-50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .modal-close {
-            position: absolute;
-            top: 10px;
-            right: 10px;
+        
+        .back-btn {
             background: none;
             border: none;
-            font-size: 22px;
-            color: #999;
-            cursor: pointer;
-            transition: color 0.3s;
-        }
-
-        .modal-close:hover {
-            color: #333;
-        }
-
-        .modal-btn {
-            flex: 1;
-            padding: 12px;
-            border: none;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s;
-            color: white;
-        }
-
-        .modal-btn-primary {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
-        }
-
-        .modal-btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
-        }
-
-        .modal-btn-secondary {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            box-shadow: 0 5px 15px rgba(30, 60, 114, 0.3);
-        }
-
-        .modal-btn-secondary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(30, 60, 114, 0.4);
-        }
-
-        /* 장소 그리드 */
-        .places-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
-            gap: 10px;
-        }
-
-        .place-item {
-            color: white;
-            padding: 12px 8px;
-            border-radius: 12px;
-            cursor: pointer;
-            transition: all 0.3s;
-            text-align: center;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-            position: relative;
-            overflow: hidden;
-            min-height: 85px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .place-item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
-            pointer-events: none;
-        }
-
-        .place-item:hover {
-            transform: translateY(-4px) scale(1.02);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
-        }
-
-        /* 각 장소별 색상 테마 */
-        .place-hospital { background: linear-gradient(135deg, #4FC3F7 0%, #29B6F6 50%, #03A9F4 100%); }
-        .place-restaurant { background: linear-gradient(135deg, #FF6B6B 0%, #FF5252 50%, #F44336 100%); }
-        .place-police { background: linear-gradient(135deg, #5C6BC0 0%, #3F51B5 50%, #303F9F 100%); }
-        .place-bank { background: linear-gradient(135deg, #FFD54F 0%, #FFC107 50%, #FFA000 100%); }
-        .place-busstation { background: linear-gradient(135deg, #FFB74D 0%, #FF9800 50%, #F57C00 100%); }
-        .place-airport { background: linear-gradient(135deg, #81D4FA 0%, #4FC3F7 50%, #29B6F6 100%); }
-        .place-trainstation { background: linear-gradient(135deg, #78909C 0%, #607D8B 50%, #455A64 100%); }
-        .place-market { background: linear-gradient(135deg, #81C784 0%, #66BB6A 50%, #4CAF50 100%); }
-        .place-apartment { background: linear-gradient(135deg, #90A4AE 0%, #78909C 50%, #607D8B 100%); }
-        .place-cinema { background: linear-gradient(135deg, #E57373 0%, #EF5350 50%, #F44336 100%); }
-        .place-theater { background: linear-gradient(135deg, #BA68C8 0%, #AB47BC 50%, #9C27B0 100%); }
-        .place-stadium { background: linear-gradient(135deg, #AED581 0%, #9CCC65 50%, #8BC34A 100%); }
-        .place-park { background: linear-gradient(135deg, #A5D6A7 0%, #81C784 50%, #66BB6A 100%); }
-        .place-department { background: linear-gradient(135deg, #F48FB1 0%, #EC407A 50%, #E91E63 100%); }
-        .place-golf { background: linear-gradient(135deg, #C5E1A5 0%, #AED581 50%, #9CCC65 100%); }
-        .place-massage { background: linear-gradient(135deg, #CE93D8 0%, #BA68C8 50%, #AB47BC 100%); }
-        .place-ktv { background: linear-gradient(135deg, #F06292 0%, #EC407A 50%, #E91E63 100%); }
-        .place-hotel { background: linear-gradient(135deg, #FFD54F 0%, #FFCA28 50%, #FFC107 100%); }
-        .place-scenic { background: linear-gradient(135deg, #4DD0E1 0%, #26C6DA 50%, #00BCD4 100%); }
-        .place-oldtown { background: linear-gradient(135deg, #FFB74D 0%, #FFA726 50%, #FF9800 100%); }
-        .place-company { background: linear-gradient(135deg, #64B5F6 0%, #42A5F5 50%, #2196F3 100%); }
-        .place-salon { background: linear-gradient(135deg, #FF80AB 0%, #FF4081 50%, #F50057 100%); }
-        .place-bakery { background: linear-gradient(135deg, #FFCC80 0%, #FFB74D 50%, #FFA726 100%); }
-        .place-zhangjiajie { background: linear-gradient(135deg, #4DB6AC 0%, #26A69A 50%, #009688 100%); }
-        .place-thegreatwall { background: linear-gradient(135deg, #8D6E63 0%, #795548 50%, #5D4037 100%); }
-        .place-elementary { background: linear-gradient(135deg, #81D4FA 0%, #4FC3F7 50%, #29B6F6 100%); }
-        .place-highschool { background: linear-gradient(135deg, #A5D6A7 0%, #81C784 50%, #66BB6A 100%); }
-        .place-university { background: linear-gradient(135deg, #7986CB 0%, #5C6BC0 50%, #3F51B5 100%); }
-        .place-communication { background: linear-gradient(135deg, #4FC3F7 0%, #29B6F6 50%, #03A9F4 100%); }
-        .place-asset { background: linear-gradient(135deg, #FFB74D 0%, #FFA726 50%, #FF9800 100%); }
-        .place-electronics { background: linear-gradient(135deg, #90A4AE 0%, #78909C 50%, #607D8B 100%); }
-
-        .place-item .place-icon {
-            font-size: 28px;
-            margin-bottom: 6px;
-            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
-            animation: floatIcon 3s ease-in-out infinite;
-        }
-
-        @keyframes floatIcon {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-3px); }
-        }
-
-        .place-item .place-name {
-            font-size: 12px;
-            font-weight: bold;
-            margin-bottom: 3px;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
-        }
-
-        .place-item .place-keywords {
-            font-size: 9px;
-            opacity: 0.9;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
-            line-height: 1.2;
-        }
-
-        .place-card {
-            background: white;
-            border-radius: 15px;
-            padding: 20px;
-            margin-bottom: 15px;
-            cursor: pointer;
-            transition: all 0.3s;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-        }
-
-        .place-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-        }
-
-        .place-card h3 {
-            margin-bottom: 10px;
-            color: #667eea;
             font-size: 24px;
-        }
-
-        .scenario-group {
-            margin-bottom: 30px;
-        }
-
-        .scenario-title {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 15px 20px;
-            border-radius: 10px;
-            margin-bottom: 15px;
-            font-size: 20px;
-            font-weight: 600;
-        }
-
-        .dialogue-item {
-            background: #f8f9fa;
-            border-left: 4px solid #667eea;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            position: relative;
-            padding-left: 45px;
-        }
-
-        /* 고객(顾客/客人/病人 등) 스타일 - 파란색 */
-        .dialogue-item.customer {
-            background: #e8f4fc;
-            border-left: 4px solid #3498db;
-        }
-        .dialogue-item.customer .play-btn {
-            background: #3498db;
-        }
-        .dialogue-item.customer .play-btn:hover {
-            background: #2980b9;
-        }
-        .dialogue-item.customer .speaker {
-            color: #3498db;
-        }
-
-        /* 직원(店员/服务员/工作人员 등) 스타일 - 코랄/주황색 */
-        .dialogue-item.staff {
-            background: #fef5f0;
-            border-left: 4px solid #e67e22;
-        }
-        .dialogue-item.staff .play-btn {
-            background: #e67e22;
-        }
-        .dialogue-item.staff .play-btn:hover {
-            background: #d35400;
-        }
-        .dialogue-item.staff .speaker {
-            color: #e67e22;
-        }
-
-        .play-btn {
-            position: absolute;
-            left: 10px;
-            top: 10px;
-            background: #667eea;
-            border: none;
-            border-radius: 50%;
-            width: 28px;
-            height: 28px;
-            font-size: 12px;
             cursor: pointer;
-            transition: all 0.3s;
+            padding: 5px;
+            display: none;
+            color: #FF6B6B;
         }
-
-        .play-btn:hover {
-            transform: scale(1.1);
-            background: #5568d3;
+        
+        .back-btn.visible {
+            display: block;
         }
-
-        .speaker {
-            color: #667eea;
-            font-weight: 700;
-            margin-bottom: 5px;
-            font-size: 11px;
+        
+        .header h1 {
+            font-size: 20px;
+            color: #FF6B6B;
+            flex: 1;
         }
-
-        .korean-main {
-            font-size: 18px;
-            font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 5px;
-            line-height: 1.5;
-        }
-
-        .english {
-            color: #7f8c8d;
-            font-size: 13px;
-            margin-bottom: 5px;
-            line-height: 1.4;
-        }
-
-        .romanization {
-            color: #27ae60;
+        
+        .header-subtitle {
             font-size: 12px;
-            font-style: italic;
-            margin-bottom: 5px;
+            color: #888;
         }
-
-        .vocab-section {
-            background: #fff3cd;
-            padding: 8px;
-            border-radius: 4px;
-            margin-top: 8px;
-            border-left: 3px solid #ffc107;
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
         }
-
-        .vocab-title {
-            font-weight: 600;
-            color: #856404;
-            margin-bottom: 3px;
-            font-size: 10px;
+        
+        .search-box {
+            background: white;
+            border-radius: 25px;
+            padding: 12px 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-
-        .vocab-item {
-            color: #856404;
-            font-size: 10px;
+        
+        .search-box input {
+            border: none;
+            outline: none;
+            font-size: 16px;
+            flex: 1;
+            background: transparent;
         }
-
-        .showcase-grid {
+        
+        .search-icon {
+            color: #999;
+            font-size: 18px;
+        }
+        
+        /* Places Grid */
+        .places-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 15px;
-            margin-bottom: 30px;
         }
-
-        .showcase-image {
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            transition: all 0.3s;
-            aspect-ratio: 1;
+        
+        .place-card {
+            background: white;
+            border-radius: 16px;
+            padding: 20px 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
         }
-
-        .showcase-image:hover {
-            transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        
+        .place-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
         }
-
-        .showcase-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
+        
+        .place-card:active {
+            transform: scale(0.95);
         }
-
-        @media (max-width: 768px) {
-            .scenarios-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .scenario-card {
-                padding: 20px;
-                font-size: 13px;
-            }
-
-            .showcase-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
-            }
-
-            .places-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .modal-content {
-                padding: 30px 20px;
-            }
+        
+        .place-icon {
+            font-size: 36px;
+            margin-bottom: 10px;
         }
-
-        @media (max-width: 480px) {
-            .showcase-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .places-grid {
-                grid-template-columns: 1fr;
-            }
+        
+        .place-name {
+            font-size: 12px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 3px;
         }
-
+        
+        .place-name-ko {
+            font-size: 11px;
+            color: #666;
+        }
+        
+        /* Categories List */
+        .categories-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .category-card {
+            background: white;
+            border-radius: 12px;
+            padding: 18px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        
+        .category-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+        }
+        
+        .category-card:active {
+            transform: scale(0.98);
+        }
+        
+        .category-info h3 {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 4px;
+        }
+        
+        .category-info p {
+            font-size: 13px;
+            color: #666;
+        }
+        
+        .category-arrow {
+            color: #FF6B6B;
+            font-size: 20px;
+        }
+        
+        /* Dialogues */
+        .dialogues-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .dialogue-bubble {
+            max-width: 85%;
+            padding: 15px 18px;
+            border-radius: 18px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .dialogue-bubble:active {
+            transform: scale(0.98);
+        }
+        
+        .dialogue-bubble.speaker-a {
+            background: white;
+            align-self: flex-start;
+            border-bottom-left-radius: 5px;
+        }
+        
+        .dialogue-bubble.speaker-b {
+            background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+            color: white;
+            align-self: flex-end;
+            border-bottom-right-radius: 5px;
+        }
+        
+        .dialogue-korean {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+        
+        .dialogue-romanization {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 6px;
+            font-style: italic;
+        }
+        
+        .speaker-b .dialogue-romanization {
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .dialogue-english {
+            font-size: 14px;
+            color: #888;
+        }
+        
+        .speaker-b .dialogue-english {
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .speaker-label {
+            font-size: 11px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            opacity: 0.6;
+        }
+        
+        /* Audio indicator */
+        .audio-indicator {
+            display: inline-block;
+            margin-left: 8px;
+            font-size: 14px;
+        }
+        
+        .playing {
+            animation: pulse 1s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        /* Loading */
         .loading {
             text-align: center;
-            padding: 50px;
-            font-size: 20px;
-            color: #667eea;
+            padding: 40px;
+            color: white;
         }
-
-        .error {
-            background: #fee;
-            color: #c33;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
+        
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Section title */
+        .section-title {
+            color: white;
+            font-size: 14px;
+            margin-bottom: 15px;
+            padding-left: 5px;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+        
+        /* Hidden */
+        .hidden {
+            display: none !important;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: rgba(255,255,255,0.7);
+            font-size: 12px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 400px) {
+            .places-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+            }
+            
+            .place-card {
+                padding: 15px 8px;
+            }
+            
+            .place-icon {
+                font-size: 28px;
+            }
+            
+            .place-name {
+                font-size: 11px;
+            }
         }
     </style>
 </head>
 <body>
+    <header class="header">
+        <button class="back-btn" id="backBtn" onclick="goBack()">←</button>
+        <div>
+            <h1 id="headerTitle">KoreaTalk</h1>
+            <div class="header-subtitle" id="headerSubtitle">Korean Travel Phrases</div>
+        </div>
+    </header>
+    
     <div class="container">
-        <!-- 새 스타일 헤더 (내부 페이지용) -->
-        <div class="header-new" id="mainHeader" style="display: none;" onclick="resetApp()">
-            <div class="header-title">NAVIGATION</div>
-            <div class="header-subtitle">for Foreigners</div>
+        <!-- Search Box -->
+        <div class="search-box" id="searchBox">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="searchInput" placeholder="Search places..." oninput="filterPlaces()">
         </div>
-
-        <!-- 검색 섹션 (새 디자인) -->
-        <div id="searchCard" class="landing-page">
-            <div class="landing-header-clickable" onclick="resetApp()">
-                <div class="landing-title">NAVIGATION</div>
-                <div class="landing-subtitle">for Foreigners</div>
-            </div>
-            <div class="landing-description">
-                목적지에서 예상되는 대화를<br>미리 연습해보세요
-            </div>
-            <div class="landing-input-wrapper">
-                <input type="text" id="searchInput" class="landing-input" placeholder="Enter destination" onkeypress="if(event.key==='Enter') searchDestination()" />
-            </div>
-            <div class="landing-hint">Go를 클릭하시면 회화예제가 나타납니다</div>
-            <button class="landing-go-btn" onclick="searchDestination()">
-                Go <span style="font-size: 20px;">›</span>
-            </button>
-            <div class="landing-brand">NAVITALK</div>
-        </div>
-
-        <!-- 로딩 -->
-        <div id="loadingSection" class="card hidden">
-            <div class="loading">데이터를 불러오는 중...</div>
-        </div>
-
-        <!-- 선택 버튼 (회화 or 네비게이션) -->
-        <div id="choiceSection" class="card hidden">
-            <h2 style="margin-bottom: 20px; color: #667eea;">어떻게 도와드릴까요?</h2>
-            <div class="button-group">
-                <button class="btn btn-secondary" onclick="loadConversations()">💬 회화 먼저 보기</button>
-                <button class="btn btn-primary" onclick="navigateToDestination()">🧭 Find Location</button>
-            </div>
-        </div>
-
-        <!-- 장소 목록 -->
-        <div id="placesSection" class="card hidden">
-            <h2 style="margin-bottom: 20px; color: #667eea;">Select a Place</h2>
-            <div id="placesList"></div>
-        </div>
-
-        <!-- 시나리오 목록 -->
-        <div id="scenariosSection" class="card hidden">
-            <div style="display: flex; gap: 10px; margin-bottom: 20px;">
-                <button class="back-btn" onclick="backToPlacesList()" style="display: none;" id="backToPlacesBtn">← Back to Places</button>
-                <button class="back-btn" onclick="backToChoice()">← 검색으로</button>
-            </div>
-            <h2 style="margin-bottom: 20px; color: #667eea;" id="scenariosSectionTitle">Select Scenario</h2>
-            <div id="scenariosList" class="scenarios-grid"></div>
-            
-            <!-- 추가 버튼들 -->
-            <div style="display: flex; gap: 15px; margin-top: 30px;">
-                <button class="action-btn action-btn-primary" onclick="playAllScenarios()">🔊 Listen All Scenarios</button>
-                <button class="action-btn action-btn-secondary" onclick="navigateToDestination()">🧭 Find Location</button>
-            </div>
-        </div>
-
-        <!-- 전체 장소 목록 -->
-        <div id="allPlacesSection" class="card hidden">
-            <button class="back-btn" onclick="backToSearch()">← 검색으로 돌아가기</button>
-            <h2 style="margin-bottom: 20px; color: #2196F3; font-size: 28px;">🌈 전체 장소 목록</h2>
-            <div id="allPlacesList" class="places-grid"></div>
-        </div>
-
-        <!-- 회화 내용 -->
-        <div id="conversationsSection" class="card hidden">
-            <div style="display: flex; gap: 8px; margin-bottom: 10px;">
-                <button class="back-btn" onclick="backToScenarios()">← Back to Scenarios</button>
-                <button class="back-btn" onclick="nextScenario()" style="margin-left: auto; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">Next Scenario →</button>
-            </div>
-            <h2 style="margin-bottom: 15px; color: #667eea; font-size: 16px;" id="conversationTitle"></h2>
-            <div id="conversationsList"></div>
-            
-            <!-- 하단 버튼들 -->
-            <div style="display: flex; gap: 10px; margin-top: 20px;">
-                <button id="playAllBtn" class="action-btn action-btn-navy" onclick="playAllConversations()">🔊 Listen All</button>
-                <button class="action-btn action-btn-secondary" onclick="nextScenario()">📋 Next Scenario</button>
-                <button class="action-btn action-btn-secondary" onclick="navigateToDestination()">🧭 Find Location</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- 커스텀 모달 -->
-    <div id="customModal" class="modal hidden">
-        <div class="modal-content">
-            <p style="color: #666; margin-bottom: 30px; margin-top: 10px; line-height: 1.6; font-size: 17px;">
-                "<span id="searchKeywordDisplay" style="color: #1e3c72; font-weight: bold;"></span>"이 회화목록에 없습니다.
-            </p>
-            <div style="display: flex; gap: 15px;">
-                <button class="modal-btn modal-btn-primary" onclick="showAllPlaces()">
-                    📚 비슷한 회화예제 보기
-                </button>
-                <button class="modal-btn modal-btn-secondary" onclick="navigateDirectly()">
-                    🧭 Find Location
-                </button>
-            </div>
-            <button class="modal-close" onclick="closeModal()">✕</button>
-        </div>
-    </div>
-
-    <script>
-        // 설정
-        const CONFIG = {
-            GOOGLE_SHEETS: {
-                PLACES_URL: './places.csv',
-                DIALOGUES_URL: './dialogues.csv',
-                CATEGORIES_URL: './categories.csv'
-            },
-            CACHE_DURATION: 24 * 60 * 60 * 1000 // 24시간
-        };
-
-        const CACHE_KEY_PLACES = 'koreatalk_places';
-        const CACHE_KEY_DIALOGUES = 'koreatalk_dialogues';
-        const CACHE_KEY_CATEGORIES = 'koreatalk_categories';
         
-        let placesData = [];
-        let dialoguesData = [];
-        let categoriesData = [];
-        let currentPlaceType = '';
-        let currentScenario = '';
-        let currentScenarioIndex = 0;
-        let currentSearchKeyword = '';
-
-        function resetApp() {
-            // 캐시 삭제
-            localStorage.removeItem(CACHE_KEY_PLACES);
-            localStorage.removeItem(CACHE_KEY_DIALOGUES);
-            localStorage.removeItem(CACHE_KEY_CATEGORIES);
-            location.reload();
-        }
-
-        function getCache(key) {
+        <!-- Places View -->
+        <div id="placesView">
+            <div class="section-title">Choose a Location</div>
+            <div class="places-grid" id="placesGrid">
+                <!-- Places will be loaded here -->
+            </div>
+        </div>
+        
+        <!-- Categories View -->
+        <div id="categoriesView" class="hidden">
+            <div class="section-title">Choose a Scenario</div>
+            <div class="categories-list" id="categoriesList">
+                <!-- Categories will be loaded here -->
+            </div>
+        </div>
+        
+        <!-- Dialogues View -->
+        <div id="dialoguesView" class="hidden">
+            <div class="section-title">Tap any phrase to hear pronunciation</div>
+            <div class="dialogues-container" id="dialoguesContainer">
+                <!-- Dialogues will be loaded here -->
+            </div>
+        </div>
+        
+        <!-- Loading -->
+        <div id="loading" class="loading hidden">
+            <div class="loading-spinner"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>KoreaTalk v1.0 - Learn Korean for Travel</p>
+        <p>Tap phrases to hear pronunciation</p>
+    </footer>
+    
+    <script>
+        // Data storage
+        let places = [];
+        let categories = [];
+        let dialogues = [];
+        let currentView = 'places';
+        let currentPlace = null;
+        let currentCategory = null;
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', async () => {
+            showLoading(true);
+            await loadData();
+            renderPlaces();
+            showLoading(false);
+        });
+        
+        // Load CSV data
+        async function loadData() {
             try {
-                const cached = localStorage.getItem(key);
-                if (!cached) return null;
+                const [placesRes, categoriesRes, dialoguesRes] = await Promise.all([
+                    fetch('places.csv'),
+                    fetch('categories.csv'),
+                    fetch('dialogues.csv')
+                ]);
                 
-                const data = JSON.parse(cached);
-                if (Date.now() - data.timestamp > CONFIG.CACHE_DURATION) {
-                    localStorage.removeItem(key);
-                    return null;
-                }
-                
-                return data.value;
-            } catch (e) {
-                console.error('캐시 읽기 실패:', e);
-                return null;
+                places = parseCSV(await placesRes.text());
+                categories = parseCSV(await categoriesRes.text());
+                dialogues = parseCSV(await dialoguesRes.text());
+            } catch (error) {
+                console.error('Error loading data:', error);
             }
         }
-
-        function setCache(key, value) {
-            localStorage.setItem(key, JSON.stringify({
-                value: value,
-                timestamp: Date.now()
-            }));
-        }
-
-        // 시나리오 숫자 기준 정렬 함수
-        function sortScenariosByNumber(a, b) {
-            const numA = parseInt(a.match(/^\d+/)?.[0] || '999');
-            const numB = parseInt(b.match(/^\d+/)?.[0] || '999');
-            return numA - numB;
-        }
-
-        // 화자가 고객/방문자인지 판별 (색상 구분용)
-        function isCustomer(speaker) {
-            const customerKeywords = [
-                // General customers
-                'Customer', 'Patient', 'Passenger', 'Traveler', 'Guest', 'Student',
-                'Resident', 'Buyer', 'Tenant', 'Tourist', 'Visitor', 'Citizen',
-                // Special cases
-                'Applicant', 'New Employee', 'Colleague'
-            ];
-            return customerKeywords.some(keyword => speaker.includes(keyword));
-        }
-
-        // isFemaleVoice is no longer used - we use isCustomer for voice selection
-
-        // 한국어 음성 저장 변수
-        let koreanMaleVoice = null;
-        let koreanFemaleVoice = null;
-
-        // 음성 초기화 함수
-        function initVoices() {
-            const voices = window.speechSynthesis.getVoices();
-            const koreanVoices = voices.filter(v => v.lang.includes('ko') || v.lang.includes('KR'));
-            
-            console.log('Available Korean voices:', koreanVoices.map(v => `${v.name} (${v.lang})`));
-            
-            // 지정된 음성 찾기
-            for (const voice of koreanVoices) {
-                const nameLower = voice.name.toLowerCase();
-                // 여자: Microsoft SunHi 또는 Heami
-                if (!koreanFemaleVoice && (nameLower.includes('sunhi') || nameLower.includes('heami'))) {
-                    koreanFemaleVoice = voice;
-                }
-                // 남자: Microsoft InJoon
-                if (!koreanMaleVoice && nameLower.includes('injoon')) {
-                    koreanMaleVoice = voice;
-                }
-            }
-            
-            // 못 찾으면 fallback
-            if (koreanVoices.length > 0) {
-                if (!koreanFemaleVoice) koreanFemaleVoice = koreanVoices[0];
-                if (!koreanMaleVoice) koreanMaleVoice = koreanVoices[koreanVoices.length > 1 ? 1 : 0];
-            }
-            
-            console.log('Selected male voice:', koreanMaleVoice?.name);
-            console.log('Selected female voice:', koreanFemaleVoice?.name);
-        }
-
-        // 음성 로드 이벤트
-        if (window.speechSynthesis.onvoiceschanged !== undefined) {
-            window.speechSynthesis.onvoiceschanged = initVoices;
-        }
-        // 즉시 시도
-        initVoices();
-
-        async function fetchCSV(url) {
-            const response = await fetch(url);
-            const text = await response.text();
-            return parseCSV(text);
-        }
-
-        function parseCSV(text) {
-            const lines = text.trim().split(/\r?\n/);
-            if (lines.length < 2) return [];
-            
-            const headers = parseCSVLine(lines[0]);
-            const data = [];
-            
-            for (let i = 1; i < lines.length; i++) {
-                const values = parseCSVLine(lines[i]);
-                if (values.length === 0) continue;
-                
+        
+        // Parse CSV
+        function parseCSV(csv) {
+            const lines = csv.trim().split('\n');
+            const headers = lines[0].split(',');
+            return lines.slice(1).map(line => {
+                const values = parseCSVLine(line);
                 const obj = {};
-                headers.forEach((header, index) => {
-                    obj[header] = values[index] || '';
+                headers.forEach((header, i) => {
+                    obj[header.trim()] = values[i] ? values[i].trim() : '';
                 });
-                data.push(obj);
-            }
-            
-            return data;
+                return obj;
+            });
         }
-
+        
+        // Parse CSV line (handle commas in quoted strings)
         function parseCSVLine(line) {
             const result = [];
             let current = '';
@@ -1025,710 +433,150 @@
             
             for (let i = 0; i < line.length; i++) {
                 const char = line[i];
-                const nextChar = line[i + 1];
-                
                 if (char === '"') {
-                    if (inQuotes && nextChar === '"') {
-                        current += '"';
-                        i++;
-                    } else {
-                        inQuotes = !inQuotes;
-                    }
+                    inQuotes = !inQuotes;
                 } else if (char === ',' && !inQuotes) {
-                    result.push(current.trim());
+                    result.push(current);
                     current = '';
                 } else {
                     current += char;
                 }
             }
-            
-            result.push(current.trim());
+            result.push(current);
             return result;
         }
-
-        async function loadData() {
-            try {
-                let places = getCache(CACHE_KEY_PLACES);
-                let dialogues = getCache(CACHE_KEY_DIALOGUES);
-                let categories = getCache(CACHE_KEY_CATEGORIES);
-
-                if (!places) {
-                    places = await fetchCSV(CONFIG.GOOGLE_SHEETS.PLACES_URL);
-                    setCache(CACHE_KEY_PLACES, places);
-                }
-
-                if (!dialogues) {
-                    dialogues = await fetchCSV(CONFIG.GOOGLE_SHEETS.DIALOGUES_URL);
-                    setCache(CACHE_KEY_DIALOGUES, dialogues);
-                }
-
-                if (!categories) {
-                    categories = await fetchCSV(CONFIG.GOOGLE_SHEETS.CATEGORIES_URL);
-                    setCache(CACHE_KEY_CATEGORIES, categories);
-                }
-
-                placesData = places;
-                dialoguesData = dialogues;
-                categoriesData = categories;
-                
-                console.log('데이터 로드 완료:', { places: places.length, dialogues: dialogues.length, categories: categories.length });
-            } catch (error) {
-                console.error('데이터 로드 실패:', error);
-                throw error;
-            }
-        }
-
-        function searchDestination() {
-            const searchInput = document.getElementById('searchInput');
-            const keyword = searchInput.value.trim();
-            
-            if (keyword.length < 2) {
-                alert('목적지를 입력해주세요 (최소 2글자)');
-                return;
-            }
-
-            currentSearchKeyword = keyword;
-
-            // 데이터 로딩 확인
-            if (placesData.length === 0) {
-                document.getElementById('loadingSection').classList.remove('hidden');
-                loadData().then(() => {
-                    document.getElementById('loadingSection').classList.add('hidden');
-                    console.log('데이터 로드 완료. 장소 개수:', placesData.length);
-                    processSearch();
-                }).catch(err => {
-                    document.getElementById('loadingSection').classList.add('hidden');
-                    alert('데이터 로드 실패: ' + err.message);
-                });
-            } else {
-                console.log('검색어:', keyword);
-                console.log('로드된 장소:', placesData.length);
-                processSearch();
-            }
-        }
-
-        function processSearch() {
-            const keyword = currentSearchKeyword.trim();
-            console.log('검색 시작:', keyword);
-            console.log('로드된 장소 수:', placesData.length);
-            
-            const matchedPlace = placesData.find(place => {
-                const placeName = place.name || '';
-                const placeKeywords = place.placeKeywords || '';
-                
-                console.log('장소 체크:', place.placeType, placeName, placeKeywords);
-                
-                // 1. 검색어에 장소명이 포함되어 있는지
-                if (keyword.includes(placeName)) {
-                    console.log('✓ 이름 매칭:', placeName);
-                    return true;
-                }
-                
-                // 2. 키워드 체크 (양방향)
-                const keywords = placeKeywords.split(',');
-                for (let kw of keywords) {
-                    const trimmedKw = kw.trim();
-                    if (!trimmedKw) continue;
-                    
-                    // 검색어에 키워드가 포함되어 있거나
-                    // 키워드에 검색어가 포함되어 있으면 매칭
-                    if (keyword.includes(trimmedKw) || trimmedKw.includes(keyword)) {
-                        console.log('✓ 키워드 매칭:', trimmedKw);
-                        return true;
-                    }
-                }
-                
-                return false;
-            });
-            
-            console.log('매칭 결과:', matchedPlace);
-            
-            if (matchedPlace) {
-                currentPlaceType = matchedPlace.placeType;
-                console.log('→ 장소 타입:', currentPlaceType);
-                
-                // 정상 검색에서는 "← Back to Places" 버튼 숨기기
-                document.getElementById('backToPlacesBtn').style.display = 'none';
-                
-                showScenarios();
-            } else {
-                // 모달 표시
-                document.getElementById('searchKeywordDisplay').textContent = currentSearchKeyword;
-                document.getElementById('customModal').classList.remove('hidden');
-            }
-        }
-
-        function showChoiceButtons() {
-            document.getElementById('searchCard').classList.add('hidden');
-            // document.getElementById('imageShowcase').classList.add('hidden');
-            document.getElementById('placesSection').classList.add('hidden');
-            document.getElementById('scenariosSection').classList.add('hidden');
-            document.getElementById('conversationsSection').classList.add('hidden');
-            document.getElementById('choiceSection').classList.remove('hidden');
-        }
-
-        function navigateToDestination() {
-            const keyword = currentSearchKeyword;
-            if (!keyword) {
-                alert('검색어를 입력해주세요');
-                return;
-            }
-            
-            const baiduMapUrl = `https://api.map.baidu.com/geocoder?address=${encodeURIComponent(keyword)}&output=html`;
-            window.open(baiduMapUrl, '_blank');
-        }
-
-        function loadPlaces() {
-            // document.getElementById('imageShowcase').classList.add('hidden');
-            document.getElementById('choiceSection').classList.add('hidden');
-            document.getElementById('scenariosSection').classList.add('hidden');
-            document.getElementById('conversationsSection').classList.add('hidden');
-            document.getElementById('placesSection').classList.remove('hidden');
-            
-            const searchCard = document.getElementById('searchCard');
-            searchCard.classList.remove('hidden');
-
-            const placesList = document.getElementById('placesList');
-            placesList.innerHTML = '';
-
-            if (placesData.length === 0) {
-                placesList.innerHTML = '<p>데이터를 불러오는 중...</p>';
-                loadData().then(() => {
-                    displayPlaces();
-                }).catch(err => {
-                    placesList.innerHTML = `<div class="error">데이터 로드 실패: ${err.message}</div>`;
-                });
-                return;
-            }
-
-            displayPlaces();
-        }
-
-        function getPlaceEmoji(placeType) {
-            const emojiMap = {
-                'airport': '✈️', 'apartment': '🏢', 'bakery': '🥐', 'bank': '🏦',
-                'busstation': '🚌', 'cinema': '🎬', 'company': '🏢', 'department': '🏬',
-                'golf': '⛳', 'hospital': '🏥', 'hotel': '🏨', 'ktv': '🎤',
-                'market': '🛒', 'massage': '💆', 'oldtown': '🏘️', 'park': '🌳',
-                'police': '🚔', 'restaurant': '🍽️', 'salon': '💇', 'scenic': '🏞️',
-                'stadium': '⚽', 'theater': '🎭', 'trainstation': '🚄',
-                'zhangjiajie': '🏔️', 'thegreatwall': '🧱',
-                'elementary': '🏫', 'highschool': '🎒', 'university': '🎓',
-                'communication': '📱', 'asset': '🏠', 'electronics': '💻'
-            };
-            return emojiMap[placeType] || '📍';
-        }
-
-        function displayPlaces() {
-            const placesList = document.getElementById('placesList');
-            placesList.innerHTML = '';
-
-            placesData.forEach(place => {
-                const placeCard = document.createElement('div');
-                placeCard.className = 'place-card';
-                placeCard.onclick = () => selectPlace(place.placeType);
-                
-                placeCard.innerHTML = `
-                    <h3>${getPlaceEmoji(place.placeType)} ${place.name}</h3>
-                    <p style="color: #7f8c8d;">${place.placeKeywords}</p>
-                `;
-                
-                placesList.appendChild(placeCard);
-            });
-        }
-
-        function selectPlace(placeType) {
-            currentPlaceType = placeType;
-            showChoiceButtons();
-        }
-
-        function loadConversations() {
-            if (!currentPlaceType) {
-                alert('장소를 먼저 선택해주세요');
-                return;
-            }
-            
-            if (dialoguesData.length === 0) {
-                loadData().then(() => {
-                    showScenarios();
-                }).catch(err => {
-                    alert('데이터 로드 실패: ' + err.message);
-                });
-            } else {
-                showScenarios();
-            }
-        }
-
-        function showScenarios() {
-            // 헤더 표시 및 배경 변경 (밝은 톤)
-            document.getElementById('mainHeader').style.display = 'block';
-            document.body.style.background = 'linear-gradient(180deg, #e8ecf1 0%, #dde3eb 100%)';
-            
-            // document.getElementById('imageShowcase').classList.add('hidden');
-            document.getElementById('searchCard').classList.add('hidden');
-            document.getElementById('placesSection').classList.add('hidden');
-            document.getElementById('choiceSection').classList.add('hidden');
-            document.getElementById('conversationsSection').classList.add('hidden');
-            document.getElementById('scenariosSection').classList.remove('hidden');
-
-            const conversations = dialoguesData.filter(d => d.장소타입 === currentPlaceType);
-            
-            if (conversations.length === 0) {
-                document.getElementById('scenariosList').innerHTML = '<p>해당 장소의 시나리오가 없습니다.</p>';
-                return;
-            }
-
-            // 시나리오 목록 추출 (중복 제거)
-            const scenariosSet = new Set();
-            conversations.forEach(conv => {
-                if (conv.시나리오 && conv.시나리오.trim()) {
-                    scenariosSet.add(conv.시나리오.trim());
-                }
-            });
-
-            // 배열로 변환 후 숫자 기준 정렬
-            const scenariosArray = Array.from(scenariosSet).sort(sortScenariosByNumber);
-
-            // 장소 이름 가져오기
-            const place = placesData.find(p => p.placeType === currentPlaceType);
-            const placeName = place ? `${getPlaceEmoji(currentPlaceType)} ${place.name}` : '장소';
-            document.getElementById('scenariosSectionTitle').textContent = `${placeName} - Select Scenario`;
-
-            // 시나리오 카드 생성
-            const scenariosList = document.getElementById('scenariosList');
-            scenariosList.innerHTML = '';
-
-            scenariosArray.forEach(scenario => {
-                const scenarioCard = document.createElement('div');
-                scenarioCard.className = 'scenario-card';
-                scenarioCard.textContent = scenario;
-                scenarioCard.onclick = () => showScenarioDialogues(scenario);
-                scenariosList.appendChild(scenarioCard);
-            });
-        }
-
-        function showScenarioDialogues(scenario) {
-            currentScenario = scenario;
-            
-            // 현재 시나리오의 인덱스 저장
-            const conversations = dialoguesData.filter(d => d.장소타입 === currentPlaceType);
-            const scenariosSet = new Set();
-            conversations.forEach(conv => {
-                if (conv.시나리오 && conv.시나리오.trim()) {
-                    scenariosSet.add(conv.시나리오.trim());
-                }
-            });
-            const scenariosArray = Array.from(scenariosSet).sort(sortScenariosByNumber);
-            currentScenarioIndex = scenariosArray.indexOf(scenario);
-            
-            document.getElementById('scenariosSection').classList.add('hidden');
-            document.getElementById('conversationsSection').classList.remove('hidden');
-
-            document.getElementById('conversationTitle').textContent = scenario;
-
-            const scenarioConversations = dialoguesData.filter(d => 
-                d.장소타입 === currentPlaceType && d.시나리오 === scenario
+        
+        // Render places
+        function renderPlaces(filter = '') {
+            const grid = document.getElementById('placesGrid');
+            const filteredPlaces = places.filter(p => 
+                p.place_name_en.toLowerCase().includes(filter.toLowerCase()) ||
+                p.place_name_ko.includes(filter)
             );
-
-            const conversationsList = document.getElementById('conversationsList');
-            conversationsList.innerHTML = '';
-
-            const dialogues = scenarioConversations.sort((a, b) => 
-                parseInt(a.대화순서) - parseInt(b.대화순서)
+            
+            grid.innerHTML = filteredPlaces.map(place => `
+                <div class="place-card" onclick="selectPlace('${place.place_id}')">
+                    <div class="place-icon">${place.icon}</div>
+                    <div class="place-name">${place.place_name_en}</div>
+                    <div class="place-name-ko">${place.place_name_ko}</div>
+                </div>
+            `).join('');
+        }
+        
+        // Filter places
+        function filterPlaces() {
+            const filter = document.getElementById('searchInput').value;
+            renderPlaces(filter);
+        }
+        
+        // Select place
+        function selectPlace(placeId) {
+            currentPlace = places.find(p => p.place_id === placeId);
+            const placeCategories = categories.filter(c => c.place_id === placeId);
+            
+            document.getElementById('categoriesList').innerHTML = placeCategories.map(cat => `
+                <div class="category-card" onclick="selectCategory('${cat.category_id}')">
+                    <div class="category-info">
+                        <h3>${cat.category_name_en}</h3>
+                        <p>${cat.category_name_ko}</p>
+                    </div>
+                    <span class="category-arrow">→</span>
+                </div>
+            `).join('');
+            
+            showView('categories');
+            updateHeader(currentPlace.place_name_en, currentPlace.place_name_ko);
+        }
+        
+        // Select category
+        function selectCategory(categoryId) {
+            currentCategory = categories.find(c => c.category_id === categoryId);
+            const categoryDialogues = dialogues.filter(d => 
+                d.place_id === currentPlace.place_id && 
+                d.category_id === categoryId
             );
-
-            dialogues.forEach(dialogue => {
-                const romanization = dialogue.로마자 || '';
-                const speakerType = isCustomer(dialogue.화자) ? 'customer' : 'staff';
-                const speakerName = dialogue.화자;
-                
-                const dialogueDiv = document.createElement('div');
-                dialogueDiv.className = `dialogue-item ${speakerType}`;
-                dialogueDiv.setAttribute('data-korean', dialogue.한국어);
-                dialogueDiv.setAttribute('data-speaker', speakerType);
-                dialogueDiv.setAttribute('data-speaker-name', speakerName);
-                
-                const playBtn = document.createElement('button');
-                playBtn.className = 'play-btn';
-                playBtn.textContent = '🔊';
-                playBtn.onclick = (e) => {
-                    e.stopPropagation();
-                    playKoreanSentence(dialogue.한국어, playBtn, speakerName);
-                };
-                
-                dialogueDiv.innerHTML = `
-                    <div class="speaker">${dialogue.화자}</div>
-                    <div class="korean-main">${dialogue.한국어}</div>
-                    <div class="english">${dialogue.영어}</div>
-                    ${romanization ? `<div class="romanization">${romanization}</div>` : ''}
-                    ${dialogue.단어 ? `<div class="vocab-section">
-                        <div class="vocab-title">Key Words:</div>
-                        <span class="vocab-item">${dialogue.단어}</span>
-                    </div>` : ''}
-                `;
-                
-                dialogueDiv.insertBefore(playBtn, dialogueDiv.firstChild);
-                conversationsList.appendChild(dialogueDiv);
-            });
+            
+            document.getElementById('dialoguesContainer').innerHTML = categoryDialogues.map(d => `
+                <div class="dialogue-bubble speaker-${d.speaker.toLowerCase()}" onclick="speak('${escapeHtml(d.korean)}', this)">
+                    <div class="speaker-label">${d.speaker === 'A' ? '🇰🇷 Korean' : '🌍 You'}</div>
+                    <div class="dialogue-korean">${d.korean}<span class="audio-indicator">🔊</span></div>
+                    <div class="dialogue-romanization">${d.romanization}</div>
+                    <div class="dialogue-english">${d.english}</div>
+                </div>
+            `).join('');
+            
+            showView('dialogues');
+            updateHeader(currentCategory.category_name_en, currentCategory.category_name_ko);
         }
-
-        function backToChoice() {
-            // 헤더 숨기기 및 배경 원래대로
-            document.getElementById('mainHeader').style.display = 'none';
-            document.body.style.background = 'linear-gradient(180deg, #f5f7fa 0%, #e8ecf1 100%)';
-            
-            document.getElementById('scenariosSection').classList.add('hidden');
-            document.getElementById('conversationsSection').classList.add('hidden');
-            document.getElementById('placesSection').classList.add('hidden');
-            document.getElementById('choiceSection').classList.add('hidden');
-            document.getElementById('allPlacesSection').classList.add('hidden');
-            
-            // "← Back to Places" 버튼 숨기기
-            document.getElementById('backToPlacesBtn').style.display = 'none';
-            
-            // document.getElementById('imageShowcase').classList.remove('hidden');
-            document.getElementById('searchCard').classList.remove('hidden');
+        
+        // Escape HTML
+        function escapeHtml(text) {
+            return text.replace(/'/g, "\\'").replace(/"/g, '\\"');
         }
-
-        function backToScenarios() {
-            document.getElementById('conversationsSection').classList.add('hidden');
-            document.getElementById('scenariosSection').classList.remove('hidden');
+        
+        // Show view
+        function showView(view) {
+            currentView = view;
+            document.getElementById('placesView').classList.toggle('hidden', view !== 'places');
+            document.getElementById('categoriesView').classList.toggle('hidden', view !== 'categories');
+            document.getElementById('dialoguesView').classList.toggle('hidden', view !== 'dialogues');
+            document.getElementById('searchBox').classList.toggle('hidden', view !== 'places');
+            document.getElementById('backBtn').classList.toggle('visible', view !== 'places');
         }
-
-        function nextScenario() {
-            // 현재 장소의 모든 시나리오 가져오기
-            const conversations = dialoguesData.filter(d => d.장소타입 === currentPlaceType);
-            const scenariosSet = new Set();
-            conversations.forEach(conv => {
-                if (conv.시나리오 && conv.시나리오.trim()) {
-                    scenariosSet.add(conv.시나리오.trim());
-                }
-            });
-            const scenariosArray = Array.from(scenariosSet).sort(sortScenariosByNumber);
-            
-            // Next Scenario 인덱스 계산 (순환)
-            let nextIndex = currentScenarioIndex + 1;
-            if (nextIndex >= scenariosArray.length) {
-                nextIndex = 0; // 마지막이면 첫 번째로
-            }
-            
-            // Next Scenario 표시
-            const nextScenario = scenariosArray[nextIndex];
-            if (nextScenario) {
-                showScenarioDialogues(nextScenario);
+        
+        // Update header
+        function updateHeader(title, subtitle) {
+            document.getElementById('headerTitle').textContent = title;
+            document.getElementById('headerSubtitle').textContent = subtitle;
+        }
+        
+        // Go back
+        function goBack() {
+            if (currentView === 'dialogues') {
+                showView('categories');
+                updateHeader(currentPlace.place_name_en, currentPlace.place_name_ko);
+            } else if (currentView === 'categories') {
+                showView('places');
+                updateHeader('KoreaTalk', 'Korean Travel Phrases');
+                currentPlace = null;
             }
         }
-
-        function playKoreanSentence(text, button, speakerName) {
-            if (window.speechSynthesis.speaking) {
+        
+        // Text-to-speech
+        function speak(text, element) {
+            if ('speechSynthesis' in window) {
                 window.speechSynthesis.cancel();
-                if (button) button.textContent = '🔊';
-                return;
-            }
-
-            const utterance = new SpeechSynthesisUtterance(text);
-            utterance.lang = 'ko-KR';
-            utterance.rate = 0.9;
-            
-            // 화자 역할로 목소리 구분 (고객=남자, 직원=여자)
-            const isCustomerRole = isCustomer(speakerName);
-            
-            // 실제 음성 선택 (고객=남자, 직원=여자)
-            if (isCustomerRole && koreanMaleVoice) {
-                utterance.voice = koreanMaleVoice;
-            } else if (!isCustomerRole && koreanFemaleVoice) {
-                utterance.voice = koreanFemaleVoice;
-            }
-            
-            if (button) {
-                button.textContent = '⏸';
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'ko-KR';
+                utterance.rate = 0.8;
+                
+                const indicator = element.querySelector('.audio-indicator');
+                indicator.classList.add('playing');
+                
                 utterance.onend = () => {
-                    button.textContent = '🔊';
+                    indicator.classList.remove('playing');
                 };
+                
                 utterance.onerror = () => {
-                    button.textContent = '🔊';
+                    indicator.classList.remove('playing');
                 };
-            }
-            
-            window.speechSynthesis.speak(utterance);
-        }
-
-        let allSentences = [];
-        let currentSentenceIndex = 0;
-
-        function playAllConversations() {
-            allSentences = [];
-            const dialogueItems = document.querySelectorAll('.dialogue-item');
-            dialogueItems.forEach(item => {
-                const korean = item.getAttribute('data-korean');
-                const speakerName = item.getAttribute('data-speaker-name');
-                if (korean) {
-                    allSentences.push({ text: korean, speakerName: speakerName });
-                }
-            });
-
-            if (allSentences.length === 0) {
-                alert('No conversations to play.');
-                return;
-            }
-
-            if (window.speechSynthesis.speaking) {
-                window.speechSynthesis.cancel();
-                document.getElementById('playAllBtn').textContent = '🔊 Listen All';
-                return;
-            }
-
-            currentSentenceIndex = 0;
-            document.getElementById('playAllBtn').textContent = '⏸ Stop';
-            playNextSentence();
-        }
-
-        function playNextSentence() {
-            if (currentSentenceIndex >= allSentences.length) {
-                document.getElementById('playAllBtn').textContent = '🔊 Listen All';
-                return;
-            }
-
-            const { text, speakerName } = allSentences[currentSentenceIndex];
-            const utterance = new SpeechSynthesisUtterance(text);
-            utterance.lang = 'ko-KR';
-            utterance.rate = 0.9;
-            
-            // 화자 역할로 목소리 구분 (고객=남자, 직원=여자)
-            const isCustomerRole = isCustomer(speakerName);
-            
-            // 실제 음성 선택 (고객=남자, 직원=여자)
-            if (isCustomerRole && koreanMaleVoice) {
-                utterance.voice = koreanMaleVoice;
-            } else if (!isCustomerRole && koreanFemaleVoice) {
-                utterance.voice = koreanFemaleVoice;
-            }
-
-            utterance.onend = () => {
-                setTimeout(() => {
-                    currentSentenceIndex++;
-                    playNextSentence();
-                }, 50);
-            };
-
-            utterance.onerror = () => {
-                document.getElementById('playAllBtn').textContent = '🔊 Listen All';
-            };
-
-            window.speechSynthesis.speak(utterance);
-        }
-
-        // 모달 Close
-        function closeModal() {
-            document.getElementById('customModal').classList.add('hidden');
-        }
-
-        // 전체 장소 목록 표시
-        function showAllPlaces() {
-            closeModal();
-            
-            // 헤더 표시 및 배경 변경 (밝은 톤)
-            document.getElementById('mainHeader').style.display = 'block';
-            document.body.style.background = 'linear-gradient(180deg, #e8ecf1 0%, #dde3eb 100%)';
-            
-            // 모든 섹션 숨기기
-            document.querySelectorAll('.card').forEach(card => card.classList.add('hidden'));
-            document.getElementById('searchCard').classList.add('hidden');
-            
-            // 전체 장소 목록 섹션 표시
-            document.getElementById('allPlacesSection').classList.remove('hidden');
-            
-            // 장소 목록 생성
-            const placesList = document.getElementById('allPlacesList');
-            placesList.innerHTML = '';
-            
-            // 장소별 아이콘 매핑
-            const placeIcons = {
-                'hospital': '🏥',
-                'restaurant': '🍽️',
-                'police': '👮',
-                'bank': '🏦',
-                'busstation': '🚌',
-                'airport': '✈️',
-                'trainstation': '🚄',
-                'market': '🛒',
-                'apartment': '🏢',
-                'cinema': '🎬',
-                'theater': '🎭',
-                'stadium': '🏟️',
-                'park': '🌳',
-                'department': '🏬',
-                'golf': '⛳',
-                'massage': '💆',
-                'ktv': '🎤',
-                'hotel': '🏨',
-                'scenic': '🗿',
-                'oldtown': '🏛️',
-                'company': '🏢',
-                'salon': '💇',
-                'bakery': '🍞',
-                'zhangjiajie': '🏔️',
-                'thegreatwall': '🧱',
-                'elementary': '🏫',
-                'highschool': '🎒',
-                'university': '🎓',
-                'communication': '📱',
-                'asset': '🏠',
-                'electronics': '💻'
-            };
-            
-            // 검색어로 관련 카테고리 찾기 (개선된 로직)
-            const searchKeyword = currentSearchKeyword.toLowerCase();
-            let matchedCategories = new Set();
-            
-            // categoriesData에서 categoryKeywords 검색
-            categoriesData.forEach(cat => {
-                if (cat.categoryKeywords) {
-                    const catKeywordsArray = cat.categoryKeywords.toLowerCase().split(',');
-                    for (let kw of catKeywordsArray) {
-                        const trimmedKw = kw.trim();
-                        if (trimmedKw.length >= 2) {
-                            if (searchKeyword.includes(trimmedKw) || trimmedKw.includes(searchKeyword)) {
-                                matchedCategories.add(cat.category);
-                                break;
-                            }
-                        }
-                    }
-                }
-            });
-            
-            // placeKeywords에서도 확인
-            placesData.forEach(place => {
-                if (place.placeKeywords) {
-                    const placeKwArray = place.placeKeywords.toLowerCase().split(',');
-                    for (let kw of placeKwArray) {
-                        const trimmedKw = kw.trim();
-                        if (trimmedKw.length >= 2) {
-                            if (searchKeyword.includes(trimmedKw) || trimmedKw.includes(searchKeyword)) {
-                                matchedCategories.add(place.category);
-                                break;
-                            }
-                        }
-                    }
-                }
-            });
-            
-            console.log('검색어:', searchKeyword, '매칭된 카테고리:', Array.from(matchedCategories));
-            
-            // 매칭된 카테고리가 있으면 해당 카테고리만, 없으면 전체 표시
-            let filteredPlaces = placesData;
-            if (matchedCategories.size > 0) {
-                filteredPlaces = placesData.filter(place => matchedCategories.has(place.category));
-            }
-            
-            filteredPlaces.forEach(place => {
-                const placeDiv = document.createElement('div');
-                placeDiv.className = `place-item place-${place.placeType}`;
-                placeDiv.onclick = () => selectPlace(place.placeType);
                 
-                const icon = placeIcons[place.placeType] || '📍';
-                const keywords = place.placeKeywords.split(',').slice(0, 3).join(', ');
-                
-                placeDiv.innerHTML = `
-                    <div class="place-icon">${icon}</div>
-                    <div class="place-name">${place.name}</div>
-                    <div class="place-keywords">${keywords}</div>
-                `;
-                
-                placesList.appendChild(placeDiv);
+                window.speechSynthesis.speak(utterance);
+            }
+        }
+        
+        // Show/hide loading
+        function showLoading(show) {
+            document.getElementById('loading').classList.toggle('hidden', !show);
+            document.getElementById('placesView').classList.toggle('hidden', show);
+        }
+        
+        // Service Worker registration for PWA
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').catch(err => {
+                console.log('ServiceWorker registration failed:', err);
             });
         }
-
-        // Select a Place
-        function selectPlace(placeType) {
-            currentPlaceType = placeType;
-            
-            // 장소 목록 숨기기
-            document.getElementById('allPlacesSection').classList.add('hidden');
-            
-            // "← Back to Places" 버튼 표시
-            document.getElementById('backToPlacesBtn').style.display = 'inline-block';
-            
-            // 시나리오 표시
-            showScenarios();
-        }
-
-        // Back to Places 돌아가기
-        function backToPlacesList() {
-            // 시나리오 섹션 숨기기
-            document.getElementById('scenariosSection').classList.add('hidden');
-            
-            // "← Back to Places" 버튼 숨기기
-            document.getElementById('backToPlacesBtn').style.display = 'none';
-            
-            // 장소 목록 표시
-            document.getElementById('allPlacesSection').classList.remove('hidden');
-        }
-
-        // 바로 네비게이션
-        function navigateDirectly() {
-            closeModal();
-            navigateToDestination();
-        }
-
-        // 검색으로 돌아가기
-        function backToSearch() {
-            // 헤더 숨기기 및 배경 원래대로
-            document.getElementById('mainHeader').style.display = 'none';
-            document.body.style.background = 'linear-gradient(180deg, #f5f7fa 0%, #e8ecf1 100%)';
-            
-            document.getElementById('allPlacesSection').classList.add('hidden');
-            document.getElementById('searchCard').classList.remove('hidden');
-            // document.getElementById('imageShowcase').classList.remove('hidden');
-        }
-
-        // Listen All Scenarios 함수
-        function playAllScenarios() {
-            if (!currentPlaceType) {
-                alert('장소가 선택되지 않았습니다.');
-                return;
-            }
-
-            // 현재 장소의 모든 시나리오 가져오기
-            const conversations = dialoguesData.filter(d => d.장소타입 === currentPlaceType);
-            
-            if (conversations.length === 0) {
-                alert('재생할 대화가 없습니다.');
-                return;
-            }
-
-            // 모든 중국어 문장과 화자명 수집
-            allSentences = [];
-            conversations.forEach(conv => {
-                if (conv.중국어) {
-                    allSentences.push({ text: conv.중국어, speakerName: conv.화자 });
-                }
-            });
-
-            if (allSentences.length === 0) {
-                alert('재생할 대화가 없습니다.');
-                return;
-            }
-
-            // 이미 재생 중이면 Stop
-            if (window.speechSynthesis.speaking) {
-                window.speechSynthesis.cancel();
-                alert('재생이 Stop되었습니다.');
-                return;
-            }
-
-            // 재생 시작
-            currentSentenceIndex = 0;
-            alert(`총 ${allSentences.length}개 대화를 재생합니다. (약 ${Math.ceil(allSentences.length * 3 / 60)}분 소요)`);
-            playNextSentence();
-        }
-
-        // 초기 로드
-        window.addEventListener('DOMContentLoaded', () => {
-            loadData().catch(err => {
-                console.error('초기 데이터 로드 실패:', err);
-            });
-        });
     </script>
 </body>
 </html>
